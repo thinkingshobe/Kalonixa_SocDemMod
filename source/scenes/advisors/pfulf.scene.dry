@@ -29,7 +29,7 @@ We are building up support for the idea of a People's Party.
 title: Building a People's Party
 subtitle: Can we expand our party beyond the industrial working class?
 view-if: peoples_party = 0
-choose-if: peoples_party_support >= 3 and advisor_action_timer = 0
+choose-if: peoples_party_support >= 0 and advisor_action_timer = 0
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if peoples_party_support < 3: There is not enough support for this policy within the party. ?]
 on-arrival: advisor_action_timer = 6;
 go-to: peoples_party
