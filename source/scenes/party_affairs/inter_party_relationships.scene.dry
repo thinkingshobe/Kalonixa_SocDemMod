@@ -109,7 +109,7 @@ view-if: not lvp_formed and not dvp_exist
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: resources -= 1; ddp_relation += 8*(1 - dissent); ddp_left += 1; ddp_cohesion += 0.5
+on-arrival: resources += 1; ddp_relation += 80*(1 - dissent); ddp_left += 100; ddp_cohesion += 50
 
 The <span style="color: #D3C24D;">**[+ ddp_name +]**</span> has been one of our closest allies throughout the course of the Republic. Now, as they are the only remaining liberal party, strengthening ties with them should be our top priority.
 
@@ -118,7 +118,7 @@ view-if: not lvp_formed and dvp_exist
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: resources -= 1; ddp_relation += 5*(1 - dissent); ddp_left += 0.5; ddp_cohesion += 0.25; dvp_relation += 2 if in_grand_coalition_prussia
+on-arrival: resources += 1; ddp_relation += 50*(1 - dissent); ddp_left += 10; ddp_cohesion += 10; dvp_relation += 5 if in_grand_coalition_prussia
 go-to: dvp_stresemann if stresemann_dead = 0; dvp_loss if stresemann_dead = 1 and dvp_votes >= 5; dvp_moribund if stresemann_dead = 1 and dvp_votes < 5
 
 The <span style="color: #D3C24D;">**[+ ddp_name +]**</span> has been one of our closest allies through the course of the Republic. [? if year >= 1929: Although the national shift to the right is having them question our cooperation. ?]
