@@ -1,4 +1,4 @@
-# Social Democracy: An Alternate History
+# Kalonixa: A Dynamic Social Democracy Mod
 
 ## Included Libraries
 
