@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\.github",
+    "\\.github\\workflows",
+    "\\out",
+    "\\out\\html",
+    "\\source",
+    "\\source\\scenes",
+    "\\source\\scenes\\party_affairs"
+  ],
+  "SelectedNode": "\\source\\scenes\\cancel_advisor_action.scene.dry",
+  "PreviewInSolutionExplorer": false
+}

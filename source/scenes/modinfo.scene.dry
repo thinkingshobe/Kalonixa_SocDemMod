@@ -234,12 +234,12 @@ on-arrival: {!
 
 = Party Paths
 
-- @ddp_paths: <span style="color: #D3C24D;">**DDP**</span> Paths!
-- @dvp_paths: <span style="color: #C0A054;">**DVP**</span> Paths!
-- @lvp_paths: <span style="color: #FFCC00;">**LVP**</span> Paths!
-- @zentrum_paths: <span style="color: #000000;">**Center**</span> Paths!
-- @dnvp_paths: <span style="color: #3E88B3;">**DNVP**</span> Paths!
-- @full_paths: Ultimate Dynamic Flowchart!
+- @KLP_paths: <span style="color: #FF5E5E;">**KLP**</span> Paths!
+- @KSP_paths: <span style="color: #A33E7E;">**KSP**</span> Paths!
+- @KPF_paths: <span style="color: #FF358C;">**KPF**</span> Paths!
+- @LP_paths: <span style="color: #FFE16B;">**LP**</span> Paths!
+- @CLP_paths: <span style="color: #89A4DD;">**CLP**</span> Paths!
+- @full_paths: Ultimate Kalonixa Flowchart!
 - @back: Back
 - @back2: Back
 

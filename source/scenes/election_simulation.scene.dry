@@ -2,9 +2,9 @@ title: Election Simulation
 set-jump: post_election
 
 
-- @1928: 1928 historical scenario
-- @1930: 1930 historical scenario
-- @1932: 1932 (July) historical scenario
+- @2015: 2015 "historical" scenario
+- @2020: 2020 "historical" scenario
+- @2025: 2025 "historical" scenario
 
 @1928
 on-arrival: {!
