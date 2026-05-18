@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\source\\scenes\\status.scene.dry||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:source\\scenes\\status.scene.dry||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\source\\scenes\\election_simulation.scene.dry||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:source\\scenes\\election_simulation.scene.dry||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
@@ -17,10 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\source\\scenes\\root.scene.dry||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:source\\scenes\\root.scene.dry||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\source\\scenes\\status.scene.dry||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:source\\scenes\\status.scene.dry||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\source\\scenes\\modinfo.scene.dry||{8B382828-6202-11D1-8870-0000F87579D2}",
@@ -202,11 +202,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "root.scene.dry",
               "DocumentMoniker": "C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\source\\scenes\\root.scene.dry",
               "RelativeDocumentMoniker": "source\\scenes\\root.scene.dry",
@@ -215,12 +215,11 @@
               "ViewState": "AgIAAH0DAAAAAAAAAAAAwJkDAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2026-04-27T23:02:23.733Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "game.js",
               "DocumentMoniker": "C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\out\\html\\game.js",
               "RelativeDocumentMoniker": "out\\html\\game.js",
@@ -228,8 +227,7 @@
               "RelativeToolTip": "out\\html\\game.js",
               "ViewState": "AgIAAAIBAAAAAAAAAAAYwBwAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-05-15T20:27:15.398Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-15T20:27:15.398Z"
             },
             {
               "$type": "Document",
@@ -269,26 +267,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "status.scene.dry",
               "DocumentMoniker": "C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\source\\scenes\\status.scene.dry",
               "RelativeDocumentMoniker": "source\\scenes\\status.scene.dry",
               "ToolTip": "C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\source\\scenes\\status.scene.dry",
               "RelativeToolTip": "source\\scenes\\status.scene.dry",
-              "ViewState": "AgIAAAoBAAAAAAAAAAAAwDYBAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAAwGEAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2026-05-14T16:25:10.795Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "election_simulation.scene.dry",
               "DocumentMoniker": "C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\source\\scenes\\election_simulation.scene.dry",
               "RelativeDocumentMoniker": "source\\scenes\\election_simulation.scene.dry",
               "ToolTip": "C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\source\\scenes\\election_simulation.scene.dry",
               "RelativeToolTip": "source\\scenes\\election_simulation.scene.dry",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2026-05-18T17:21:20.984Z",
               "EditorCaption": ""
@@ -319,7 +317,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "main.scene.dry",
               "DocumentMoniker": "C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\source\\scenes\\main.scene.dry",
               "RelativeDocumentMoniker": "source\\scenes\\main.scene.dry",
@@ -327,8 +325,7 @@
               "RelativeToolTip": "source\\scenes\\main.scene.dry",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-05-14T16:31:49.009Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-14T16:31:49.009Z"
             },
             {
               "$type": "Document",
