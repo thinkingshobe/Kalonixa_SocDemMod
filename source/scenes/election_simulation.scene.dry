@@ -6,7 +6,149 @@ set-jump: post_election
 - @2020: 2020 "historical" scenario
 - @2025: 2025 "historical" scenario
 
-@1928
+@2015
+on-arrival: {!
+Q.workers = 45; //mostly urbanites
+Q.old_middle = 10; //im taking this as a literal age indicator here tbh
+Q.new_middle = 30; 
+Q.rural = 15;
+Q.unemployed = 5;
+Q.environmentalists = 30;
+
+Q.classes = ['workers', 'old_middle', 'new_middle', 'rural', 'unemployed', 'environmentalists'];
+Q.parties = ['egk', 'klp', 'ksp', 'lp', 'clp', 'snp', 'pn', 'other'];
+
+// Support for party by social group
+// they don't have to sum to 100 since the electoral calculations will be normaliksped.
+Q.workers_egk = 10;
+Q.workers_klp = 40;
+Q.workers_ksp = 30;
+Q.workers_lp = 10;
+Q.workers_clp = 5;
+Q.workers_snp = 10;
+Q.workers_pn = 10;
+Q.workers_other = 5;
+
+Q.old_middle_egk = 20;
+Q.old_middle_klp = 5;
+Q.old_middle_ksp = 30;
+Q.old_middle_lp= 50;
+Q.old_middle_clp = 35;
+Q.old_middle_snp = 10;
+Q.old_middle_pn = 10;
+Q.old_middle_other = 10;
+
+Q.new_middle_egk = 50;
+Q.new_middle_klp = 0;
+Q.new_middle_ksp = 20;
+Q.new_middle_lp= 60;
+Q.new_middle_clp = 30;
+Q.new_middle_snp = 20;
+Q.new_middle_pn = 30;
+Q.new_middle_other = 5;
+
+Q.rural_egk = 30;
+Q.rural_klp = 0;
+Q.rural_ksp = 15;
+Q.rural_lp= 40;
+Q.rural_clp = 30;
+Q.rural_snp = 20;
+Q.rural_pn = 0;
+Q.rural_other = 10;
+
+Q.unemployed_egk = 0;
+Q.unemployed_klp = 10;
+Q.unemployed_ksp = 10;
+Q.unemployed_lp = 5;
+Q.unemployed_clp = 5;
+Q.unemployed_snp = 5;
+Q.unemployed_pn = 15;
+Q.unemployed_other = 5;
+
+Q.environmentalists_egk = 60;
+Q.environmentalists_klp = 20;
+Q.environmentalists_ksp = 20;
+Q.environmentalists_lp = 5;
+Q.environmentalists_clp = 0;
+Q.environmentalists_snp = 10;
+Q.environmentalists_pn = 5;
+Q.environmentalists_other = 5;
+!}
+go-to: election_algorithm
+set-jump: post_election
+
+@2020
+on-arrival: {!
+Q.workers = 45; //mostly urbanites
+Q.old_middle = 10; //im taking this as a literal age indicator here tbh
+Q.new_middle = 30; 
+Q.rural = 15;
+Q.unemployed = 5;
+Q.environmentalists = 30;
+
+Q.classes = ['workers', 'old_middle', 'new_middle', 'rural', 'unemployed', 'environmentalists'];
+Q.parties = ['egk', 'klp', 'ksp', 'lp', 'clp', 'snp', 'pn', 'other'];
+
+// Support for party by social group
+// they don't have to sum to 100 since the electoral calculations will be normaliksped.
+Q.workers_egk = 10;
+Q.workers_klp = 40;
+Q.workers_ksp = 30;
+Q.workers_lp = 10;
+Q.workers_clp = 5;
+Q.workers_snp = 10;
+Q.workers_pn = 10;
+Q.workers_other = 5;
+
+Q.old_middle_egk = 20;
+Q.old_middle_klp = 5;
+Q.old_middle_ksp = 30;
+Q.old_middle_lp= 50;
+Q.old_middle_clp = 35;
+Q.old_middle_snp = 10;
+Q.old_middle_pn = 10;
+Q.old_middle_other = 10;
+
+Q.new_middle_egk = 50;
+Q.new_middle_klp = 0;
+Q.new_middle_ksp = 20;
+Q.new_middle_lp= 60;
+Q.new_middle_clp = 30;
+Q.new_middle_snp = 20;
+Q.new_middle_pn = 30;
+Q.new_middle_other = 5;
+
+Q.rural_egk = 30;
+Q.rural_klp = 0;
+Q.rural_ksp = 15;
+Q.rural_lp= 40;
+Q.rural_clp = 30;
+Q.rural_snp = 20;
+Q.rural_pn = 0;
+Q.rural_other = 10;
+
+Q.unemployed_egk = 0;
+Q.unemployed_klp = 10;
+Q.unemployed_ksp = 10;
+Q.unemployed_lp = 5;
+Q.unemployed_clp = 5;
+Q.unemployed_snp = 5;
+Q.unemployed_pn = 15;
+Q.unemployed_other = 5;
+
+Q.environmentalists_egk = 60;
+Q.environmentalists_klp = 20;
+Q.environmentalists_ksp = 20;
+Q.environmentalists_lp = 5;
+Q.environmentalists_clp = 0;
+Q.environmentalists_snp = 10;
+Q.environmentalists_pn = 5;
+Q.environmentalists_other = 5;
+!}
+go-to: election_algorithm
+set-jump: post_election
+
+@2025
 on-arrival: {!
 Q.workers = 45; //mostly urbanites
 Q.old_middle = 10; //im taking this as a literal age indicator here tbh
@@ -114,7 +256,7 @@ The electoral system is essentially proportional, with the proportion of Reichst
  
 **Election results:**
 
-# 1928: 30, 1930: 25, 1932: 22
+# 2015: 30, 2020: 25, 1932: 22
 egk: [+ egk_r +]
 
 # 1928: 15, 1930: 15, 1932: 

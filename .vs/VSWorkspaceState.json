@@ -6,10 +6,8 @@
     "\\out",
     "\\out\\html",
     "\\source",
-    "\\source\\qdisplays",
-    "\\source\\scenes",
-    "\\source\\scenes\\events",
-    "\\source\\scenes\\party_affairs"
+    "\\source\\scenes"
   ],
+  "SelectedNode": "\\source\\scenes\\root.scene.dry",
   "PreviewInSolutionExplorer": false
 }

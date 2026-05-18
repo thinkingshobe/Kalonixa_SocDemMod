@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\source\\scenes\\root.scene.dry||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:source\\scenes\\root.scene.dry||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\source\\scenes\\modinfo.scene.dry||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:source\\scenes\\modinfo.scene.dry||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\source\\scenes\\election_simulation.scene.dry||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:source\\scenes\\election_simulation.scene.dry||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\source\\scenes\\status.scene.dry||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:source\\scenes\\status.scene.dry||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
@@ -17,10 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\source\\scenes\\party_affairs\\campaigning.scene.dry||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:source\\scenes\\party_affairs\\campaigning.scene.dry||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\source\\scenes\\root.scene.dry||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:source\\scenes\\root.scene.dry||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\source\\qdisplays\\relationships.qdisplay.dry||{8B382828-6202-11D1-8870-0000F87579D2}",
@@ -107,10 +115,6 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:source\\scenes\\return.scene.dry||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\source\\scenes\\election_simulation.scene.dry||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:source\\scenes\\election_simulation.scene.dry||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\source\\scenes\\election_algorithm.scene.dry||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:source\\scenes\\election_algorithm.scene.dry||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
@@ -189,10 +193,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\source\\qdisplays\\camarilla_strength.qdisplay.dry||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:source\\qdisplays\\camarilla_strength.qdisplay.dry||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\source\\scenes\\modinfo.scene.dry||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:source\\scenes\\modinfo.scene.dry||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -202,48 +202,25 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "root.scene.dry",
               "DocumentMoniker": "C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\source\\scenes\\root.scene.dry",
               "RelativeDocumentMoniker": "source\\scenes\\root.scene.dry",
               "ToolTip": "C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\source\\scenes\\root.scene.dry",
               "RelativeToolTip": "source\\scenes\\root.scene.dry",
-              "ViewState": "AgIAAJcAAAAAAAAAAAAwwK4AAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAAD8EAAAAAAAAAAAAwFkEAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2026-04-27T23:02:23.733Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "favicon.ico - Icon [16x16, 32 bit, BMP]",
-              "DocumentMoniker": "C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\out\\html\\favicon.ico",
-              "RelativeDocumentMoniker": "out\\html\\favicon.ico",
-              "ToolTip": "C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\out\\html\\favicon.ico - Icon [16x16, 32 bit, BMP]",
-              "RelativeToolTip": "out\\html\\favicon.ico - Icon [16x16, 32 bit, BMP]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001525|",
-              "WhenOpened": "2026-05-18T19:23:38.696Z",
-              "EditorCaption": " - Icon [16x16, 32 bit, BMP]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "d3-linegraph.js",
-              "DocumentMoniker": "C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\out\\html\\d3-linegraph.js",
-              "RelativeDocumentMoniker": "out\\html\\d3-linegraph.js",
-              "ToolTip": "C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\out\\html\\d3-linegraph.js",
-              "RelativeToolTip": "out\\html\\d3-linegraph.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-05-18T19:22:14.663Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "d3.v7.min.js",
               "DocumentMoniker": "C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\out\\html\\d3.v7.min.js",
               "RelativeDocumentMoniker": "out\\html\\d3.v7.min.js",
@@ -255,7 +232,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": ".jshintrc",
               "DocumentMoniker": "C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\out\\html\\.jshintrc",
               "RelativeDocumentMoniker": "out\\html\\.jshintrc",
@@ -267,7 +244,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "game.js",
               "DocumentMoniker": "C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\out\\html\\game.js",
               "RelativeDocumentMoniker": "out\\html\\game.js",
@@ -279,7 +256,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "election_1928.scene.dry",
               "DocumentMoniker": "C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\source\\scenes\\events\\election_1928.scene.dry",
               "RelativeDocumentMoniker": "source\\scenes\\events\\election_1928.scene.dry",
@@ -287,12 +264,11 @@
               "RelativeToolTip": "source\\scenes\\events\\election_1928.scene.dry",
               "ViewState": "AgIAANgGAAAAAAAAAAAlwPUGAAB1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-05-14T16:45:39.584Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-14T16:45:39.584Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "campaigning.scene.dry",
               "DocumentMoniker": "C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\source\\scenes\\party_affairs\\campaigning.scene.dry",
               "RelativeDocumentMoniker": "source\\scenes\\party_affairs\\campaigning.scene.dry",
@@ -304,7 +280,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "library.scene.dry",
               "DocumentMoniker": "C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\source\\scenes\\library.scene.dry",
               "RelativeDocumentMoniker": "source\\scenes\\library.scene.dry",
@@ -312,12 +288,11 @@
               "RelativeToolTip": "source\\scenes\\library.scene.dry",
               "ViewState": "AgIAADgBAAAAAAAAAAAlwFUBAABeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-05-15T07:11:06.541Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-15T07:11:06.541Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "status.scene.dry",
               "DocumentMoniker": "C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\source\\scenes\\status.scene.dry",
               "RelativeDocumentMoniker": "source\\scenes\\status.scene.dry",
@@ -330,7 +305,57 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
+              "Title": "election_simulation.scene.dry",
+              "DocumentMoniker": "C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\source\\scenes\\election_simulation.scene.dry",
+              "RelativeDocumentMoniker": "source\\scenes\\election_simulation.scene.dry",
+              "ToolTip": "C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\source\\scenes\\election_simulation.scene.dry",
+              "RelativeToolTip": "source\\scenes\\election_simulation.scene.dry",
+              "ViewState": "AgIAAHMAAAAAAAAAAAAQwJMAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-05-18T17:21:20.984Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "modinfo.scene.dry",
+              "DocumentMoniker": "C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\source\\scenes\\modinfo.scene.dry",
+              "RelativeDocumentMoniker": "source\\scenes\\modinfo.scene.dry",
+              "ToolTip": "C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\source\\scenes\\modinfo.scene.dry",
+              "RelativeToolTip": "source\\scenes\\modinfo.scene.dry",
+              "ViewState": "AgIAAA4BAAAAAAAAAAAAADEBAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-04-27T23:15:29.658Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "d3-linegraph.js",
+              "DocumentMoniker": "C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\out\\html\\d3-linegraph.js",
+              "RelativeDocumentMoniker": "out\\html\\d3-linegraph.js",
+              "ToolTip": "C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\out\\html\\d3-linegraph.js",
+              "RelativeToolTip": "out\\html\\d3-linegraph.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-05-18T19:22:14.663Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "favicon.ico - Icon [16x16, 32 bit, BMP]",
+              "DocumentMoniker": "C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\out\\html\\favicon.ico",
+              "RelativeDocumentMoniker": "out\\html\\favicon.ico",
+              "ToolTip": "C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\out\\html\\favicon.ico - Icon [16x16, 32 bit, BMP]",
+              "RelativeToolTip": "out\\html\\favicon.ico - Icon [16x16, 32 bit, BMP]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001525|",
+              "WhenOpened": "2026-05-18T19:23:38.696Z",
+              "EditorCaption": " - Icon [16x16, 32 bit, BMP]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "confidence.qdisplay.dry",
               "DocumentMoniker": "C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\source\\qdisplays\\confidence.qdisplay.dry",
               "RelativeDocumentMoniker": "source\\qdisplays\\confidence.qdisplay.dry",
@@ -342,7 +367,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "relationships.qdisplay.dry",
               "DocumentMoniker": "C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\source\\qdisplays\\relationships.qdisplay.dry",
               "RelativeDocumentMoniker": "source\\qdisplays\\relationships.qdisplay.dry",
@@ -354,7 +379,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "set_next_election_time_2.scene.dry",
               "DocumentMoniker": "C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\source\\scenes\\set_next_election_time_2.scene.dry",
               "RelativeDocumentMoniker": "source\\scenes\\set_next_election_time_2.scene.dry",
@@ -366,7 +391,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "d3-parliament.js",
               "DocumentMoniker": "C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\out\\html\\d3-parliament.js",
               "RelativeDocumentMoniker": "out\\html\\d3-parliament.js",
@@ -378,7 +403,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "coalition_dissent.qdisplay.dry",
               "DocumentMoniker": "C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\source\\qdisplays\\coalition_dissent.qdisplay.dry",
               "RelativeDocumentMoniker": "source\\qdisplays\\coalition_dissent.qdisplay.dry",
@@ -390,7 +415,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "set_next_election_time_prussia.scene.dry",
               "DocumentMoniker": "C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\source\\scenes\\set_next_election_time_prussia.scene.dry",
               "RelativeDocumentMoniker": "source\\scenes\\set_next_election_time_prussia.scene.dry",
@@ -402,7 +427,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "game.css",
               "DocumentMoniker": "C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\out\\html\\game.css",
               "RelativeDocumentMoniker": "out\\html\\game.css",
@@ -414,7 +439,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "set_next_election_time.scene.dry",
               "DocumentMoniker": "C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\source\\scenes\\set_next_election_time.scene.dry",
               "RelativeDocumentMoniker": "source\\scenes\\set_next_election_time.scene.dry",
@@ -426,7 +451,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "info.dry",
               "DocumentMoniker": "C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\source\\info.dry",
               "RelativeDocumentMoniker": "source\\info.dry",
@@ -438,7 +463,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "month.qdisplay.dry",
               "DocumentMoniker": "C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\source\\qdisplays\\month.qdisplay.dry",
               "RelativeDocumentMoniker": "source\\qdisplays\\month.qdisplay.dry",
@@ -450,7 +475,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 24,
               "Title": "game_over.scene.dry",
               "DocumentMoniker": "C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\source\\scenes\\game_over.scene.dry",
               "RelativeDocumentMoniker": "source\\scenes\\game_over.scene.dry",
@@ -462,7 +487,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 26,
               "Title": "post_event.scene.dry",
               "DocumentMoniker": "C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\source\\scenes\\post_event.scene.dry",
               "RelativeDocumentMoniker": "source\\scenes\\post_event.scene.dry",
@@ -474,7 +499,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 25,
               "Title": "main.scene.dry",
               "DocumentMoniker": "C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\source\\scenes\\main.scene.dry",
               "RelativeDocumentMoniker": "source\\scenes\\main.scene.dry",
@@ -486,7 +511,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 27,
               "Title": "return.scene.dry",
               "DocumentMoniker": "C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\source\\scenes\\return.scene.dry",
               "RelativeDocumentMoniker": "source\\scenes\\return.scene.dry",
@@ -498,7 +523,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "election_algorithm.scene.dry",
               "DocumentMoniker": "C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\source\\scenes\\election_algorithm.scene.dry",
               "RelativeDocumentMoniker": "source\\scenes\\election_algorithm.scene.dry",
@@ -510,7 +535,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "build.yaml",
               "DocumentMoniker": "C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\.github\\workflows\\build.yaml",
               "RelativeDocumentMoniker": ".github\\workflows\\build.yaml",
@@ -522,19 +547,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "election_simulation.scene.dry",
-              "DocumentMoniker": "C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\source\\scenes\\election_simulation.scene.dry",
-              "RelativeDocumentMoniker": "source\\scenes\\election_simulation.scene.dry",
-              "ToolTip": "C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\source\\scenes\\election_simulation.scene.dry",
-              "RelativeToolTip": "source\\scenes\\election_simulation.scene.dry",
-              "ViewState": "AgIAAH8AAAAAAAAAAAAAAJoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-05-18T17:21:20.984Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 23,
               "Title": "1929.scene.dry",
               "DocumentMoniker": "C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\source\\scenes\\events\\1929.scene.dry",
               "RelativeDocumentMoniker": "source\\scenes\\events\\1929.scene.dry",
@@ -546,7 +559,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "credits.scene.dry",
               "DocumentMoniker": "C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\source\\scenes\\credits.scene.dry",
               "RelativeDocumentMoniker": "source\\scenes\\credits.scene.dry",
@@ -558,7 +571,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "easy_discard.scene.dry",
               "DocumentMoniker": "C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\source\\scenes\\easy_discard.scene.dry",
               "RelativeDocumentMoniker": "source\\scenes\\easy_discard.scene.dry",
@@ -570,7 +583,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 31,
               "Title": "cancel_advisor_action.scene.dry",
               "DocumentMoniker": "C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\source\\scenes\\cancel_advisor_action.scene.dry",
               "RelativeDocumentMoniker": "source\\scenes\\cancel_advisor_action.scene.dry",
@@ -582,7 +595,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 32,
               "Title": "boycott_efficacy.qdisplay.dry",
               "DocumentMoniker": "C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\source\\qdisplays\\boycott_efficacy.qdisplay.dry",
               "RelativeDocumentMoniker": "source\\qdisplays\\boycott_efficacy.qdisplay.dry",
@@ -594,7 +607,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 33,
               "Title": "hindenburg_hitler.qdisplay.dry",
               "DocumentMoniker": "C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\source\\qdisplays\\hindenburg_hitler.qdisplay.dry",
               "RelativeDocumentMoniker": "source\\qdisplays\\hindenburg_hitler.qdisplay.dry",
@@ -606,7 +619,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 34,
               "Title": "hindenburg_unity.qdisplay.dry",
               "DocumentMoniker": "C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\source\\qdisplays\\hindenburg_unity.qdisplay.dry",
               "RelativeDocumentMoniker": "source\\qdisplays\\hindenburg_unity.qdisplay.dry",
@@ -618,7 +631,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 40,
               "Title": "changes.txt",
               "DocumentMoniker": "C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\changes.txt",
               "RelativeDocumentMoniker": "changes.txt",
@@ -630,7 +643,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 39,
               "Title": "womens_rights.scene.dry",
               "DocumentMoniker": "C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\source\\scenes\\government_affairs\\womens_rights.scene.dry",
               "RelativeDocumentMoniker": "source\\scenes\\government_affairs\\womens_rights.scene.dry",
@@ -642,7 +655,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 35,
               "Title": "ending_slides.scene.dry",
               "DocumentMoniker": "C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\source\\scenes\\ending_slides.scene.dry",
               "RelativeDocumentMoniker": "source\\scenes\\ending_slides.scene.dry",
@@ -654,7 +667,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 36,
               "Title": "status_right.scene.dry",
               "DocumentMoniker": "C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\source\\scenes\\status_right.scene.dry",
               "RelativeDocumentMoniker": "source\\scenes\\status_right.scene.dry",
@@ -666,7 +679,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 38,
               "Title": "index.html",
               "DocumentMoniker": "C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\out\\html\\index.html",
               "RelativeDocumentMoniker": "out\\html\\index.html",
@@ -678,7 +691,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 37,
               "Title": "prussian_affairs_left.scene.dry",
               "DocumentMoniker": "C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\source\\scenes\\government_affairs\\prussian_affairs_left.scene.dry",
               "RelativeDocumentMoniker": "source\\scenes\\government_affairs\\prussian_affairs_left.scene.dry",
@@ -690,7 +703,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 41,
               "Title": "mod_loader.scene.dry",
               "DocumentMoniker": "C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\source\\scenes\\mod_loader.scene.dry",
               "RelativeDocumentMoniker": "source\\scenes\\mod_loader.scene.dry",
@@ -702,7 +715,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 43,
               "Title": "presidential_election_1932_campaign.scene.dry",
               "DocumentMoniker": "C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\source\\scenes\\events\\presidential_election_1932_campaign.scene.dry",
               "RelativeDocumentMoniker": "source\\scenes\\events\\presidential_election_1932_campaign.scene.dry",
@@ -714,7 +727,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 42,
               "Title": "papenomics.scene.dry",
               "DocumentMoniker": "C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\source\\scenes\\events\\papenomics.scene.dry",
               "RelativeDocumentMoniker": "source\\scenes\\events\\papenomics.scene.dry",
@@ -726,7 +739,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 44,
               "Title": "kvp_formed.scene.dry",
               "DocumentMoniker": "C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\source\\scenes\\events\\kvp_formed.scene.dry",
               "RelativeDocumentMoniker": "source\\scenes\\events\\kvp_formed.scene.dry",
@@ -738,7 +751,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 45,
               "Title": "dissent.qdisplay.dry",
               "DocumentMoniker": "C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\source\\qdisplays\\dissent.qdisplay.dry",
               "RelativeDocumentMoniker": "source\\qdisplays\\dissent.qdisplay.dry",
@@ -750,7 +763,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 46,
               "Title": "hindenburg_angry.qdisplay.dry",
               "DocumentMoniker": "C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\source\\qdisplays\\hindenburg_angry.qdisplay.dry",
               "RelativeDocumentMoniker": "source\\qdisplays\\hindenburg_angry.qdisplay.dry",
@@ -762,7 +775,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 47,
               "Title": "camarilla_strength.qdisplay.dry",
               "DocumentMoniker": "C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\source\\qdisplays\\camarilla_strength.qdisplay.dry",
               "RelativeDocumentMoniker": "source\\qdisplays\\camarilla_strength.qdisplay.dry",
@@ -771,18 +784,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2026-05-14T16:32:52.388Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 47,
-              "Title": "modinfo.scene.dry",
-              "DocumentMoniker": "C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\source\\scenes\\modinfo.scene.dry",
-              "RelativeDocumentMoniker": "source\\scenes\\modinfo.scene.dry",
-              "ToolTip": "C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\source\\scenes\\modinfo.scene.dry",
-              "RelativeToolTip": "source\\scenes\\modinfo.scene.dry",
-              "ViewState": "AgIAAAsBAAAAAAAAAAAAAPYAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-04-27T23:15:29.658Z"
             }
           ]
         }
