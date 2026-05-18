@@ -37,7 +37,7 @@ jobs:
       - name: Install
         run: npm install
       - name: Build game
-        run: npm run dendrynexus make-html -- --pretty
+        run: npm run dendrynexus make-html -- --pretty node --trace-warnings
       - name: Copy game.json to output
         run: cp out/game.json out/html/
       - name: Upload artifact
