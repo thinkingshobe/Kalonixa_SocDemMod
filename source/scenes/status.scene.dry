@@ -146,7 +146,7 @@ Support for the Republic: [+ pro_republic_disp +]%<br>
 
 = Economics
 
-Inflation: 0 [+ inflation_2 +]%<br>
+Inflation: [+ inflation_2 +]%<br>
 [? if black_thursday_seen or jobless_mode: Unemployment: [+ unemployed_2 +]% ?]<br>
 Economic growth: 0 [+ economic_growth_2 +]%
 
