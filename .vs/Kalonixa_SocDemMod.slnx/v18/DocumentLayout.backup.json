@@ -273,7 +273,7 @@
               "RelativeDocumentMoniker": "source\\scenes\\status.scene.dry",
               "ToolTip": "C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\source\\scenes\\status.scene.dry",
               "RelativeToolTip": "source\\scenes\\status.scene.dry",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAAwGEAAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAAHYAAAAAAAAAAAAAwJYAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2026-05-14T16:25:10.795Z",
               "EditorCaption": ""
@@ -288,8 +288,7 @@
               "RelativeToolTip": "source\\scenes\\election_simulation.scene.dry",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-05-18T17:21:20.984Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-18T17:21:20.984Z"
             },
             {
               "$type": "Document",
