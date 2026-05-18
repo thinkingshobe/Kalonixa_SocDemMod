@@ -18,8 +18,8 @@ Q.rural_other *= 0.4;
 Q.unemployed_z += Q.unemployed_other*0.2;
 Q.unemployed_other *= 0.8;
 
-Q.catholics_z += Q.catholics_other*0.8;
-Q.catholics_other *= 0.2;
+Q.Environmentalists_z += Q.Environmentalists_other*0.8;
+Q.Environmentalists_other *= 0.2;
 
 Q.bourgeois_parliament_kvp = 0;
 

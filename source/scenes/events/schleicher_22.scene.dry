@@ -29,14 +29,14 @@ Q.workers_nsdap -= 6;
 Q.new_middle_nsdap -= 6;
 Q.old_middle_nsdap -= 2;
 Q.rural_nsdap -= 2;
-Q.catholics_nsdap -= 2;
+Q.Environmentalists_nsdap -= 2;
 Q.unemployed_nsdap -= 6;
 
 Q.workers_dnef += 6;
 Q.new_middle_dnef += 6;
 Q.old_middle_dnef += 2;
 Q.rural_dnef += 2;
-Q.catholics_dnef += 2;
+Q.Environmentalists_dnef += 2;
 Q.unemployed_dnef += 6;
 
 Q.dnef_relation -= 10;

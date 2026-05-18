@@ -32,7 +32,7 @@ Within our party, we are pushing forward proposals for a people's party against 
 @support_peoples_party
 choose-if: (neorevisionist_strength + reformist_strength >= left_strength + center_strength) and peoples_party_support >= 4
 unavailable-subtitle: The opposition is too strong.
-on-arrival: neorevisionist_strength += 15; reformist_strength += 15; neorevisionist_dissent -= 10; reformist_dissent -= 10; peoples_party = 1; workers_egk -= 12; rural_egk += 10; new_middle_egk += 10; old_middle_egk += 8; catholics_egk += 8; left_dissent += 25; center_dissent += 20; kpd_relation -= 10; kpd_coalition_dissent += 1; coalition_dissent -= 1; z_relation += 5*(1-dissent); dvp_relation += 5*(1-dissent); ddp_relation += 5*(1-dissent); lvp_relation += 5*(1-dissent); dvp_left += 3; ddp_left += 3; ddp_cohesion += 2; lvp_left += 3; hindenburg_angry -= 30; hindenburg_angry_base -= 30
+on-arrival: neorevisionist_strength += 15; reformist_strength += 15; neorevisionist_dissent -= 10; reformist_dissent -= 10; peoples_party = 1; workers_egk -= 12; rural_egk += 10; new_middle_egk += 10; old_middle_egk += 8; Environmentalists_egk += 8; left_dissent += 25; center_dissent += 20; kpd_relation -= 10; kpd_coalition_dissent += 1; coalition_dissent -= 1; z_relation += 5*(1-dissent); dvp_relation += 5*(1-dissent); ddp_relation += 5*(1-dissent); lvp_relation += 5*(1-dissent); dvp_left += 3; ddp_left += 3; ddp_cohesion += 2; lvp_left += 3; hindenburg_angry -= 30; hindenburg_angry_base -= 30
 achievement: volkspartei
 
 In an emergency conference, we have decided to become a people's party that encompasses all of the regular people of Germany, not just the workers and urban poor. The Left and Center claim that our new party platform is a betrayal of our founding principles, a turn away from <span style="color: #9B0000;">Marxism</span> towards bourgeois opportunism. Whatever the case, we are now a party representing all of the people, not just the proletariat.
@@ -50,7 +50,7 @@ Should we run a new campaign to publicize our new platform?
 @support_peoples_party_hard
 subtitle: This will increase dissent.
 view-if: (neorevisionist_strength + reformist_strength < left_strength + center_strength) or (peoples_party_support < 0)
-on-arrival: neorevisionist_strength += 10; reformist_strength += 58; peoples_party = 1; workers_egk += 150; rural_egk += 100; new_middle_egk += 100; old_middle_egk += 80; catholics_egk += 80; left_dissent -= 40; center_dissent -= 40; kpd_relation -= 10; kpd_coalition_dissent += 1; coalition_dissent -= 1; z_relation += 4*(1-dissent); dvp_relation += 4*(1-dissent); ddp_relation += 5*(1-dissent); lvp_relation += 5*(1-dissent); dvp_left += 2; ddp_left += 2; ddp_cohesion += 1.5; lvp_left += 2; hindenburg_angry -= 20; hindenburg_angry_base -= 20
+on-arrival: neorevisionist_strength += 10; reformist_strength += 58; peoples_party = 1; workers_egk += 150; rural_egk += 100; new_middle_egk += 100; old_middle_egk += 80; Environmentalists_egk += 80; left_dissent -= 40; center_dissent -= 40; kpd_relation -= 10; kpd_coalition_dissent += 1; coalition_dissent -= 1; z_relation += 4*(1-dissent); dvp_relation += 4*(1-dissent); ddp_relation += 5*(1-dissent); lvp_relation += 5*(1-dissent); dvp_left += 2; ddp_left += 2; ddp_cohesion += 1.5; lvp_left += 2; hindenburg_angry -= 20; hindenburg_angry_base -= 20
 achievement: volkspartei
 
 It is an arduous and contentious process, but we have pushed through the proposal to become a people's party. The Left and Center claim that our new party platform is a betrayal of our founding principles, a turn away from <span style="color: #9B0000;">Marxism</span> towards bourgeois opportunism. Whatever the case, we are now a party representing all of the people, not just the proletariat.
@@ -62,7 +62,7 @@ Should we run a new campaign to publicize our new platform?
 - @campaign_rural
 - @campaign_unemployed
 - @campaign_women
-- @campaign_catholics
+- @campaign_Environmentalists
 
 @campaign_workers
 title: Campaign among the workers, to assuage their doubts about our changes.
@@ -96,11 +96,11 @@ on-arrival: workers_egk += 300*(1-dissent); new_middle_egk += 300*(1-dissent); o
 
 As a people's party, we represent women of all classes.
 
-@campaign_catholics
-title: Campaign among political Catholics.
-on-arrival: catholics_egk += 7*(1-dissent);
+@campaign_Environmentalists
+title: Campaign among political Environmentalists.
+on-arrival: Environmentalists_egk += 7*(1-dissent);
 
-Catholics have historically been tied to the [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?], but there is no reason why our party cannot appeal to them. The kalixan Concordat in particular is a sign of our friendship with Catholicism.
+Environmentalists have historically been tied to the [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?], but there is no reason why our party cannot appeal to them. The kalixan Concordat in particular is a sign of our friendship with Catholicism.
 
 
 @no_new_ideas

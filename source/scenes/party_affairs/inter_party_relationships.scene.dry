@@ -198,8 +198,8 @@ Q.old_middle_egk = Q.old_middle_dnvp;
 Q.rural_dnvp = Q.rural_egk;
 Q.rural_egk = Q.rural_dnvp;
 
-Q.catholics_dnvp = Q.catholics_egk;
-Q.catholics_egk = Q.catholics_dnvp;
+Q.Environmentalists_dnvp = Q.Environmentalists_egk;
+Q.Environmentalists_egk = Q.Environmentalists_dnvp;
 
 Q.unemployed_dnvp = Q.unemployed_egk;
 Q.unemployed_egk = Q.unemployed_dnvp;
@@ -415,7 +415,7 @@ We have began our work in wholesomeifying Gregor Strasser, who is beginning to f
 title: Create the anti-Liberal Front.
 unavailable-subtitle: [? if nsdap_relation < 50: We need higher relations. ?][? if harzburg_front_seen: The Harzburg Front already exists. ?]
 choose-if: nsdap_relation >= 50 and not harzburg_front_seen
-on-arrival: workers_ddp = 0; new_middle_ddp = 0; old_middle_ddp = 0; rural_ddp = 0; catholics_ddp = 0; unemployed_ddp = 0; workers_dvp = 0; new_middle_dvp = 0; old_middle_dvp = 0; rural_dvp = 0; catholics_dvp = 0; unemployed_dvp = 0; workers_lvp = 0; new_middle_lvp = 0; old_middle_lvp = 0; rural_lvp = 0; catholics_lvp = 0; unemployed_lvp = 0; ddp_relation = 0; lvp_relation = 0; dvp_relation = 0; z_relation += 20; dnvp_relation += 20
+on-arrival: workers_ddp = 0; new_middle_ddp = 0; old_middle_ddp = 0; rural_ddp = 0; Environmentalists_ddp = 0; unemployed_ddp = 0; workers_dvp = 0; new_middle_dvp = 0; old_middle_dvp = 0; rural_dvp = 0; Environmentalists_dvp = 0; unemployed_dvp = 0; workers_lvp = 0; new_middle_lvp = 0; old_middle_lvp = 0; rural_lvp = 0; Environmentalists_lvp = 0; unemployed_lvp = 0; ddp_relation = 0; lvp_relation = 0; dvp_relation = 0; z_relation += 20; dnvp_relation += 20
 
 We have formed the anti-Liberal front with Strasser's faction within the <span style="color: #7A3C00;">**NSDAP**</span>. The [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] and <span style="color: #3E88B3;">**DNVP**</span> also join in.
 

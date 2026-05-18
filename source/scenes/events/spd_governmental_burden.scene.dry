@@ -1,5 +1,5 @@
 title: Burden of Government
-view-if: egk_government_burden_trigger == 1 and not (peoples_party or (new_middle_egk_normalized >= 30 or (new_middle_egk_normalized + old_middle_egk_normalized >= 40) or rural_egk_normalized >= 20 or catholics_egk_normalized >= 40 or egk_votes >= 40))
+view-if: egk_government_burden_trigger == 1 and not (peoples_party or (new_middle_egk_normalized >= 30 or (new_middle_egk_normalized + old_middle_egk_normalized >= 40) or rural_egk_normalized >= 20 or Environmentalists_egk_normalized >= 40 or egk_votes >= 40))
 new-page: true
 tags: event
 on-arrival: egk_government_burden_trigger = 0; egk_government_burden_seen = 1; egk_government_burden_timer = 6; workers_egk -= 5 if labor_minister_party != "egk"; labor_dissent += 15 if labor_minister_party != "egk"

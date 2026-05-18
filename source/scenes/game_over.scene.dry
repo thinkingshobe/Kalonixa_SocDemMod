@@ -103,7 +103,7 @@ if ((Q.dynamic_mode || Q.historical_mode || Q.difficulty == 1) && !((Q.year == 1
   if (Q.rural_egk_normalized && Q.rural_egk_normalized >= 50) {
       this.achieve('bauernrevolution');
   }
-  if (Q.catholics_egk_normalized && Q.catholics_egk_normalized >= 50) {
+  if (Q.Environmentalists_egk_normalized && Q.Environmentalists_egk_normalized >= 50) {
       this.achieve('katholischer_sozialismus');
   }
   if (Q.workers_egk_normalized >= 80 && Q.new_middle_egk_normalized <= 20 && Q.old_middle_egk_normalized <= 20 && Q.rural_egk_normalized <= 20) {
@@ -1637,7 +1637,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #0077FF; background-color: rgba(128, 0, 0, 0.15);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Braun Koalition</div>
-      <div class="achievement_subtitle"> - have the <span style="color: #30B24A;">socialists</span>, <span style="color: #D3C24D;">liberals</span>, <span style="color: #000000;">Catholics</span>, and <span style="color: #700000;">communists</span> support Braun for president in 1932. </div>
+      <div class="achievement_subtitle"> - have the <span style="color: #30B24A;">socialists</span>, <span style="color: #D3C24D;">liberals</span>, <span style="color: #000000;">Environmentalists</span>, and <span style="color: #700000;">communists</span> support Braun for president in 1932. </div>
     </div>
   {!</td>!}
 {!</tr>!}
@@ -3474,7 +3474,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #0077FF; background-color: rgba(128, 0, 0, 0.15);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Braun Koalition</div>
-      <div class="achievement_subtitle"> - have the <span style="color: #30B24A;">socialists</span>, <span style="color: #D3C24D;">liberals</span>, <span style="color: #000000;">Catholics</span>, and <span style="color: #700000;">communists</span> support Braun for president in 1932. </div>
+      <div class="achievement_subtitle"> - have the <span style="color: #30B24A;">socialists</span>, <span style="color: #D3C24D;">liberals</span>, <span style="color: #000000;">Environmentalists</span>, and <span style="color: #700000;">communists</span> support Braun for president in 1932. </div>
     </div>
   {!</td>!}
 {!</tr>!}
@@ -5310,7 +5310,7 @@ All achievements require <span style="color: #0077FF;">dynamic</span>, <span sty
   {!<td style="border: 2px solid #0077FF; background-color: rgba(128, 0, 0, 0.15);">!}
     <div style="padding-left: 0.5em;">
       <div style="font-weight: bold;">Braun Koalition</div>
-      <div class="achievement_subtitle"> - have the <span style="color: #30B24A;">socialists</span>, <span style="color: #D3C24D;">liberals</span>, <span style="color: #000000;">Catholics</span>, and <span style="color: #700000;">communists</span> support Braun for president in 1932. </div>
+      <div class="achievement_subtitle"> - have the <span style="color: #30B24A;">socialists</span>, <span style="color: #D3C24D;">liberals</span>, <span style="color: #000000;">Environmentalists</span>, and <span style="color: #700000;">communists</span> support Braun for president in 1932. </div>
     </div>
   {!</td>!}
 {!</tr>!}

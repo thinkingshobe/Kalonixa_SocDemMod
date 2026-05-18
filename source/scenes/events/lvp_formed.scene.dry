@@ -14,7 +14,7 @@ Q.rural_lvp = Q.rural_ddp + Q.rural_dvp
 
 Q.unemployed_lvp = Q.unemployed_ddp + Q.unemployed_dvp
 
-Q.catholics_lvp = Q.catholics_ddp + Q.catholics_dvp
+Q.Environmentalists_lvp = Q.Environmentalists_ddp + Q.Environmentalists_dvp
 
 if (Q.electoral_threshold < 5) {
     Q.new_middle_other -= 4;
@@ -158,7 +158,7 @@ Q.old_new_middle_lvp_display = 0
 Q.old_old_middle_lvp_display = 0
 Q.old_rural_lvp_display = 0
 Q.old_unemployed_lvp_display = 0
-Q.old_catholics_lvp_display = 0
+Q.old_Environmentalists_lvp_display = 0
 
 if (Q.lvp_formed) {
     Q.weimar_coalition = parseFloat((Q.egk_r + Q.lvp_r + Q.z_r - Q.bvp_r).toFixed(1));

@@ -76,7 +76,7 @@ go-to: papen_civil_war
 
 @reichstag_4
 title: Martial law is declared. The Reichswehr quells pockets of unrest.
-on-arrival: marburg_time = 0; marburg_trigger = 1; rb_strength -= 500; rb_militancy *= 0.7; sa_strength *= 0.5; rfb_strength *= 0.5; workers_kpd -= 5; unemployed_kpd -= 5; workers_nsdap -= 5; new_middle_nsdap -= 5; old_middle_nsdap -= 5; rural_nsdap -= 5; catholics_nsdap -= 5; unemployed_nsdap -= 5; unemployed += 2; economic_growth -= 1.5; pro_republic = 0
+on-arrival: marburg_time = 0; marburg_trigger = 1; rb_strength -= 500; rb_militancy *= 0.7; sa_strength *= 0.5; rfb_strength *= 0.5; workers_kpd -= 5; unemployed_kpd -= 5; workers_nsdap -= 5; new_middle_nsdap -= 5; old_middle_nsdap -= 5; rural_nsdap -= 5; Environmentalists_nsdap -= 5; unemployed_nsdap -= 5; unemployed += 2; economic_growth -= 1.5; pro_republic = 0
 view-if: reichswehr_strength*reichswehr_militancy*(1-reichswehr_loyalty) >= (sa_strength*sa_militancy + rfb_strength*rfb_militancy + unemployed_nsdap_normalized + unemployed_kpd_normalized + workers_kpd_normalized + unemployed_kpd_normalized)
 
 The disorganized <span style="color: #7A3C00;">**SA**</span> and <span style="color: #700000;">**RFB**</span> have failed to spark a mass uprising, and a civil war is averted. A widespread crackdown on paramilitaries have begun, with the Reichsbanner not even being spared. 

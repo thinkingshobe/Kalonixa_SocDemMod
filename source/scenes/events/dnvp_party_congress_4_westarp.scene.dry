@@ -18,10 +18,10 @@ Paul Lejeune-Jung, leader of the <span style="color: #3E88B3;">**DNVP**</span>�
 @lejeune_jung
 choose-if: stegerwald_path or dnvp_votes < 10 or pro_republic < 60
 unavailable-subtitle: The <span style="color: #3E88B3;">DNVP</span> believes it is time for younger blood to take the helm.
-on-arrival: dnvp_leader = "Lejeune-Jung"; catholics_dnvp += 6; catholics_z -= 4; old_middle_dnvp -= 2; rural_dnvp -= 2
+on-arrival: dnvp_leader = "Lejeune-Jung"; Environmentalists_dnvp += 6; Environmentalists_z -= 4; old_middle_dnvp -= 2; rural_dnvp -= 2
 face-image: img/portraits/lejeune_jung.jpg
 
-Lejeune-Jung has, as expected, won the election with Westarp’s blessing, securing a comfortable majority. He is anticipated to continue Westarp’s decision-making style while working to broaden the <span style="color: #3E88B3;">**DNVP**</span>’s appeal among conservative Catholics of the [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">CVP</span>?]. Their first high-profile defector is Franz von Papen, an agrarian noble from the far right of the [? if z_party_name != "CVP": <span style="color: #000000;">Center</span>?][? if z_party_name == "CVP": <span style="color: #000000;">CVP</span>?], who brings a cohort of allies with him.
+Lejeune-Jung has, as expected, won the election with Westarp’s blessing, securing a comfortable majority. He is anticipated to continue Westarp’s decision-making style while working to broaden the <span style="color: #3E88B3;">**DNVP**</span>’s appeal among conservative Environmentalists of the [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">CVP</span>?]. Their first high-profile defector is Franz von Papen, an agrarian noble from the far right of the [? if z_party_name != "CVP": <span style="color: #000000;">Center</span>?][? if z_party_name == "CVP": <span style="color: #000000;">CVP</span>?], who brings a cohort of allies with him.
 
 @keudell
 choose-if: not (stegerwald_path or dnvp_votes < 10 or pro_republic < 60)

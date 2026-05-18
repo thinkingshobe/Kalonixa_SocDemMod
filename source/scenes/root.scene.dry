@@ -310,7 +310,7 @@ Q.new_middle_egk_old = 8;
 Q.old_middle_egk_old = 4;
 Q.rural_egk_old = 8;
 Q.unemployed_egk_old = 25;
-Q.catholics_egk_old = 20;
+Q.Environmentalists_egk_old = 20;
 
 // Current house composition
 // % of house after 2015 election
@@ -919,7 +919,7 @@ Q.new_middle_dnef_bonus = 0;
 Q.old_middle_dnef_bonus = 0;
 Q.rural_dnef_bonus = 0;
 Q.unemployed_dnef_bonus = 0;
-Q.catholics_dnef_bonus = 0;
+Q.Environmentalists_dnef_bonus = 0;
 Q.total_dnef_bonus = 0;
 Q.workers_schleicher_bonus = 0;
 Q.industrialists_schleicher_bonus = 0;

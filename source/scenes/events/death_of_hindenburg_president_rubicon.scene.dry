@@ -32,7 +32,7 @@ for (var party of Q.parties) {
     if (party == "nsdap" && Q.nsdap_split) {
         Q.nsdap_hitler_support = Q.rural_nsdap_normalized*Q.rural;
         Q.nsdap_hitler_support += Q.old_middle_nsdap_normalized*Q.old_middle;
-        Q.nsdap_hitler_support += Q.catholics_nsdap_normalized*Q.catholics;
+        Q.nsdap_hitler_support += Q.Environmentalists_nsdap_normalized*Q.Environmentalists;
 
         if (Q.dsu_exist && !Q.nvf_exist) {
             Q.dsu_support = Q.workers_nsdap*Q.workers*((120 - Q.sa_force) / 100);

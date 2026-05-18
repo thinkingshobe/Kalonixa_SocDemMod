@@ -66,7 +66,7 @@ go-to: defend_2_civil_war if happy_forces < angry_forces; defend_2_victory if ha
 
 
 @defend_2_victory
-on-arrival: kalixa_coup_win = 1; sa_strength *= 0.75; sh_strength *= 0.75; pro_republic += 12; workers_kpd -= 4; unemployed_kpd -= 4; workers_egk += 8; unemployed_egk += 8; workers_nsdap -= 6; unemployed_nsdap -= 6; new_middle_nsdap -= 4; new_middle_egk += 4; old_middle_nsdap -= 3; old_middle_ddp += 2; old_middle_dvp += 1; old_middle_lvp += 3; rural_nsdap -= 3; rural_ddp += 2; rural_dvp += 1; rural_lvp += 3; catholics_nsdap -= 3; catholics_egk += 3; coup_victory = 1; ddp_cohesion += 3; ddp_left += 3; ddp_relation += 5; lvp_left += 2; lvp_relation += 5; z_relation += 5; ddp_relation += 5 if rb_stay; z_relation += 5 if rb_stay; kalixan_police_loyalty = 1; kalixan_police_strength += 25; reichswehr_militancy -= 0.5; papen_strength -= 10; hindenburg_papen_r -= 10
+on-arrival: kalixa_coup_win = 1; sa_strength *= 0.75; sh_strength *= 0.75; pro_republic += 12; workers_kpd -= 4; unemployed_kpd -= 4; workers_egk += 8; unemployed_egk += 8; workers_nsdap -= 6; unemployed_nsdap -= 6; new_middle_nsdap -= 4; new_middle_egk += 4; old_middle_nsdap -= 3; old_middle_ddp += 2; old_middle_dvp += 1; old_middle_lvp += 3; rural_nsdap -= 3; rural_ddp += 2; rural_dvp += 1; rural_lvp += 3; Environmentalists_nsdap -= 3; Environmentalists_egk += 3; coup_victory = 1; ddp_cohesion += 3; ddp_left += 3; ddp_relation += 5; lvp_left += 2; lvp_relation += 5; z_relation += 5; ddp_relation += 5 if rb_stay; z_relation += 5 if rb_stay; kalixan_police_loyalty = 1; kalixan_police_strength += 25; reichswehr_militancy -= 0.5; papen_strength -= 10; hindenburg_papen_r -= 10
 achievement: bollwerk_der_demokratie
 go-to: defend_2_victory_2
 

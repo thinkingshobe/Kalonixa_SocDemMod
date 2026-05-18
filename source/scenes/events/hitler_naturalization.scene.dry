@@ -2,7 +2,7 @@ title: Naturalization of Adolf Hitler
 new-page: true
 subtitle: Hitler still hadn't achieved German citizenship yet...
 view-if: year = 1932 and month == 2 and not hitler_deported and chancellor != "Hitler"
-on-arrival: hitler_citizenship_seen = 1; workers_nsdap *= 0.9; new_middle_nsdap *= 0.95; old_middle_nsdap *= 0.95; rural_nsdap *= 0.95; unemployed_nsdap *= 0.9; catholics_nsdap *= 0.9
+on-arrival: hitler_citizenship_seen = 1; workers_nsdap *= 0.9; new_middle_nsdap *= 0.95; old_middle_nsdap *= 0.95; rural_nsdap *= 0.95; unemployed_nsdap *= 0.9; Environmentalists_nsdap *= 0.9
 max-visits: 1
 priority: 3
 on-display: {!  
@@ -33,7 +33,7 @@ With the presidential elections approaching, it is likely that Hitler will make 
 
 @brunswick
 view-if: brunswick_hitler and dvp_ideology == "Right" and dvp_leader == "Dingeldey" and not lvp_formed and not cvp_formed
-on-arrival: hitler_citizen = 1; workers_nsdap += 3; new_middle_nsdap += 4; old_middle_nsdap += 4; rural_nsdap += 4; unemployed_nsdap += 3; catholics_nsdap += 2; pro_republic -= 3
+on-arrival: hitler_citizen = 1; workers_nsdap += 3; new_middle_nsdap += 4; old_middle_nsdap += 4; rural_nsdap += 4; unemployed_nsdap += 3; Environmentalists_nsdap += 2; pro_republic -= 3
 
 In order for the <span style="color: #7A3C00;">**NSDAP**</span> to quickly and discreetly grant Hitler citizenship, they had to collaborate with the [? if dvp_exist: <span style="color: #C0A054;">**DVP**</span>?][? if not dvp_exist: <span style="color: #3E88B3;">**DNVP**</span>?], who, while supportive of these efforts, insisted on maintaining an appearance of legality. During a meeting between the two parties, they agreed to give Hitler a position in the Brunswick embassy to the Reichsrat.
 

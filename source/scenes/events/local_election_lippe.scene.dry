@@ -575,7 +575,7 @@ Nevertheless, the <span style="color: #7A3C00;">**NSDAP**</span> continues to us
 @nsdap_joever
 title: The <span style="color: #7A3C00;">**NSDAP**</span>'s suffers a crushing defeat!
 view-if: change_nsdap_votes_lippe < 0 and change_nsdap_votes_lippe > -4
-on-arrival: hindenburg_hitler_r -= 1; workers_nsdap -= 2; unemployed_nsdap -= 2; new_middle_nsdap -= 4; old_middle_nsdap -= 4; rural_nsdap -= 4; catholics_nsdap -= 2; nazi_funds -= 1
+on-arrival: hindenburg_hitler_r -= 1; workers_nsdap -= 2; unemployed_nsdap -= 2; new_middle_nsdap -= 4; old_middle_nsdap -= 4; rural_nsdap -= 4; Environmentalists_nsdap -= 2; nazi_funds -= 1
 
 The <span style="color: #7A3C00;">**NSDAP**</span> has suffered a crushing defeat! Despite throwing everything into this campaign, their vote share has actually declined. This is clear evidence that the movement is collapsing rapidly—and that new elections would be disastrous for the <span style="color: #7A3C00;">Nazi</span> cause.
 
@@ -586,7 +586,7 @@ Donations are drying up, party membership is plummeting, defections are soaring,
 @nsdap_explode
 title: The <span style="color: #7A3C00;">**NSDAP**</span> is rapidly imploding!
 view-if: change_nsdap_votes_lippe <= -4
-on-arrival: hindenburg_hitler_r -= 2; workers_nsdap -= 4; unemployed_nsdap -= 4; new_middle_nsdap -= 8; old_middle_nsdap -= 8; rural_nsdap -= 6; catholics_nsdap -= 4; nazi_funds -= 2
+on-arrival: hindenburg_hitler_r -= 2; workers_nsdap -= 4; unemployed_nsdap -= 4; new_middle_nsdap -= 8; old_middle_nsdap -= 8; rural_nsdap -= 6; Environmentalists_nsdap -= 4; nazi_funds -= 2
 
 The <span style="color: #7A3C00;">**NSDAP**</span> is in free fall! Despite throwing everything they had into this campaign, their vote share has actually declined—a humiliating blow that confirms the movement’s rapid implosion.
 

@@ -7,7 +7,7 @@ title: Campaigning (People's Party)
 - @campaign_rural
 - @campaign_unemployed
 - @campaign_women
-- @campaign_catholics
+- @campaign_Environmentalists
 
 @campaign_workers
 title: Campaign among the workers, to assuage their doubts about our changes.
@@ -41,10 +41,10 @@ on-arrival: workers_egk += 30*(1-dissent); new_middle_egk += 30*(1-dissent); old
 
 As a people's party, we represent women of all classes.
 
-@campaign_catholics
-title: Campaign among political Catholics.
-on-arrival: catholics_egk += 5*(1-dissent);
+@campaign_Environmentalists
+title: Campaign among political Environmentalists.
+on-arrival: Environmentalists_egk += 5*(1-dissent);
 
-Catholics have historically been tied to the [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?], but there is no reason why our party cannot appeal to them. The kalixan Concordat in particular is a sign of our friendship with Catholicism.
+Environmentalists have historically been tied to the [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?], but there is no reason why our party cannot appeal to them. The kalixan Concordat in particular is a sign of our friendship with Catholicism.
 
 

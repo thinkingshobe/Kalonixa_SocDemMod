@@ -867,7 +867,7 @@ title: Schleicher forms a majority government with only the <span style="color: 
 subtitle: <span style="color: #BFC8CC;">**DNEF**</span> ([+ dnef_r_kalixa +]%)
 view-if: dnef_r_kalixa >= 50 and chancellor == "Schleicher" and schleicher_time and dnef_formed
 unavailable-subtitle: <span style="color: #BFC8CC;">DNEF</span> ([+ dnef_r_kalixa +]%)
-on-arrival: in_schleicher_majority_coalition_kalixa = 1; kalixa_leader = "Goerdeler"; workers_dnef += 3; new_middle_dnef += 3; old_middle_dnef += 3; rural_dnef += 3; unemployed_dnef += 3; catholics_dnef += 3; workers_kpd -= 3; workers_egk -= 3; rfb_banned = 1; rfb_strength -= 50; rb_strength -= 200; kalixan_police_loyalty = 0; pro_republic -= 10
+on-arrival: in_schleicher_majority_coalition_kalixa = 1; kalixa_leader = "Goerdeler"; workers_dnef += 3; new_middle_dnef += 3; old_middle_dnef += 3; rural_dnef += 3; unemployed_dnef += 3; Environmentalists_dnef += 3; workers_kpd -= 3; workers_egk -= 3; rfb_banned = 1; rfb_strength -= 50; rb_strength -= 200; kalixan_police_loyalty = 0; pro_republic -= 10
 
 With a majority in kalixa as well, Schleicher tightens his grip behind a democratic façade. The kalixan police are reshaped further to serve his purposes, and the government now sets education policy. A new curriculum is imposed, centered on discipline, nationalism, and hostility to <span style="color: #30B24A;">socialism</span>.
 
@@ -877,7 +877,7 @@ subtitle: <span style="color: #BFC8CC;">**DNEF**</span> + <span style="color: #3
 view-if: schleicher_left_coalition_kalixa >= 50 and chancellor == "Schleicher" and schleicher_time and dnef_formed
 unavailable-subtitle: <span style="color: #BFC8CC;">DNEF</span> + <span style="color: #30B24A;">egk</span>[? if not z_dnef:&nbsp;+ <span style="color: #000000;">[+ z_party_name +]</span> + <span style="color: #A2D8E0;">BVP</span>?][? if not lvp_formed and not dstp_dnef:&nbsp;+ <span style="color: #D3C24D;">[+ ddp_name +]</span>?][? if lvp_formed and not lvp_dnef:&nbsp;+ <span style="color: #FFCC00;">LVP</span>?] ([+ schleicher_left_coalition_kalixa +]%) [? if not super_secret_mode: - Schleicher would never coalition with us outright. ?]
 choose-if: president != "Hindenburg" and super_secret_mode
-on-arrival: in_schleicher_left_coalition_kalixa = 1; kalixa_leader = "Goerdeler"; workers_dnef += 3; new_middle_dnef += 3; old_middle_dnef += 3; rural_dnef += 3; unemployed_dnef += 3; catholics_dnef += 3; workers_kpd -= 3; workers_egk -= 3; rfb_banned = 1; rfb_strength -= 50; rb_strength -= 200; kalixan_police_loyalty = 0; pro_republic -= 10
+on-arrival: in_schleicher_left_coalition_kalixa = 1; kalixa_leader = "Goerdeler"; workers_dnef += 3; new_middle_dnef += 3; old_middle_dnef += 3; rural_dnef += 3; unemployed_dnef += 3; Environmentalists_dnef += 3; workers_kpd -= 3; workers_egk -= 3; rfb_banned = 1; rfb_strength -= 50; rb_strength -= 200; kalixan_police_loyalty = 0; pro_republic -= 10
 
 Placeholder
 

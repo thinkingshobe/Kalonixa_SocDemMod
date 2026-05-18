@@ -17,7 +17,7 @@ While Dingeldey insists that the pact is purely technical and does not compromis
 
 @dvp_left_split
 title: The <span style="color: #C0A054;">**DVP**</span>'s left wing splits!
-on-arrival: hugenberg_dvp = 1; old_middle_dvp *= 0.8; new_middle_dvp *= 0.5; catholics_dvp *= 0.8; pro_republic -= 3; liberal_cooperation -= 10; bourgeois_cooperation -= 10; dvp_right += 25; dvp_relation -= 50
+on-arrival: hugenberg_dvp = 1; old_middle_dvp *= 0.8; new_middle_dvp *= 0.5; Environmentalists_dvp *= 0.8; pro_republic -= 3; liberal_cooperation -= 10; bourgeois_cooperation -= 10; dvp_right += 25; dvp_relation -= 50
 face-image: img/dvp_poster_2.jpg
 
 Those on the <span style="color: #C0A054;">**DVP**</span>'s left wing who had quietly opposed Dingeldey's turn to the right have now resigned en masse. Hans Bechly, Frank Glatzel, and Otto Thiel—prominent figures within the white-collar DHV union—have also stepped down, with Bechly being the longtime chairman of the association.

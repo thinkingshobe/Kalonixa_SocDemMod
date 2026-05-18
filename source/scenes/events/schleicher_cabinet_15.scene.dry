@@ -54,8 +54,8 @@ Q.rural_ddp -= 2;
 Q.rural_lvp -= 2;
 Q.rural_nsdap -= 2;
 
-Q.catholics_egk -= 4;
-Q.catholics_z -= 2;
+Q.Environmentalists_egk -= 4;
+Q.Environmentalists_z -= 2;
 
 Q.unemployed_egk -= 6;
 Q.unemployed_kpd -= 2;
@@ -65,7 +65,7 @@ Q.workers_dnef += 8;
 Q.new_middle_dnef += 8;
 Q.old_middle_dnef += 8;
 Q.rural_dnef += 6;
-Q.catholics_dnef += 6;
+Q.Environmentalists_dnef += 6;
 Q.unemployed_dnef += 8;
 !}
 

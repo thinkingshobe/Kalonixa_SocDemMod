@@ -89,17 +89,17 @@ if (Q.dnvp_papen) {
     Q.rural_dnf -= 2;
 }
 
-Q.catholics_nsdap -= 5;
-if (Q.hugenberg_dvp) Q.catholics_dvp += 1;
-if (Q.dnvp_ideology == "Radical") Q.catholics_dnvp += 4;
+Q.Environmentalists_nsdap -= 5;
+if (Q.hugenberg_dvp) Q.Environmentalists_dvp += 1;
+if (Q.dnvp_ideology == "Radical") Q.Environmentalists_dnvp += 4;
 if (Q.kvp_papen) {
-    Q.catholics_kvp += 3;
-    Q.catholics_dnvp -= 3;
+    Q.Environmentalists_kvp += 3;
+    Q.Environmentalists_dnvp -= 3;
 }
-Q.catholics_dnf += 5;
+Q.Environmentalists_dnf += 5;
 if (Q.dnvp_papen) {
-    Q.catholics_dnvp += 4;
-    Q.catholics_dnf -= 4;
+    Q.Environmentalists_dnvp += 4;
+    Q.Environmentalists_dnf -= 4;
 }
 !}
 go-to: reichstag_1 if papen_votes < 14; reichstag_1_alt if papen_votes >= 14

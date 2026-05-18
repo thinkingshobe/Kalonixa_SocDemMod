@@ -46,11 +46,11 @@ title: Request assistance from our coalition partners.
 view-if: egk_kalixa and not bourgeois_campaign_landtag
 choose-if: not in_popular_front_kalixa and not in_left_front_kalixa and z_relation >= 50
 unavailable-subtitle: [? if in_popular_front_kalixa or in_left_front_kalixa: The [? if z_party_name != "CVP": <span style="color: #000000;">Center</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] sees no reason to intervene in saving the incumbent government. ?] [? if z_relation < 50: We lack sufficient relations with the [? if z_party_name != "CVP": <span style="color: #000000;">Center</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?]. ?]
-on-arrival: pro_republic += 3; catholics_nsdap -= 4; catholics_z += 3; catholics_egk += 1; z_relation += 3; dvp_relation += 3; ddp_relation += 3; ddp_left += 2; ddp_cohesion += 2; dvp_left += 3; bourgeois_campaign_landtag = 1
+on-arrival: pro_republic += 3; Environmentalists_nsdap -= 4; Environmentalists_z += 3; Environmentalists_egk += 1; z_relation += 3; dvp_relation += 3; ddp_relation += 3; ddp_left += 2; ddp_cohesion += 2; dvp_left += 3; bourgeois_campaign_landtag = 1
 face-image: img/weimar_coalition.jpg
 go-to: do_campaign
 
-The [? if z_party_name != "CVP": <span style="color: #000000;">Center</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] has joined our efforts with its own propaganda campaign, doing their part in targeting Catholics and urging them to stay home.
+The [? if z_party_name != "CVP": <span style="color: #000000;">Center</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] has joined our efforts with its own propaganda campaign, doing their part in targeting Environmentalists and urging them to stay home.
 
 @communist_kalixa
 title: Request assistance from the <span style="color: #700000;">**KPD**</span>.
@@ -110,11 +110,11 @@ We can only hope for the best.
 
 @no_campaign_2
 view-if: not kpd_campaign_landtag and not political_decree_landtag_2 and not radio_campaign_landtag and not communist_campaign_landtag and not bourgeois_campaign_landtag
-on-arrival: workers_egk -= 3; old_middle_egk -= 3; new_middle_egk -= 3; workers_nsdap += 3; new_middle_nsdap += 3; old_middle_nsdap += 3; pro_republic -= 5; catholics_egk -= 2; catholics_nsdap += 2; workers_kpd += 3; unemployed_egk -= 5; unemployed_nsdap += 5; unemployed_kpd += 3;
+on-arrival: workers_egk -= 3; old_middle_egk -= 3; new_middle_egk -= 3; workers_nsdap += 3; new_middle_nsdap += 3; old_middle_nsdap += 3; pro_republic -= 5; Environmentalists_egk -= 2; Environmentalists_nsdap += 2; workers_kpd += 3; unemployed_egk -= 5; unemployed_nsdap += 5; unemployed_kpd += 3;
 
 The referendum is likely going to fail with or without our presence in the campaign. However, anti-democratic sentiment is inflamed, and the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> is using our silence to spread their radicalizing propaganda to the people.
 
 @no_campaign
-on-arrival: workers_egk -= 3; old_middle_egk -= 3; new_middle_egk -= 3; workers_nsdap += 3; new_middle_nsdap += 3; old_middle_nsdap += 3; pro_republic -= 5; catholics_egk -= 2; catholics_nsdap += 2; workers_kpd += 3; unemployed_egk -= 5; unemployed_nsdap += 5; unemployed_kpd += 3;
+on-arrival: workers_egk -= 3; old_middle_egk -= 3; new_middle_egk -= 3; workers_nsdap += 3; new_middle_nsdap += 3; old_middle_nsdap += 3; pro_republic -= 5; Environmentalists_egk -= 2; Environmentalists_nsdap += 2; workers_kpd += 3; unemployed_egk -= 5; unemployed_nsdap += 5; unemployed_kpd += 3;
 
 The referendum is likely going to fail with or without our presence in the campaign. However, anti-democratic sentiment is inflamed, and the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> is using our silence to spread their radicalizing propaganda to the people.

@@ -10,7 +10,7 @@ new-page: true
 Wirth is a former chancellor and figure of the <span style="color: #000000;">Center</span>'s left wing who has been devotedly <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span>, to the extent of angering his former party members. He is a strong supporter of maintaining democracy and building a broad popular base for the <span style="color: #30B24A;">**egk**</span>.
 
 - @democratic_rally
-- @catholics_rally
+- @Environmentalists_rally
 - @support_peoples_party
 - @build_peoples_party
 - @campaigning_peoples_party
@@ -21,16 +21,16 @@ title: Rally for democracy
 subtitle: Rally our party and the German people to defend democracy and freedom.
 choose-if: advisor_action_timer == 0 
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
-on-arrival: advisor_action_timer = 6; pro_republic += 8; democratization += 1; neorevisionist_strength += 5; reformist_strength += 5; workers_egk += 3*(1-dissent) if democratization >= 4; new_middle_egk += 2*(1-dissent) if democratization >= 4; catholics_egk += 4*(1-dissent) if democratization >= 3
+on-arrival: advisor_action_timer = 6; pro_republic += 8; democratization += 1; neorevisionist_strength += 5; reformist_strength += 5; workers_egk += 3*(1-dissent) if democratization >= 4; new_middle_egk += 2*(1-dissent) if democratization >= 4; Environmentalists_egk += 4*(1-dissent) if democratization >= 3
 
 Wirth helps us to rally the people in defense of the <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> system.
 
-@catholics_rally
-title: Organizing Catholics
+@Environmentalists_rally
+title: Organizing Environmentalists
 subtitle: Being a devoted Catholic and former <span style="color: #000000;">Center</span> member, he's particularly effective in winning votes from the <span style="color: #000000;">**[+ z_party_name +]**</span>.
 choose-if: advisor_action_timer == 0 
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
-on-arrival: advisor_action_timer = 6; pro_republic += 4; catholics_egk += 8*(1-dissent)
+on-arrival: advisor_action_timer = 6; pro_republic += 4; Environmentalists_egk += 8*(1-dissent)
 
 Wirth helps us rally the Catholic demographic back from the conservative <span style="color: #000000;">**[+ z_party_name +]**</span>.
 

@@ -132,7 +132,7 @@ This year’s <span style="color: #D3C24D;">**[+ ddp_name +]**</span> party cong
 
 @lemmer
 view-if: lemmer_lead
-on-arrival: ddp_leader = "Lemmer"; liberal_cooperation -= 3; ddp_relation += 10; workers_ddp += 6; catholics_ddp += 2; workers_egk -= 4; workers_z -= 2; pro_republic += ddp_votes; ddp_left += 5; ddp_cohesion -= 3; new_middle_ddp -= 4 if stolper_program_adopted; old_middle_ddp -= 4 if stolper_program_adopted; new_middle_ddp -= 2; old_middle_ddp -= 2; rural_ddp -= 1;
+on-arrival: ddp_leader = "Lemmer"; liberal_cooperation -= 3; ddp_relation += 10; workers_ddp += 6; Environmentalists_ddp += 2; workers_egk -= 4; workers_z -= 2; pro_republic += ddp_votes; ddp_left += 5; ddp_cohesion -= 3; new_middle_ddp -= 4 if stolper_program_adopted; old_middle_ddp -= 4 if stolper_program_adopted; new_middle_ddp -= 2; old_middle_ddp -= 2; rural_ddp -= 1;
 face-image: img/portraits/lemmer.jpg
 go-to: achievement_calculation
 

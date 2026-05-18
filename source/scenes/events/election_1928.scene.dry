@@ -29,7 +29,7 @@ Since we are currently ruling as part of an emergency government, we may use qua
 - @election_algorithm: No, let's hold the elections.
 
 @cancel_elections_2
-on-departure: next_election_year = next_election_year + 1; next_election_time = time + 12; pro_republic -= 10; dvp_relation -= 8; lvp_relation -= 8; z_relation -= 8; ddp_relation -= 10; kpd_relation -= 8; coup_progress += 2; workers_egk -= 4; new_middle_egk -= 5; old_middle_egk -= 5; rural_egk -= 5; catholics_egk -= 5; unemployed_egk -= 5; coup_progress += 2 if nsdap_normalized >= 0.3; coup_progress += 2 if nsdap_normalized + dnvp_normalized >= 0.5 and dnvp_ideology = "Radical"; coup_progress += 2 if nsdap_normalized + dnf_normalized >= 0.5 and dnvp_ideology = "Moderate"; sa_strength += 100 if coup_progress >= 7; sh_strength += 100 if coup_progress >= 7
+on-departure: next_election_year = next_election_year + 1; next_election_time = time + 12; pro_republic -= 10; dvp_relation -= 8; lvp_relation -= 8; z_relation -= 8; ddp_relation -= 10; kpd_relation -= 8; coup_progress += 2; workers_egk -= 4; new_middle_egk -= 5; old_middle_egk -= 5; rural_egk -= 5; Environmentalists_egk -= 5; unemployed_egk -= 5; coup_progress += 2 if nsdap_normalized >= 0.3; coup_progress += 2 if nsdap_normalized + dnvp_normalized >= 0.5 and dnvp_ideology = "Radical"; coup_progress += 2 if nsdap_normalized + dnf_normalized >= 0.5 and dnvp_ideology = "Moderate"; sa_strength += 100 if coup_progress >= 7; sh_strength += 100 if coup_progress >= 7
 achievement: ausnahmezustand
 
 Fine. President [+ president +] has taken the unprecedented step of canceling these elections. New elections are scheduled for [+ next_election_month : month +] [+ next_election_year +].
@@ -1775,7 +1775,7 @@ go-to: achievement_check_e
             {!<th>Old Middle Class</th>!}
             {!<th>Rural</th>!}
             {!<th>Unemployed</th>!}
-            {!<th>Catholics</th>!}
+            {!<th>Environmentalists</th>!}
         {!</tr>!}
         [? if dnef_formed: {!<tr>!}
             {!<td><span style="color: #BFC8CC;">!}**DNEF**{!</span></td>!}
@@ -1784,7 +1784,7 @@ go-to: achievement_check_e
             {!<td style="background-color: rgba(191, 200, 204, 0.2); font-size: 0.85em;">!}[+ old_middle_dnef_display +]%[? if n_elections != 1 and demo_change_old_middle_dnef_display != 0 : ([+ demo_change_old_middle_dnef_display +])?]{!</td>!}
             {!<td style="background-color: rgba(191, 200, 204, 0.2); font-size: 0.85em;">!}[+ rural_dnef_display +]%[? if n_elections != 1 and demo_change_rural_dnef_display != 0 : ([+ demo_change_rural_dnef_display +])?]{!</td>!}
             {!<td style="background-color: rgba(191, 200, 204, 0.2); font-size: 0.85em;">!}[+ unemployed_dnef_display +]%[? if n_elections != 1 and demo_change_unemployed_dnef_display != 0 : ([+ demo_change_unemployed_dnef_display +])?]{!</td>!}
-            {!<td style="background-color: rgba(191, 200, 204, 0.2); font-size: 0.85em;">!}[+ catholics_dnef_display +]%[? if n_elections != 1 and demo_change_catholics_dnef_display != 0 : ([+ demo_change_catholics_dnef_display +])?]{!</td>!}
+            {!<td style="background-color: rgba(191, 200, 204, 0.2); font-size: 0.85em;">!}[+ Environmentalists_dnef_display +]%[? if n_elections != 1 and demo_change_Environmentalists_dnef_display != 0 : ([+ demo_change_Environmentalists_dnef_display +])?]{!</td>!}
         {!</tr>!}?]
         {!<tr>!}
             {!<td><span style="color: #30B24A;"><b>egk</b></span></td>!}
@@ -1793,7 +1793,7 @@ go-to: achievement_check_e
             {!<td style="background-color: rgba(192, 0, 0, 0.1); font-size: 0.85em;">!}[+ old_middle_egk_display +]%[? if n_elections != 1 and demo_change_old_middle_egk_display != 0 : ([+ demo_change_old_middle_egk_display +])?]{!</td>!}
             {!<td style="background-color: rgba(192, 0, 0, 0.1); font-size: 0.85em;">!}[+ rural_egk_display +]%[? if n_elections != 1 and demo_change_rural_egk_display != 0 : ([+ demo_change_rural_egk_display +])?]{!</td>!}
             {!<td style="background-color: rgba(192, 0, 0, 0.1); font-size: 0.85em;">!}[+ unemployed_egk_display +]%[? if n_elections != 1 and demo_change_unemployed_egk_display != 0 : ([+ demo_change_unemployed_egk_display +])?]{!</td>!}
-            {!<td style="background-color: rgba(192, 0, 0, 0.1); font-size: 0.85em;">!}[+ catholics_egk_display +]%[? if n_elections != 1 and demo_change_catholics_egk_display != 0 : ([+ demo_change_catholics_egk_display +])?]{!</td>!}
+            {!<td style="background-color: rgba(192, 0, 0, 0.1); font-size: 0.85em;">!}[+ Environmentalists_egk_display +]%[? if n_elections != 1 and demo_change_Environmentalists_egk_display != 0 : ([+ demo_change_Environmentalists_egk_display +])?]{!</td>!}
         {!</tr>!}
         [? if sapd_formed: {!<tr>!}
             {!<td><span style="color: #9B0000;">!}**SAPD**{!</span></td>!}
@@ -1802,7 +1802,7 @@ go-to: achievement_check_e
             {!<td style="background-color: rgba(155, 0, 0, 0.2); font-size: 0.85em;">!}[+ old_middle_sapd_display +]%[? if n_elections != 1 and demo_change_old_middle_sapd_display != 0 : ([+ demo_change_old_middle_sapd_display +])?]{!</td>!}
             {!<td style="background-color: rgba(155, 0, 0, 0.2); font-size: 0.85em;">!}[+ rural_sapd_display +]%[? if n_elections != 1 and demo_change_rural_sapd_display != 0 : ([+ demo_change_rural_sapd_display +])?]{!</td>!}
             {!<td style="background-color: rgba(155, 0, 0, 0.2); font-size: 0.85em;">!}[+ unemployed_sapd_display +]%[? if n_elections != 1 and demo_change_unemployed_sapd_display != 0 : ([+ demo_change_unemployed_sapd_display +])?]{!</td>!}
-            {!<td style="background-color: rgba(155, 0, 0, 0.2); font-size: 0.85em;">!}[+ catholics_sapd_display +]%[? if n_elections != 1 and demo_change_catholics_sapd_display != 0 : ([+ demo_change_catholics_sapd_display +])?]{!</td>!}
+            {!<td style="background-color: rgba(155, 0, 0, 0.2); font-size: 0.85em;">!}[+ Environmentalists_sapd_display +]%[? if n_elections != 1 and demo_change_Environmentalists_sapd_display != 0 : ([+ demo_change_Environmentalists_sapd_display +])?]{!</td>!}
         {!</tr>!}?]
         {!<tr>!}
             {!<td>!}<span style="color: #000000;">**[+ z_party_name +]**</span> + <span style="color: #4B758B;">**BVP**</span>{!</td>!}
@@ -1811,7 +1811,7 @@ go-to: achievement_check_e
             {!<td style="background-color: rgba(0, 0, 0, 0.2); font-size: 0.85em;">!}[+ old_middle_z_display +]%[? if n_elections != 1 and demo_change_old_middle_z_display != 0 : ([+ demo_change_old_middle_z_display +])?]{!</td>!}
             {!<td style="background-color: rgba(0, 0, 0, 0.2); font-size: 0.85em;">!}[+ rural_z_display +]%[? if n_elections != 1 and demo_change_rural_z_display != 0 : ([+ demo_change_rural_z_display +])?]{!</td>!}
             {!<td style="background-color: rgba(0, 0, 0, 0.2); font-size: 0.85em;">!}[+ unemployed_z_display +]%[? if n_elections != 1 and demo_change_unemployed_z_display != 0 : ([+ demo_change_unemployed_z_display +])?]{!</td>!}
-            {!<td style="background-color: rgba(0, 0, 0, 0.2); font-size: 0.85em;">!}[+ catholics_z_display +]%[? if n_elections != 1 and demo_change_catholics_z_display != 0 : ([+ demo_change_catholics_z_display +])?]{!</td>!}
+            {!<td style="background-color: rgba(0, 0, 0, 0.2); font-size: 0.85em;">!}[+ Environmentalists_z_display +]%[? if n_elections != 1 and demo_change_Environmentalists_z_display != 0 : ([+ demo_change_Environmentalists_z_display +])?]{!</td>!}
         {!</tr>!}
         {!<tr>!}
             {!<td><span style="color: #700000;"><b>KPD</b></span></td>!}
@@ -1820,7 +1820,7 @@ go-to: achievement_check_e
             {!<td style="background-color: rgba(112, 0, 0, 0.2); font-size: 0.85em;">!}[+ old_middle_kpd_display +]%[? if n_elections != 1 and demo_change_old_middle_kpd_display != 0 : ([+ demo_change_old_middle_kpd_display +])?]{!</td>!}
             {!<td style="background-color: rgba(112, 0, 0, 0.2); font-size: 0.85em;">!}[+ rural_kpd_display +]%[? if n_elections != 1 and demo_change_rural_kpd_display != 0 : ([+ demo_change_rural_kpd_display +])?]{!</td>!}
             {!<td style="background-color: rgba(112, 0, 0, 0.2); font-size: 0.85em;">!}[+ unemployed_kpd_display +]%[? if n_elections != 1 and demo_change_unemployed_kpd_display != 0 : ([+ demo_change_unemployed_kpd_display +])?]{!</td>!}
-            {!<td style="background-color: rgba(112, 0, 0, 0.2); font-size: 0.85em;">!}[+ catholics_kpd_display +]%[? if n_elections != 1 and demo_change_catholics_kpd_display != 0 : ([+ demo_change_catholics_kpd_display +])?]{!</td>!}
+            {!<td style="background-color: rgba(112, 0, 0, 0.2); font-size: 0.85em;">!}[+ Environmentalists_kpd_display +]%[? if n_elections != 1 and demo_change_Environmentalists_kpd_display != 0 : ([+ demo_change_Environmentalists_kpd_display +])?]{!</td>!}
         {!</tr>!}
         [? if not lvp_formed: {!<tr>!}
             {!<td>!}<span style="color: #D3C24D;">**[+ ddp_name +]**</span>{!</td>!}
@@ -1829,7 +1829,7 @@ go-to: achievement_check_e
             {!<td style="background-color: rgba(211, 194, 77, 0.2); font-size: 0.85em;">!}[+ old_middle_ddp_display +]%[? if n_elections != 1 and demo_change_old_middle_ddp_display != 0 : ([+ demo_change_old_middle_ddp_display +])?]{!</td>!}
             {!<td style="background-color: rgba(211, 194, 77, 0.2); font-size: 0.85em;">!}[+ rural_ddp_display +]%[? if n_elections != 1 and demo_change_rural_ddp_display != 0 : ([+ demo_change_rural_ddp_display +])?]{!</td>!}
             {!<td style="background-color: rgba(211, 194, 77, 0.2); font-size: 0.85em;">!}[+ unemployed_ddp_display +]%[? if n_elections != 1 and demo_change_unemployed_ddp_display != 0 : ([+ demo_change_unemployed_ddp_display +])?]{!</td>!}
-            {!<td style="background-color: rgba(211, 194, 77, 0.2); font-size: 0.85em;">!}[+ catholics_ddp_display +]%[? if n_elections != 1 and demo_change_catholics_ddp_display != 0 : ([+ demo_change_catholics_ddp_display +])?]{!</td>!}
+            {!<td style="background-color: rgba(211, 194, 77, 0.2); font-size: 0.85em;">!}[+ Environmentalists_ddp_display +]%[? if n_elections != 1 and demo_change_Environmentalists_ddp_display != 0 : ([+ demo_change_Environmentalists_ddp_display +])?]{!</td>!}
         {!</tr>!} ?]
         [? if lvp_formed: {!<tr>!}
             {!<td>!}<span style="color: #FFCC00;">**LVP**</span>{!</td>!}
@@ -1838,7 +1838,7 @@ go-to: achievement_check_e
             {!<td style="background-color: rgba(255, 204, 0, 0.2); font-size: 0.85em;">!}[+ old_middle_lvp_display +]%[? if n_elections != 1 and demo_change_old_middle_lvp_display != 0 : ([+ demo_change_old_middle_lvp_display +])?]{!</td>!}
             {!<td style="background-color: rgba(255, 204, 0, 0.2); font-size: 0.85em;">!}[+ rural_lvp_display +]%[? if n_elections != 1 and demo_change_rural_lvp_display != 0 : ([+ demo_change_rural_lvp_display +])?]{!</td>!}
             {!<td style="background-color: rgba(255, 204, 0, 0.2); font-size: 0.85em;">!}[+ unemployed_lvp_display +]%[? if n_elections != 1 and demo_change_unemployed_lvp_display != 0 : ([+ demo_change_unemployed_lvp_display +])?]{!</td>!}
-            {!<td style="background-color: rgba(255, 204, 0, 0.2); font-size: 0.85em;">!}[+ catholics_lvp_display +]%[? if n_elections != 1 and demo_change_catholics_lvp_display != 0 : ([+ demo_change_catholics_lvp_display +])?]{!</td>!}
+            {!<td style="background-color: rgba(255, 204, 0, 0.2); font-size: 0.85em;">!}[+ Environmentalists_lvp_display +]%[? if n_elections != 1 and demo_change_Environmentalists_lvp_display != 0 : ([+ demo_change_Environmentalists_lvp_display +])?]{!</td>!}
         {!</tr>!} ?]
         [? if not lvp_formed and dvp_exist: {!<tr>!}
             {!<td><span style="color: #C0A054;"><b>DVP</b></span></td>!}
@@ -1847,7 +1847,7 @@ go-to: achievement_check_e
             {!<td style="background-color: rgba(192, 160, 84, 0.2); font-size: 0.85em;">!}[+ old_middle_dvp_display +]%[? if n_elections != 1 and demo_change_old_middle_dvp_display != 0 : ([+ demo_change_old_middle_dvp_display +])?]{!</td>!}
             {!<td style="background-color: rgba(192, 160, 84, 0.2); font-size: 0.85em;">!}[+ rural_dvp_display +]%[? if n_elections != 1 and demo_change_rural_dvp_display != 0 : ([+ demo_change_rural_dvp_display +])?]{!</td>!}
             {!<td style="background-color: rgba(192, 160, 84, 0.2); font-size: 0.85em;">!}[+ unemployed_dvp_display +]%[? if n_elections != 1 and demo_change_unemployed_dvp_display != 0 : ([+ demo_change_unemployed_dvp_display +])?]{!</td>!}
-            {!<td style="background-color: rgba(192, 160, 84, 0.2); font-size: 0.85em;">!}[+ catholics_dvp_display +]%[? if n_elections != 1 and demo_change_catholics_dvp_display != 0 : ([+ demo_change_catholics_dvp_display +])?]{!</td>!}
+            {!<td style="background-color: rgba(192, 160, 84, 0.2); font-size: 0.85em;">!}[+ Environmentalists_dvp_display +]%[? if n_elections != 1 and demo_change_Environmentalists_dvp_display != 0 : ([+ demo_change_Environmentalists_dvp_display +])?]{!</td>!}
         {!</tr>!} ?]
         [? if kvp_formed and not dnvp_dvp_formed: {!<tr>!}
             {!<td><span style="color: #0087DC;">!}**KVP**{!</span></td>!}
@@ -1856,7 +1856,7 @@ go-to: achievement_check_e
             {!<td style="background-color: rgba(0, 135, 220, 0.2); font-size: 0.85em;">!}[+ old_middle_kvp_display +]%[? if n_elections != 1 and demo_change_old_middle_kvp_display != 0 : ([+ demo_change_old_middle_kvp_display +])?]{!</td>!}
             {!<td style="background-color: rgba(0, 135, 220, 0.2); font-size: 0.85em;">!}[+ rural_kvp_display +]%[? if n_elections != 1 and demo_change_rural_kvp_display != 0 : ([+ demo_change_rural_kvp_display +])?]{!</td>!}
             {!<td style="background-color: rgba(0, 135, 220, 0.2); font-size: 0.85em;">!}[+ unemployed_kvp_display +]%[? if n_elections != 1 and demo_change_unemployed_kvp_display != 0 : ([+ demo_change_unemployed_kvp_display +])?]{!</td>!}
-            {!<td style="background-color: rgba(0, 135, 220, 0.2); font-size: 0.85em;">!}[+ catholics_kvp_display +]%[? if n_elections != 1 and demo_change_catholics_kvp_display != 0 : ([+ demo_change_catholics_kvp_display +])?]{!</td>!}
+            {!<td style="background-color: rgba(0, 135, 220, 0.2); font-size: 0.85em;">!}[+ Environmentalists_kvp_display +]%[? if n_elections != 1 and demo_change_Environmentalists_kvp_display != 0 : ([+ demo_change_Environmentalists_kvp_display +])?]{!</td>!}
         {!</tr>!} ?]
         [? if dnvp_dvp_formed: {!<tr>!}
             {!<td><span style="color: #00C0FF;">!}**FKP**{!</span></td>!}
@@ -1865,7 +1865,7 @@ go-to: achievement_check_e
             {!<td style="background-color: rgba(0, 192, 255, 0.2); font-size: 0.85em;">!}[+ old_middle_kvp_display +]%[? if n_elections != 1 and demo_change_old_middle_kvp_display != 0 : ([+ demo_change_old_middle_kvp_display +])?]{!</td>!}
             {!<td style="background-color: rgba(0, 192, 255, 0.2); font-size: 0.85em;">!}[+ rural_kvp_display +]%[? if n_elections != 1 and demo_change_rural_kvp_display != 0 : ([+ demo_change_rural_kvp_display +])?]{!</td>!}
             {!<td style="background-color: rgba(0, 192, 255, 0.2); font-size: 0.85em;">!}[+ unemployed_kvp_display +]%[? if n_elections != 1 and demo_change_unemployed_kvp_display != 0 : ([+ demo_change_unemployed_kvp_display +])?]{!</td>!}
-            {!<td style="background-color: rgba(0, 192, 255, 0.2); font-size: 0.85em;">!}[+ catholics_kvp_display +]%[? if n_elections != 1 and demo_change_catholics_kvp_display != 0 : ([+ demo_change_catholics_kvp_display +])?]{!</td>!}
+            {!<td style="background-color: rgba(0, 192, 255, 0.2); font-size: 0.85em;">!}[+ Environmentalists_kvp_display +]%[? if n_elections != 1 and demo_change_Environmentalists_kvp_display != 0 : ([+ demo_change_Environmentalists_kvp_display +])?]{!</td>!}
         {!</tr>!} ?]
         [? if not cvp_formed and not dnvp_defunct: {!<tr>!}
             {!<td><span style="color: #3E88B3;"><b>DNVP</b></span></td>!}
@@ -1874,7 +1874,7 @@ go-to: achievement_check_e
             {!<td style="background-color: rgba(44, 81, 122, 0.2); font-size: 0.85em;">!}[+ old_middle_dnvp_display +]%[? if n_elections != 1 and demo_change_old_middle_dnvp_display != 0 : ([+ demo_change_old_middle_dnvp_display +])?]{!</td>!}
             {!<td style="background-color: rgba(44, 81, 122, 0.2); font-size: 0.85em;">!}[+ rural_dnvp_display +]%[? if n_elections != 1 and demo_change_rural_dnvp_display != 0 : ([+ demo_change_rural_dnvp_display +])?]{!</td>!}
             {!<td style="background-color: rgba(44, 81, 122, 0.2); font-size: 0.85em;">!}[+ unemployed_dnvp_display +]%[? if n_elections != 1 and demo_change_unemployed_dnvp_display != 0 : ([+ demo_change_unemployed_dnvp_display +])?]{!</td>!}
-            {!<td style="background-color: rgba(44, 81, 122, 0.2); font-size: 0.85em;">!}[+ catholics_dnvp_display +]%[? if n_elections != 1 and demo_change_catholics_dnvp_display != 0 : ([+ demo_change_catholics_dnvp_display +])?]{!</td>!}
+            {!<td style="background-color: rgba(44, 81, 122, 0.2); font-size: 0.85em;">!}[+ Environmentalists_dnvp_display +]%[? if n_elections != 1 and demo_change_Environmentalists_dnvp_display != 0 : ([+ demo_change_Environmentalists_dnvp_display +])?]{!</td>!}
         {!</tr>!} ?]
         [? if dnf_formed: {!<tr>!}
             {!<td><span style="color: #003755;">!}**DNF**{!</span></td>!}
@@ -1883,7 +1883,7 @@ go-to: achievement_check_e
             {!<td style="background-color: rgba(0, 31, 48, 0.2); font-size: 0.85em;">!}[+ old_middle_dnf_display +]%[? if n_elections != 1 and demo_change_old_middle_dnf_display != 0 : ([+ demo_change_old_middle_dnf_display +])?]{!</td>!}
             {!<td style="background-color: rgba(0, 31, 48, 0.2); font-size: 0.85em;">!}[+ rural_dnf_display +]%[? if n_elections != 1 and demo_change_rural_dnf_display != 0 : ([+ demo_change_rural_dnf_display +])?]{!</td>!}
             {!<td style="background-color: rgba(0, 31, 48, 0.2); font-size: 0.85em;">!}[+ unemployed_dnf_display +]%[? if n_elections != 1 and demo_change_unemployed_dnf_display != 0 : ([+ demo_change_unemployed_dnf_display +])?]{!</td>!}
-            {!<td style="background-color: rgba(0, 31, 48, 0.2); font-size: 0.85em;">!}[+ catholics_dnf_display +]%[? if n_elections != 1 and demo_change_catholics_dnf_display != 0 : ([+ demo_change_catholics_dnf_display +])?]{!</td>!}
+            {!<td style="background-color: rgba(0, 31, 48, 0.2); font-size: 0.85em;">!}[+ Environmentalists_dnf_display +]%[? if n_elections != 1 and demo_change_Environmentalists_dnf_display != 0 : ([+ demo_change_Environmentalists_dnf_display +])?]{!</td>!}
         {!</tr>!} ?]
         [? if not nsdap_split: {!<tr>!}
             {!<td><span style="color: #7A3C00;">!}**NSDAP**{!</span></td>!}
@@ -1892,7 +1892,7 @@ go-to: achievement_check_e
             {!<td style="background-color: rgba(122, 60, 0, 0.2); font-size: 0.85em;">!}[+ old_middle_nsdap_display +]%[? if n_elections != 1 and demo_change_old_middle_nsdap_display != 0 : ([+ demo_change_old_middle_nsdap_display +])?]{!</td>!}
             {!<td style="background-color: rgba(122, 60, 0, 0.2); font-size: 0.85em;">!}[+ rural_nsdap_display +]%[? if n_elections != 1 and demo_change_rural_nsdap_display != 0 : ([+ demo_change_rural_nsdap_display +])?]{!</td>!}
             {!<td style="background-color: rgba(122, 60, 0, 0.2); font-size: 0.85em;">!}[+ unemployed_nsdap_display +]%[? if n_elections != 1 and demo_change_unemployed_nsdap_display != 0 : ([+ demo_change_unemployed_nsdap_display +])?]{!</td>!}
-            {!<td style="background-color: rgba(122, 60, 0, 0.2); font-size: 0.85em;">!}[+ catholics_nsdap_display +]%[? if n_elections != 1 and demo_change_catholics_nsdap_display != 0 : ([+ demo_change_catholics_nsdap_display +])?]{!</td>!}
+            {!<td style="background-color: rgba(122, 60, 0, 0.2); font-size: 0.85em;">!}[+ Environmentalists_nsdap_display +]%[? if n_elections != 1 and demo_change_Environmentalists_nsdap_display != 0 : ([+ demo_change_Environmentalists_nsdap_display +])?]{!</td>!}
         {!</tr>!} ?]
         [? if nsdap_split: {!<tr>!}
             {!<td><span style="color: #7A3C00;">!}**NSDAP**{!</span></td>!}
@@ -1901,7 +1901,7 @@ go-to: achievement_check_e
             {!<td style="background-color: rgba(122, 60, 0, 0.2); font-size: 0.85em;">!}[+ old_middle_nsdap_display +]%[? if n_elections != 1 and demo_change_old_middle_nsdap_display != 0 : ([+ demo_change_old_middle_nsdap_display +])?]{!</td>!}
             {!<td style="background-color: rgba(122, 60, 0, 0.2); font-size: 0.85em;">!}[+ rural_nsdap_display +]%[? if n_elections != 1 and demo_change_rural_nsdap_display != 0 : ([+ demo_change_rural_nsdap_display +])?]{!</td>!}
             {!<td style="background-color: rgba(20, 46, 32, 0.2); font-size: 0.85em;">!}[+ unemployed_nsdap_display +]%[? if n_elections != 1 and demo_change_unemployed_nsdap_display != 0 : ([+ demo_change_unemployed_nsdap_display +])?]{!</td>!}
-            {!<td style="background-color: rgba(122, 60, 0, 0.2); font-size: 0.85em;">!}[+ catholics_nsdap_display +]%[? if n_elections != 1 and demo_change_catholics_nsdap_display != 0 : ([+ demo_change_catholics_nsdap_display +])?]{!</td>!}
+            {!<td style="background-color: rgba(122, 60, 0, 0.2); font-size: 0.85em;">!}[+ Environmentalists_nsdap_display +]%[? if n_elections != 1 and demo_change_Environmentalists_nsdap_display != 0 : ([+ demo_change_Environmentalists_nsdap_display +])?]{!</td>!}
         {!</tr>!} ?]
         {!<tr>!}
             {!<td><b>Others</b></td>!}
@@ -1910,7 +1910,7 @@ go-to: achievement_check_e
             {!<td style="background-color: rgba(144, 144, 144, 0.2); font-size: 0.85em;">!}[+ old_middle_other_display +]%[? if n_elections != 1 and demo_change_old_middle_other_display != 0 : ([+ demo_change_old_middle_other_display +])?]{!</td>!}
             {!<td style="background-color: rgba(144, 144, 144, 0.2); font-size: 0.85em;">!}[+ rural_other_display +]%[? if n_elections != 1 and demo_change_rural_other_display != 0 : ([+ demo_change_rural_other_display +])?]{!</td>!}
             {!<td style="background-color: rgba(144, 144, 144, 0.2); font-size: 0.85em;">!}[+ unemployed_other_display +]%[? if n_elections != 1 and demo_change_unemployed_other_display != 0 : ([+ demo_change_unemployed_other_display +])?]{!</td>!}
-            {!<td style="background-color: rgba(144, 144, 144, 0.2); font-size: 0.85em;">!}[+ catholics_other_display +]%[? if n_elections != 1 and demo_change_catholics_other_display != 0 : ([+ demo_change_catholics_other_display +])?]{!</td>!}
+            {!<td style="background-color: rgba(144, 144, 144, 0.2); font-size: 0.85em;">!}[+ Environmentalists_other_display +]%[? if n_elections != 1 and demo_change_Environmentalists_other_display != 0 : ([+ demo_change_Environmentalists_other_display +])?]{!</td>!}
         {!</tr>!}
     {!</table>!}
     {!</div>!}
@@ -3118,7 +3118,7 @@ Q.workers_egk -= 3;
 Q.new_middle_egk -= 3;
 Q.old_middle_egk -= 3;
 Q.rural_egk -= 3;
-Q.catholics_egk -= 3;
+Q.Environmentalists_egk -= 3;
 Q.workers_nsdap += 5;
 Q.old_middle_nsdap += 3;
 Q.new_middle_nsdap += 3;
@@ -3134,7 +3134,7 @@ if (Q.pro_republic < 36) {
     Q.new_middle_egk -= 5;
     Q.old_middle_egk -= 5;
     Q.rural_egk -= 5;
-    Q.catholics_egk -= 3;
+    Q.Environmentalists_egk -= 3;
     Q.workers_nsdap += 5;
     Q.old_middle_nsdap += 5;
     Q.new_middle_nsdap += 5;
@@ -3385,7 +3385,7 @@ if (Q.cvp_economy_accepted && Q.budget < 0) {
     Q.new_middle_egk -= Q.austerity_budget*2;
     Q.old_middle_egk -= Q.austerity_budget;
     Q.unemployed_egk -= Q.austerity_budget*3;
-    Q.catholics_egk -= Q.austerity_budget;
+    Q.Environmentalists_egk -= Q.austerity_budget;
     if (Q.welfare >= 1) Q.welfare -= 2;
     Q.workers_kpd += Q.austerity_budget*2;
     Q.workers_nsdap += Q.austerity_budget;
@@ -3408,7 +3408,7 @@ go-to: social_catholic_coalition_cvp_3
 achievement: frahm_und_brandt
 
 @social_catholic_coalition_cvp_3
-on-arrival: leverage -= 10; leverage += 5 if cvp_ideology == "Left"; in_weimar_coalition = 1; in_social_catholic_coalition = 1; egk_in_government = 1; in_popular_front = 0; in_left_front = 0; foreign_minister_party = "Z"; interior_minister_party = "Z"; justice_minister_party = "Z"; labor_minister_party = "Z"; reichswehr_minister_party = "I"; finance_minister_party = "Z"; economic_minister_party = "Z"; agriculture_minister_party = "Z"; foreign_minister = "Wirth"; interior_minister = "Wirth"; justice_minister = "Guérard"; labor_minister = "Stegerwald"; reichswehr_minister = "Groener"; economic_minister = "Brüning"; finance_minister = "Köhler"; agriculture_minister = "Hermes"; dvp_right += 2; ddp_right += 4; ddp_cohesion -= 3; lvp_right += 3; hindenburg_angry = 30; liberal_cooperation += 5; z_relation += 10; workers_z += 3; unemployed_z += 3; new_middle_z -= 6; old_middle_z -= 10; rural_z -= 6; catholics_z += 4; new_middle_dnf += 2; new_middle_dvp += 2; new_middle_ddp += 2; new_middle_lvp += 4; old_middle_dnf += 6; old_middle_dvp += 4; old_middle_dvp += 4; rural_dnf += 4; rural_dvp += 2; rural_lvp += 2
+on-arrival: leverage -= 10; leverage += 5 if cvp_ideology == "Left"; in_weimar_coalition = 1; in_social_catholic_coalition = 1; egk_in_government = 1; in_popular_front = 0; in_left_front = 0; foreign_minister_party = "Z"; interior_minister_party = "Z"; justice_minister_party = "Z"; labor_minister_party = "Z"; reichswehr_minister_party = "I"; finance_minister_party = "Z"; economic_minister_party = "Z"; agriculture_minister_party = "Z"; foreign_minister = "Wirth"; interior_minister = "Wirth"; justice_minister = "Guérard"; labor_minister = "Stegerwald"; reichswehr_minister = "Groener"; economic_minister = "Brüning"; finance_minister = "Köhler"; agriculture_minister = "Hermes"; dvp_right += 2; ddp_right += 4; ddp_cohesion -= 3; lvp_right += 3; hindenburg_angry = 30; liberal_cooperation += 5; z_relation += 10; workers_z += 3; unemployed_z += 3; new_middle_z -= 6; old_middle_z -= 10; rural_z -= 6; Environmentalists_z += 4; new_middle_dnf += 2; new_middle_dvp += 2; new_middle_ddp += 2; new_middle_lvp += 4; old_middle_dnf += 6; old_middle_dvp += 4; old_middle_dvp += 4; rural_dnf += 4; rural_dvp += 2; rural_lvp += 2
 achievement: sozialchristliche_koalition
 
 We have somehow convinced the <span style="color: #000000;">**[+ z_party_name +]**</span> to enter in a <span style="color: #30B24A;">Social</span>-<span style="color: #000000;">Christian</span> Coalition with us! The <span style="color: #3E88B3;">nationalist</span> elements within the <span style="color: #000000;">**[+ z_party_name +]**</span> are disgusted by this, never actually expecting the negotiations to have a successful conclusion. They're refusing to participate in government through cabinet positions as to not be associated with the <span style="color: #30B24A;">socialists</span>.
@@ -3592,7 +3592,7 @@ Q.workers_egk -= 4;
 Q.new_middle_egk -= 4;
 Q.old_middle_egk -= 4;
 Q.rural_egk -= 4;
-Q.catholics_egk -= 2;
+Q.Environmentalists_egk -= 2;
 Q.new_middle_dvp -= 4;
 Q.old_middle_dvp -= 4;
 Q.new_middle_ddp -= 5;
@@ -3883,7 +3883,7 @@ go-to: right_coalition_post_egk if right_coalition >= 50 and ((dnvp_ideology == 
 go-to: right_coalition_2
 
 @new_elections_egk
-on-arrival: next_election_time = time+3; next_election_month = month + 3; next_election_year = year; next_election_year = year + 1 if next_election_month > 12; next_election_month = next_election_month - 12 if next_election_month > 12; new_middle_egk -= 5; old_middle_egk -= 5; workers_egk -= 3; catholics_egk -= 3; in_election = 1
+on-arrival: next_election_time = time+3; next_election_month = month + 3; next_election_year = year; next_election_year = year + 1 if next_election_month > 12; next_election_month = next_election_month - 12 if next_election_month > 12; new_middle_egk -= 5; old_middle_egk -= 5; workers_egk -= 3; Environmentalists_egk -= 3; in_election = 1
 
 Since the remaining bourgeois and right-wing parties cannot form a tolerable governing agreement, new elections have been called for [+ next_election_month : month +] [+ next_election_year +]. The previous chancellor has resigned, and has been replaced by Heinrich Brüning, also of the [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?], ruling as part of a presidential cabinet. 
 

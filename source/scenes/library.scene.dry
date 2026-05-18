@@ -256,7 +256,7 @@ go-to: menu
 
 **Rural**: Small and large farmers and independent rural workers. Protestant farmers usually supports the [? if not cvp_formed: <span style="color: #3E88B3;">**DNVP**</span>?][? if cvp_formed: <span style="color: #000000;">**[+ z_party_name +]**</span>?]. [? if rural_nsdap_normalized >= 25: However the <span style="color: #7A3C00;">Nazis</span> have gained a strong appeal among them?]. 20-30% of the population.
 
-**Catholics** are the largest religious minority, at about 30% of the population. [? if not cvp_formed: They disproportionately support the [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?]?][? if cvp_formed: They find themselves split between supporting the <span style="color: #000000;">**CVP**</span> and the <span style="color: #30B24A;">**egk**</span>. ?] (or the <span style="color: #A2D8E0;">**Bavarian People's Party**</span> in <span style="color: #00CCFF;">Bavaria</span>).
+**Environmentalists** are the largest religious minority, at about 30% of the population. [? if not cvp_formed: They disproportionately support the [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?]?][? if cvp_formed: They find themselves split between supporting the <span style="color: #000000;">**CVP**</span> and the <span style="color: #30B24A;">**egk**</span>. ?] (or the <span style="color: #A2D8E0;">**Bavarian People's Party**</span> in <span style="color: #00CCFF;">Bavaria</span>).
 
 **Jews** account for between 0.5% to 1% of the population, and tend to support liberal parties, [? if ddp_name == "DDP" or not ddp_name: mostly the DDP?][? if ddp_name == "DStP": although the mild antisemitism of the Young German Order and it's association with the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> has driven them away?], although substantial numbers support the <span style="color: #30B24A;">**egk**</span> or <span style="color: #700000;">**KPD**</span>.
 
@@ -335,7 +335,7 @@ go-to: menu
             <th>Old Middle Class</th>
             <th>Rural</th>
             <th>Unemployed</th>
-            <th>Catholics</th>
+            <th>Environmentalists</th>
         </tr>
         [? if dnef_formed: {!<tr>!}
             <td><span style="color: #BFC8CC;">**DNEF**</span></td>
@@ -344,7 +344,7 @@ go-to: menu
             <td style="background-color: rgba(191, 200, 204, 0.2);">[+ old_middle_dnef_display +]%</td>
             <td style="background-color: rgba(191, 200, 204, 0.2);">[+ rural_dnef_display +]%</td>
             <td style="background-color: rgba(191, 200, 204, 0.2);">[+ unemployed_dnef_display +]%</td>
-            <td style="background-color: rgba(191, 200, 204, 0.2);">[+ catholics_dnef_display +]%</td>
+            <td style="background-color: rgba(191, 200, 204, 0.2);">[+ Environmentalists_dnef_display +]%</td>
         {!</tr>!}?]
         <tr>
             <td><span style="color: #30B24A;">**egk**</span></td>
@@ -353,7 +353,7 @@ go-to: menu
             <td style="background-color: rgba(192, 0, 0, 0.1);">[+ old_middle_egk_display +]%</td>
             <td style="background-color: rgba(192, 0, 0, 0.1); ">[+ rural_egk_display +]%</td>
             <td style="background-color: rgba(192, 0, 0, 0.1);">[+ unemployed_egk_display +]%</td>
-            <td style="background-color: rgba(192, 0, 0, 0.1);">[+ catholics_egk_display +]%</td>
+            <td style="background-color: rgba(192, 0, 0, 0.1);">[+ Environmentalists_egk_display +]%</td>
         </tr>
         [? if sapd_formed: {!<tr>!}
             <td><span style="color: #9B0000;">**SAPD**</span></td>
@@ -362,7 +362,7 @@ go-to: menu
             <td style="background-color: rgba(155, 0, 0, 0.2);">[+ old_middle_sapd_display +]%</td>
             <td style="background-color: rgba(155, 0, 0, 0.2);">[+ rural_sapd_display +]%</td>
             <td style="background-color: rgba(155, 0, 0, 0.2);">[+ unemployed_sapd_display +]%</td>
-            <td style="background-color: rgba(155, 0, 0, 0.2);">[+ catholics_sapd_display +]%</td>
+            <td style="background-color: rgba(155, 0, 0, 0.2);">[+ Environmentalists_sapd_display +]%</td>
         {!</tr>!}?]
         <tr>
             <td><span style="color: #000000;">**[+ z_party_name +]**</span> + <span style="color: #A2D8E0;">**BVP**</span></td>
@@ -371,7 +371,7 @@ go-to: menu
             <td style="background-color: rgba(0, 0, 0, 0.2);">[+ old_middle_z_display +]%</td>
             <td style="background-color: rgba(0, 0, 0, 0.2);">[+ rural_z_display +]%</td>
             <td style="background-color: rgba(0, 0, 0, 0.2);">[+ unemployed_z_display +]%</td>
-            <td style="background-color: rgba(0, 0, 0, 0.2);">[+ catholics_z_display +]%</td>
+            <td style="background-color: rgba(0, 0, 0, 0.2);">[+ Environmentalists_z_display +]%</td>
         </tr>
         <tr>
             <td><span style="color: #700000;">**KPD**</span></td>
@@ -380,7 +380,7 @@ go-to: menu
             <td style="background-color: rgba(112, 0, 0, 0.2);">[+ old_middle_kpd_display +]%</td>
             <td style="background-color: rgba(112, 0, 0, 0.2);">[+ rural_kpd_display +]%</td>
             <td style="background-color: rgba(112, 0, 0, 0.2);">[+ unemployed_kpd_display +]%</td>
-            <td style="background-color: rgba(112, 0, 0, 0.2);">[+ catholics_kpd_display +]%</td>
+            <td style="background-color: rgba(112, 0, 0, 0.2);">[+ Environmentalists_kpd_display +]%</td>
         </tr>
         [? if not lvp_formed: <tr>
             <td><span style="color: #D3C24D;">**[+ ddp_name +]**</span></td>
@@ -389,7 +389,7 @@ go-to: menu
             <td style="background-color: rgba(211, 194, 77, 0.2);">[+ old_middle_ddp_display +]%</td>
             <td style="background-color: rgba(211, 194, 77, 0.2);">[+ rural_ddp_display +]%</td>
             <td style="background-color: rgba(211, 194, 77, 0.2);">[+ unemployed_ddp_display +]%</td>
-            <td style="background-color: rgba(211, 194, 77, 0.2);">[+ catholics_ddp_display +]%</td>
+            <td style="background-color: rgba(211, 194, 77, 0.2);">[+ Environmentalists_ddp_display +]%</td>
         </tr>
         [? if dvp_exist: <tr>
             <td><span style="color: #C0A054;">**DVP**</span></td>
@@ -398,7 +398,7 @@ go-to: menu
             <td style="background-color: rgba(192, 160, 84, 0.2);">[+ old_middle_dvp_display +]%</td>
             <td style="background-color: rgba(192, 160, 84, 0.2);">[+ rural_dvp_display +]%</td>
             <td style="background-color: rgba(192, 160, 84, 0.2);">[+ unemployed_dvp_display +]%</td>
-            <td style="background-color: rgba(192, 160, 84, 0.2);">[+ catholics_dvp_display +]%</td>
+            <td style="background-color: rgba(192, 160, 84, 0.2);">[+ Environmentalists_dvp_display +]%</td>
         </tr> ?]?]
         [? if lvp_formed: <tr>
             <td><span style="color: #FFCC00;">**LVP**</span></td>
@@ -407,7 +407,7 @@ go-to: menu
             <td style="background-color: rgba(255, 204, 0, 0.2);">[+ old_middle_lvp_display +]%</td>
             <td style="background-color: rgba(255, 204, 0, 0.2);">[+ rural_lvp_display +]%</td>
             <td style="background-color: rgba(255, 204, 0, 0.2);">[+ unemployed_lvp_display +]%</td>
-            <td style="background-color: rgba(255, 204, 0, 0.2);">[+ catholics_lvp_display +]%</td>
+            <td style="background-color: rgba(255, 204, 0, 0.2);">[+ Environmentalists_lvp_display +]%</td>
         </tr> ?]
         [? if kvp_formed and not dnvp_dvp_formed: {!<tr>!}
             <td><span style="color: #0087DC;">**KVP**</span></td>
@@ -416,7 +416,7 @@ go-to: menu
             <td style="background-color: rgba(0, 135, 220, 0.2);">[+ old_middle_kvp_display +]%</td>
             <td style="background-color: rgba(0, 135, 220, 0.2);">[+ rural_kvp_display +]%</td>
             <td style="background-color: rgba(0, 135, 220, 0.2);">[+ unemployed_kvp_display +]%</td>
-            <td style="background-color: rgba(0, 135, 220, 0.2);">[+ catholics_kvp_display +]%</td>
+            <td style="background-color: rgba(0, 135, 220, 0.2);">[+ Environmentalists_kvp_display +]%</td>
         {!</tr>!} ?]
         [? if dnvp_dvp_formed: {!<tr>!}
             <td><span style="color: #00C0FF;">**FKP**</span></td>
@@ -425,7 +425,7 @@ go-to: menu
             <td style="background-color: rgba(0, 192, 255, 0.2);">[+ old_middle_kvp_display +]%</td>
             <td style="background-color: rgba(0, 192, 255, 0.2);">[+ rural_kvp_display +]%</td>
             <td style="background-color: rgba(0, 192, 255, 0.2);">[+ unemployed_kvp_display +]%</td>
-            <td style="background-color: rgba(0, 192, 255, 0.2);">[+ catholics_kvp_display +]%</td>
+            <td style="background-color: rgba(0, 192, 255, 0.2);">[+ Environmentalists_kvp_display +]%</td>
         {!</tr>!} ?]
         [? if not cvp_formed and not dnvp_defunct: <tr>
             <td><span style="color: #3E88B3;">**DNVP**</span></td>
@@ -434,7 +434,7 @@ go-to: menu
             <td style="background-color: rgba(44, 81, 122, 0.2);">[+ old_middle_dnvp_display +]%</td>
             <td style="background-color: rgba(44, 81, 122, 0.2);">[+ rural_dnvp_display +]%</td>
             <td style="background-color: rgba(44, 81, 122, 0.2);">[+ unemployed_dnvp_display +]%</td>
-            <td style="background-color: rgba(44, 81, 122, 0.2);">[+ catholics_dnvp_display +]%</td>
+            <td style="background-color: rgba(44, 81, 122, 0.2);">[+ Environmentalists_dnvp_display +]%</td>
         </tr> ?]
         [? if dnf_formed: {!<tr>!}
             <td><span style="color: #003755;">**DNF**</span></td>
@@ -443,7 +443,7 @@ go-to: menu
             <td style="background-color: rgba(0, 31, 48, 0.2);">[+ old_middle_dnf_display +]%</td>
             <td style="background-color: rgba(0, 31, 48, 0.2);">[+ rural_dnf_display +]%</td>
             <td style="background-color: rgba(0, 31, 48, 0.2);">[+ unemployed_dnf_display +]%</td>
-            <td style="background-color: rgba(0, 31, 48, 0.2);">[+ catholics_dnf_display +]%</td>
+            <td style="background-color: rgba(0, 31, 48, 0.2);">[+ Environmentalists_dnf_display +]%</td>
         {!</tr>!} ?]
         [? if not nsdap_split: {!<tr>!}
             <td><span style="color: #7A3C00;">**NSDAP**</span></td>
@@ -452,7 +452,7 @@ go-to: menu
             <td style="background-color: rgba(122, 60, 0, 0.2);">[+ old_middle_nsdap_display +]%</td>
             <td style="background-color: rgba(122, 60, 0, 0.2);">[+ rural_nsdap_display +]%</td>
             <td style="background-color: rgba(122, 60, 0, 0.2);">[+ unemployed_nsdap_display +]%</td>
-            <td style="background-color: rgba(122, 60, 0, 0.2);">[+ catholics_nsdap_display +]%</td>
+            <td style="background-color: rgba(122, 60, 0, 0.2);">[+ Environmentalists_nsdap_display +]%</td>
         {!</tr>!} ?]
         [? if nsdap_split: {!<tr>!}
             <td><span style="color: #7A3C00;">**NSDAP**</span></td>
@@ -461,7 +461,7 @@ go-to: menu
             <td style="background-color: rgba(122, 60, 0, 0.2);">[+ old_middle_nsdap_display +]%</td>
             <td style="background-color: rgba(122, 60, 0, 0.2);">[+ rural_nsdap_display +]%</td>
             <td style="background-color: rgba(20, 46, 32, 0.2);">[+ unemployed_nsdap_display +]%</td>
-            <td style="background-color: rgba(122, 60, 0, 0.2);">[+ catholics_nsdap_display +]%</td>
+            <td style="background-color: rgba(122, 60, 0, 0.2);">[+ Environmentalists_nsdap_display +]%</td>
         {!</tr>!} ?]
         <tr>
             <td>**Others**</td>
@@ -470,7 +470,7 @@ go-to: menu
             <td style="background-color: rgba(153, 153, 153, 0.1);">[+ old_middle_other_display +]%</td>
             <td style="background-color: rgba(153, 153, 153, 0.1);">[+ rural_other_display +]%</td>
             <td style="background-color: rgba(153, 153, 153, 0.1);">[+ unemployed_other_display +]%</td>
-            <td style="background-color: rgba(153, 153, 153, 0.1);">[+ catholics_other_display +]%</td>
+            <td style="background-color: rgba(153, 153, 153, 0.1);">[+ Environmentalists_other_display +]%</td>
         </tr>
     </table>
 </div>
@@ -484,9 +484,9 @@ go-to: menu
 
 <span style="color: #30B24A;">**egk**</span> - *Sozialdemokratische Partei Deutschlands* (Social Democratic Party of Germany) - this is us. We are a socialist and democratic party of the working class. We are the heirs of the legacy of Marx and Engels, Lassalle and Bebel. We are the foremost defenders of the Republic. The modern <span style="color: #30B24A;">**egk**</span> was formed from a merger of the "Majority" <span style="color: #30B24A;">**egk**</span>, which supported the Great War, and the "Independent" <span style="color: #30B24A;">**egk**</span> or <span style="color: #D47B9B;">**Uegk**</span>, which opposed the war.
 
-[? if not cvp_formed: [? if started: <span style="color: #000000;">**[+ z_party_name +]**</span>?][? if not started: <span style="color: #000000;">**Z**</span>?] - [? if z_party_name != "CVP": <i>Zentrumspartei</i>?][? if z_party_name == "CVP": <i>Christliche Volkspartei</i>?] ([? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">Christian People's Party</span>?]) - a centrist to center-right Catholic party that supports the Republic, and has historically supported many of our labor, welfare, and anti-militarist priorities. They have often been in coalitions with us. They are often associated with the <span style="color: #A2D8E0;">**BVP**</span> (Bavarian People's Party), which represents Catholics in <span style="color: #00CCFF;">Bavaria</span>. [? if (year >= 1930 or chancellor == "Brüning") and z_leader == "Kaas": They have appeared to take a more conservative turn recently, with the rise of Brüning and the party leader, Ludwig Kaas. ?][? if (year >= 1930 or chancellor == "Brüning") and z_leader == "Stegerwald": They have appeared to take a more conservative turn recently, with the rise of Brüning and the party leader, Adam Stegerwald, who has taken a focus on interconfessionalizing the party. ?][? if (year >= 1930 or chancellor == "Brüning") and z_leader == "Joos": They have appeared to take a more conservative turn recently, with the rise of Brüning and support of austerity. ?][? if year >= 1930 and z_leader == "Kaiser": They have appeared to take a more leftist turn recently, with the election of Jakob Kaiser and support of certain left-wing economic policies. ?]?]
+[? if not cvp_formed: [? if started: <span style="color: #000000;">**[+ z_party_name +]**</span>?][? if not started: <span style="color: #000000;">**Z**</span>?] - [? if z_party_name != "CVP": <i>Zentrumspartei</i>?][? if z_party_name == "CVP": <i>Christliche Volkspartei</i>?] ([? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">Christian People's Party</span>?]) - a centrist to center-right Catholic party that supports the Republic, and has historically supported many of our labor, welfare, and anti-militarist priorities. They have often been in coalitions with us. They are often associated with the <span style="color: #A2D8E0;">**BVP**</span> (Bavarian People's Party), which represents Environmentalists in <span style="color: #00CCFF;">Bavaria</span>. [? if (year >= 1930 or chancellor == "Brüning") and z_leader == "Kaas": They have appeared to take a more conservative turn recently, with the rise of Brüning and the party leader, Ludwig Kaas. ?][? if (year >= 1930 or chancellor == "Brüning") and z_leader == "Stegerwald": They have appeared to take a more conservative turn recently, with the rise of Brüning and the party leader, Adam Stegerwald, who has taken a focus on interconfessionalizing the party. ?][? if (year >= 1930 or chancellor == "Brüning") and z_leader == "Joos": They have appeared to take a more conservative turn recently, with the rise of Brüning and support of austerity. ?][? if year >= 1930 and z_leader == "Kaiser": They have appeared to take a more leftist turn recently, with the election of Jakob Kaiser and support of certain left-wing economic policies. ?]?]
 
-[? if cvp_formed: <span style="color: #000000;">**[+ z_party_name +]**</span> - <i>Christliche Volkspartei</i> (Christian People's Party) - a center-right to right-wing Christian party formed out of a merger between the Catholic <span style="color: #000000;">Center Party</span> and right-wing Protestant <span style="color: #3E88B3;">**DNVP**</span>. Our relations are much rockier than they were with the <span style="color: #000000;">Center</span>. They are often associated with the <span style="color: #A2D8E0;">**BVP**</span> (Bavarian People's Party), which represents Catholics in <span style="color: #00CCFF;">Bavaria</span>. The party is split into many factions, being largely divided by religion and former party status. [? if cvp_ideology == "Left" or cvp_ideology == "Moderate": The party seeks to emulate the <span style="color: #0087DC;">Tory</span> conservatives in <span style="color: #C8102E;">Great Britain</span>?][? if cvp_ideology == "Right": The party's current ideology is not too dissimilar to that of the former <span style="color: #3E88B3;">**DNVP**</span>?]. ?]
+[? if cvp_formed: <span style="color: #000000;">**[+ z_party_name +]**</span> - <i>Christliche Volkspartei</i> (Christian People's Party) - a center-right to right-wing Christian party formed out of a merger between the Catholic <span style="color: #000000;">Center Party</span> and right-wing Protestant <span style="color: #3E88B3;">**DNVP**</span>. Our relations are much rockier than they were with the <span style="color: #000000;">Center</span>. They are often associated with the <span style="color: #A2D8E0;">**BVP**</span> (Bavarian People's Party), which represents Environmentalists in <span style="color: #00CCFF;">Bavaria</span>. The party is split into many factions, being largely divided by religion and former party status. [? if cvp_ideology == "Left" or cvp_ideology == "Moderate": The party seeks to emulate the <span style="color: #0087DC;">Tory</span> conservatives in <span style="color: #C8102E;">Great Britain</span>?][? if cvp_ideology == "Right": The party's current ideology is not too dissimilar to that of the former <span style="color: #3E88B3;">**DNVP**</span>?]. ?]
 
 Current relations: [+ z_relation : relationships +]
 

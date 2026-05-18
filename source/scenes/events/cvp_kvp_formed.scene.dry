@@ -13,7 +13,7 @@ Q.rural_z += Q.rural_kvp;
 
 Q.unemployed_z += Q.unemployed_kvp;
 
-Q.catholics_z += Q.catholics_kvp;
+Q.Environmentalists_z += Q.Environmentalists_kvp;
 
 Q.bourgeois_parliament_kvp = 0;
 

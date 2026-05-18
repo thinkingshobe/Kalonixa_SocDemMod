@@ -56,7 +56,7 @@ Meanwhile, the <span style="color: #C0A054;">**DVP**</span>'s right wing—despi
 subtitle: Thiel is a controversial unionist within the party, being more left wing than Glatzel.
 unavailable-subtitle: [? if not glatzel_unlock: The workers have no power within the <span style="color: #C0A054;">DVP</span>, and the wider party won't back a trade unionist. ?][? if glatzel_unlock: Thiel is still considered too left-wing for the party, and many prefer to back his colleague Glatzel instead. ?]
 choose-if: thiel_unlock
-on-arrival: dvp_leader = "Thiel"; bourgeois_cooperation -= 3; dvp_left += 10; coalition_dissent -= 1 if in_grand_coalition; dvp_relation += 15; workers_dvp += 6; workers_dnvp -= 2; workers_other -= 2; workers_egk -= 2; new_middle_dvp += 6; new_middle_nsdap -= 3; new_middle_other -= 3; catholics_dvp += 3; catholics_other -= 3; old_middle_dvp -= 4; old_middle_dnvp += 2; old_middle_kvp += 2 if kvp_formed; rural_dvp -= 4; rural_dnvp += 2; rural_dnvp += 2 if dnvp_ideology == "Moderate"; rural_kvp += 2 if kvp_formed; pro_republic += 5; ddp_left += 3; ddp_relation += 5
+on-arrival: dvp_leader = "Thiel"; bourgeois_cooperation -= 3; dvp_left += 10; coalition_dissent -= 1 if in_grand_coalition; dvp_relation += 15; workers_dvp += 6; workers_dnvp -= 2; workers_other -= 2; workers_egk -= 2; new_middle_dvp += 6; new_middle_nsdap -= 3; new_middle_other -= 3; Environmentalists_dvp += 3; Environmentalists_other -= 3; old_middle_dvp -= 4; old_middle_dnvp += 2; old_middle_kvp += 2 if kvp_formed; rural_dvp -= 4; rural_dnvp += 2; rural_dnvp += 2 if dnvp_ideology == "Moderate"; rural_kvp += 2 if kvp_formed; pro_republic += 5; ddp_left += 3; ddp_relation += 5
 face-image: img/portraits/thiel.jpg
 
 Surprisingly, Otto Thiel has been elected as the new leader of the <span style="color: #C0A054;">**DVP**</span>! Compared to his colleague Glatzel, Thiel leans further left within the party’s unionist faction. He has even voiced support for increased welfare spending, arguing that austerity measures would only deepen the hardships faced by the people. In his push for *Volksgemeinschaft*, he has begun introducing more labor-friendly policies into the party’s platform, backing collective bargaining rights and worker protections.
@@ -67,7 +67,7 @@ As expected, the remaining industrialists within the <span style="color: #C0A054
 subtitle: Glatzel, being a former member of the <span style="color: #3E88B3;">**DNVP**</span> as well, has shown nationalist sympathies.
 unavailable-subtitle: [? if not thiel_unlock: The workers have no power within the <span style="color: #C0A054;">DVP</span>, and the wider party won't back a trade unionist. ?][? if thiel_unlock: Glatzel's views are too right-wing and nationalistic for the party, particularly given the current national mood. ?]
 choose-if: glatzel_unlock
-on-arrival: dvp_leader = "Glatzel"; bourgeois_cooperation += 1; dvp_right += 3; dvp_relation -= 5; workers_dvp += 6; workers_dnvp -= 2; workers_other -= 2; workers_nsdap -= 2; new_middle_dvp += 6; new_middle_nsdap -= 4; new_middle_other -= 2; catholics_dvp += 4; catholics_other -= 2; catholics_dnvp -= 2; old_middle_dvp += 2; old_middle_dnvp -= 2; rural_dvp -= 4; rural_dnvp += 2; rural_dnvp += 2 if dnvp_ideology == "Moderate"; rural_kvp += 2 if kvp_formed
+on-arrival: dvp_leader = "Glatzel"; bourgeois_cooperation += 1; dvp_right += 3; dvp_relation -= 5; workers_dvp += 6; workers_dnvp -= 2; workers_other -= 2; workers_nsdap -= 2; new_middle_dvp += 6; new_middle_nsdap -= 4; new_middle_other -= 2; Environmentalists_dvp += 4; Environmentalists_other -= 2; Environmentalists_dnvp -= 2; old_middle_dvp += 2; old_middle_dnvp -= 2; rural_dvp -= 4; rural_dnvp += 2; rural_dnvp += 2 if dnvp_ideology == "Moderate"; rural_kvp += 2 if kvp_formed
 face-image: img/portraits/glatzel.jpg
 achievement: neuer_nationalismus
 
@@ -79,7 +79,7 @@ As expected, the remaining industrialists within the <span style="color: #C0A054
 subtitle: Kardorff is able to secure the continuation of Luther's leadership.
 unavailable-subtitle: [? if hugo_unlock: The right-industrial faction blocks Kardorff’s ascension, ensuring the party veers further to the right. ?][? if thiel_unlock or glatzel_unlock: The party prefers a new and dynamic leader, preferably not one with closeness to Luther. ?]
 choose-if: kardorff_unlock
-on-arrival: dvp_leader = "Kardorff"; dvp_left += 3 if in_grand_coalition; liberal_cooperation += 3; bourgeois_cooperation += 3; dvp_relation += 5 if in_grand_coalition; new_middle_dvp += 4; catholics_dvp += 2; rural_dvp += 2; old_middle_dvp += 2; pro_republic += 3
+on-arrival: dvp_leader = "Kardorff"; dvp_left += 3 if in_grand_coalition; liberal_cooperation += 3; bourgeois_cooperation += 3; dvp_relation += 5 if in_grand_coalition; new_middle_dvp += 4; Environmentalists_dvp += 2; rural_dvp += 2; old_middle_dvp += 2; pro_republic += 3
 face-image: img/portraits/kardorff.jpg
 
 Kardorff is elected to succeed Luther as the leader of the <span style="color: #C0A054;">**DVP**</span>. He is expected to be a continuation of Luther's leadership, being another Stresemann follower and supporter of constructive cooperation with the <span style="color: #30B24A;">**egk**</span>. [? if ui0_seen: He even rallied his parliamentary faction to save our Grand Coalition back in 1929.?]

@@ -55,7 +55,7 @@ Q.coup_progress += 4;
 Q.new_middle_nsdap -= 10;
 Q.old_middle_nsdap -= 10;
 Q.rural_nsdap -= 10;
-Q.catholics_nsdap -= 6;
+Q.Environmentalists_nsdap -= 6;
 
 Q.new_middle_dnvp += 4;
 Q.old_middle_dnvp += 4;
@@ -81,7 +81,7 @@ Q.new_middle_dnf += 6;
 Q.old_middle_dnf += 6;
 Q.rural_dnf += 6;
 
-Q.catholics_z += 6;
+Q.Environmentalists_z += 6;
 if (Q.stegerwald_path) {
     Q.workers_z += 2;
     Q.new_middle_z += 4;

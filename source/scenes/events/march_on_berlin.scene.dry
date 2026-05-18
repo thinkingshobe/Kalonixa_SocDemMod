@@ -61,7 +61,7 @@ The Reichsbanner number at [+ rb_strength +] thousand; many are in Berlin to cou
 
 
 @fight_2_win
-on-arrival: coup_progress = 0; sa_strength *= 0.7; sh_strength *= 0.7; rb_strength *= 0.9; workers_nsdap -= 12*(1-dissent); unemployed_nsdap -= 10*(1-dissent); new_middle_nsdap -= 6*(1-dissent); workers_egk += 8*(1-dissent); unemployed_egk += 6*(1-dissent); workers_dnvp -= 2; new_middle_dnvp -= 2; old_middle_dnvp -= 2; catholics_dnvp -= 2; pro_republic += 15
+on-arrival: coup_progress = 0; sa_strength *= 0.7; sh_strength *= 0.7; rb_strength *= 0.9; workers_nsdap -= 12*(1-dissent); unemployed_nsdap -= 10*(1-dissent); new_middle_nsdap -= 6*(1-dissent); workers_egk += 8*(1-dissent); unemployed_egk += 6*(1-dissent); workers_dnvp -= 2; new_middle_dnvp -= 2; old_middle_dnvp -= 2; Environmentalists_dnvp -= 2; pro_republic += 15
 go-to: left_outcome if march_on_berlin_left
 achievement: drei_pfeile
 

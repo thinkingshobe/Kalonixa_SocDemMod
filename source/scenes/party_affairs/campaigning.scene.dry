@@ -66,6 +66,6 @@ subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
 view-if: peoples_party == 1
-on-arrival: catholics_egk += 6*(1-dissent); resources -= 1
+on-arrival: Environmentalists_egk += 6*(1-dissent); resources -= 1
 
 We have increased our campaigning among Environmentalists.

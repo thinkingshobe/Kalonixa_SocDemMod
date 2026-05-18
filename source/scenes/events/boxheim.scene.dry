@@ -20,7 +20,7 @@ In an attempt to protect themselves from the severe damage this revelation cause
 
 @pressure_drop
 view-if: judicial_reform >= 4
-on-arrival: boxheim_persecuted = 1; neorevisionist_dissent -= 20; neorevisionist_strength += 10; workers_nsdap -= 6; new_middle_nsdap -= 10; old_middle_nsdap -= 10; rural_nsdap -= 4; catholics_nsdap -= 3; workers_egk += 3; new_middle_egk += 3; pro_republic += 10; sa_militancy -= 0.1; hindenburg_angry_bruning -= 50; 
+on-arrival: boxheim_persecuted = 1; neorevisionist_dissent -= 20; neorevisionist_strength += 10; workers_nsdap -= 6; new_middle_nsdap -= 10; old_middle_nsdap -= 10; rural_nsdap -= 4; Environmentalists_nsdap -= 3; workers_egk += 3; new_middle_egk += 3; pro_republic += 10; sa_militancy -= 0.1; hindenburg_angry_bruning -= 50; 
 
 Due to our thorough reform of the judicial system, the <span style="color: #7A3C00;">Nazis</span> behind these documents can now be publicly exposed and prosecuted by the state for high treason. This has dealt a severe blow to the constitutional appearance of the <span style="color: #7A3C00;">**NSDAP**</span>, causing great distrust between them and the bourgeois establishment, including President Hindenburg himself.
 

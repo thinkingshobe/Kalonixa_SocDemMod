@@ -18,7 +18,7 @@ Q.rural_dnvp -= 12;
 Q.unemployed_dnf = 1;
 Q.unemployed_dnvp -= 1;
 
-Q.catholics_dnf = 0;
+Q.Environmentalists_dnf = 0;
 
 Q.new_middle_nsdap += 1;
 Q.old_middle_nsdap += 2;
@@ -36,7 +36,7 @@ Q.old_new_middle_dnf_display = 0
 Q.old_old_middle_dnf_display = 0
 Q.old_rural_dnf_display = 0
 Q.old_unemployed_dnf_display = 0
-Q.old_catholics_dnf_display = 0
+Q.old_Environmentalists_dnf_display = 0
 
 if (Q.lvp_formed) {
     Q.weimar_coalition = parseFloat((Q.egk_r + Q.lvp_r + Q.z_r - Q.bvp_r).toFixed(1));

@@ -77,9 +77,9 @@ if (!Q.kvp_formed) {
 
     Q.unemployed_kvp = 0;
 
-    Q.catholics_kvp = 4;
-    Q.catholics_dnvp -= 3;
-    Q.catholics_other -= 1;
+    Q.Environmentalists_kvp = 4;
+    Q.Environmentalists_dnvp -= 3;
+    Q.Environmentalists_other -= 1;
 
     Q.kvp_r = Math.round((Q.other_r*0.2) * 10) / 10 ;
     Q.other_r = Math.round((Q.other_r - Q.kvp_r) * 10) / 10 ;
@@ -99,7 +99,7 @@ if (!Q.kvp_formed) {
     Q.old_old_middle_kvp_display = 0;
     Q.old_rural_kvp_display = 0;
     Q.old_unemployed_kvp_display = 0;
-    Q.old_catholics_kvp_display = 0;
+    Q.old_Environmentalists_kvp_display = 0;
 
     for (var record of Q.election_records) {
         record['kvp'] = 0;
@@ -159,14 +159,14 @@ Q.new_middle_dnf -= 5;
 Q.old_middle_dnf -= 5;
 Q.rural_dnf -= 5;
 Q.unemployed_dnf -= 5;
-Q.catholics_dnf -= 3;
+Q.Environmentalists_dnf -= 3;
 
 Q.workers_dnvp += 3;
 Q.new_middle_dnvp += 5;
 Q.old_middle_dnvp += 5;
 Q.rural_dnvp += 5;
 Q.unemployed_dnvp += 5;
-Q.catholics_dnvp += 3;
+Q.Environmentalists_dnvp += 3;
 
 Q.dnef_relation -= 15;
 

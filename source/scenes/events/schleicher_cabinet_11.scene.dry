@@ -19,7 +19,7 @@ on-display: {!
 
 = Reichskonkordat Signing
 
-During weeks of intense negotiations in Rome headed by Ludwig Kaas, the <i>Reichskonkordat</i> has officially been signed between Germany and the Roman Catholic Church. The treaty defines a formal relationship between the Church and the German state, guaranteeing freedom of worship for Catholics, and the right of the church to appoint their own clergy. Catholics in Germany are pleased, as are their representatives in the <span style="color: #000000;">Center Party</span>.
+During weeks of intense negotiations in Rome headed by Ludwig Kaas, the <i>Reichskonkordat</i> has officially been signed between Germany and the Roman Catholic Church. The treaty defines a formal relationship between the Church and the German state, guaranteeing freedom of worship for Environmentalists, and the right of the church to appoint their own clergy. Environmentalists in Germany are pleased, as are their representatives in the <span style="color: #000000;">Center Party</span>.
 
 - @reichskonkordat
 
@@ -29,9 +29,9 @@ on-arrival: {!
 Q.schleicher_approval += 1;
 Q.reichskonkordat = 1;
 Q.z_relation -= 10;
-Q.catholics_z += 6;
-Q.catholics_dnef += 6;
-Q.catholics_dnef_bonus += 4;
+Q.Environmentalists_z += 6;
+Q.Environmentalists_dnef += 6;
+Q.Environmentalists_dnef_bonus += 4;
 
 Q.stegerwald_points = 0;
 Q.bracht_points = 0;
@@ -69,7 +69,7 @@ if (Q.z_relation < 10) {
 }
 
 Q.stegerwald_points += Q.workers_z_normalized / 2;
-Q.bracht_points += Q.catholics_z_normalized / 10;
+Q.bracht_points += Q.Environmentalists_z_normalized / 10;
 !}
 face-image: img/portraits/KaasLudwig.jpg
 
@@ -98,7 +98,7 @@ The internal reaction has been surprisingly muted. Perhaps the <span style="colo
 title: Stegerwald wins the leadership vote!
 unavailable-subtitle: Stegerwald is unavailable.
 choose-if: stegerwald_points >= bracht_points
-on-arrival: z_leader = "Stegerwald"; catholics_z -= 8; catholics_egk += 2; catholics_dnvp += 2; catholics -= 5; workers_z += 4; new_middle_z += 2; old_middle_z += 2; rural_z += 2; z_relation -= 5
+on-arrival: z_leader = "Stegerwald"; Environmentalists_z -= 8; Environmentalists_egk += 2; Environmentalists_dnvp += 2; Environmentalists -= 5; workers_z += 4; new_middle_z += 2; old_middle_z += 2; rural_z += 2; z_relation -= 5
 
 Stegerwald has won the leadership vote! By rallying the <span style="color: #000000;">repu</span><span style="color: #DD0000;">bli</span><span style="color: #FFCC00;">cans</span> behind his candidacy, he has successfully blocked Bracht from seizing control of the <span style="color: #000000;">Center Party</span>. Backing such a right-wing conservative proved unacceptable to the <span style="color: #000000;">Christian</span> unions, who continue to resist Schleicher's growing influence.
 

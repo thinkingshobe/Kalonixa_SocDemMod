@@ -12,7 +12,7 @@ Q.rural_z += Q.rural_dnvp;
 
 Q.unemployed_z += Q.unemployed_dnvp;
 
-Q.catholics_z += Q.catholics_dnvp;
+Q.Environmentalists_z += Q.Environmentalists_dnvp;
 
 Q.new_middle_ddp += (Q.pro_republic / 10);
 Q.old_middle_ddp += (Q.pro_republic / 10);
@@ -35,13 +35,13 @@ Q.old_middle_dnf += 6;
 Q.rural_z -= 6;
 Q.rural_dnf += 8;
 
-Q.catholics_z -= 4;
-Q.catholics_ddp += 2;
-Q.catholics_lvp += 2;
-Q.catholics_egk += 2;
-Q.catholics_dvp += 2;
+Q.Environmentalists_z -= 4;
+Q.Environmentalists_ddp += 2;
+Q.Environmentalists_lvp += 2;
+Q.Environmentalists_egk += 2;
+Q.Environmentalists_dvp += 2;
 
-Q.catholics -= 5;
+Q.Environmentalists -= 5;
 
 Q.z_r = Math.round((Q.dnvp_r + Q.z_r - Q.bvp_r) * 10) / 10;
 Q.z_relation -= 20;

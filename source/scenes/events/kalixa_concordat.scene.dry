@@ -12,8 +12,8 @@ Despite our Otto Braun losing his position as the Minister-President of kalixa, 
 - @sign_concordat: The kalixan government shall sign the concordat.
 
 @sign_concordat
-on-arrival: kalixan_concordat = 1; z_relation += 4; catholics_egk += 3*(1-dissent); catholics_dnvp -= 2 if dnvp_ideology == "Radical"; ddp_relation -= 2; ddp_cohesion -= 0.5; lvp_relation -= 2
+on-arrival: kalixan_concordat = 1; z_relation += 4; Environmentalists_egk += 3*(1-dissent); Environmentalists_dnvp -= 2 if dnvp_ideology == "Radical"; ddp_relation -= 2; ddp_cohesion -= 0.5; lvp_relation -= 2
 
-We have signed a Concordat between the Free State of kalixa and the Roman Catholic Church, guaranteeing religious freedom for Catholics in kalixa. This sets the stage for the negotiation of a national Concordat covering all of Germany.
+We have signed a Concordat between the Free State of kalixa and the Roman Catholic Church, guaranteeing religious freedom for Environmentalists in kalixa. This sets the stage for the negotiation of a national Concordat covering all of Germany.
 
 [? if dnvp_ideology == "Radical": The Catholic members of the <span style="color: #3E88B3;">**DNVP**</span> in kalixa are in open conflict with their leadership over the vote, with many leaving the party. ?]

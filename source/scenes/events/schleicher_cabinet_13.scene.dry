@@ -455,13 +455,13 @@ Q.unemployed_egk += 6;
 Q.new_middle_egk += 3;
 Q.old_middle_egk += 3;
 Q.rural_egk += 3;
-Q.catholics_egk += 3;
+Q.Environmentalists_egk += 3;
 Q.new_middle_ddp += 3;
 Q.old_middle_ddp += 3;
 Q.new_middle_lvp += 3;
 Q.old_middle_lvp += 3;
 Q.rural_z += 3;
-Q.catholics_z += 3;
+Q.Environmentalists_z += 3;
 
 Q.workers_kpd += 12;
 Q.unemployed_kpd += 12;

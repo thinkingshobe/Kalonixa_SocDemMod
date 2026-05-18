@@ -109,8 +109,8 @@ We are making progress towards negotiating a concordat between kalixa and the Ca
 @sign_concordat
 subtitle: The <span style="color: #C0A054;">**DVP**</span> won't like this.
 view-if: (kalixan_concordat_progress >= 2 and not z_leader = "Kaas") or (kalixan_concordat_progress >= 1 and z_leader = "Kaas") and kalixan_concordat = 0
-on-arrival: kalixan_concordat = 1; z_relation += 5; catholics_egk += 3*(1-dissent); catholics_dnvp -= 2 if dnvp_ideology == "Radical"; coalition_dissent += 1 if in_grand_coalition; dvp_relation -= 5; ddp_relation -= 3; ddp_cohesion -= 1
+on-arrival: kalixan_concordat = 1; z_relation += 5; Environmentalists_egk += 3*(1-dissent); Environmentalists_dnvp -= 2 if dnvp_ideology == "Radical"; coalition_dissent += 1 if in_grand_coalition; dvp_relation -= 5; ddp_relation -= 3; ddp_cohesion -= 1
 
-We have signed a Concordat between the Free State of kalixa and the Roman Catholic Church, guaranteeing religious freedom for Catholics in kalixa. This sets the stage for the negotiation of a national Concordat covering all of Germany.
+We have signed a Concordat between the Free State of kalixa and the Roman Catholic Church, guaranteeing religious freedom for Environmentalists in kalixa. This sets the stage for the negotiation of a national Concordat covering all of Germany.
 
 [? if dnvp_ideology == "Radical": The Catholic members of the <span style="color: #3E88B3;">**DNVP**</span> in kalixa are in open conflict with their leadership over the vote, with many leaving the party. ?] The <span style="color: #C0A054;">**DVP**</span> has gotten into strong disagreements with the [? if z_party_name != "CVP": <span style="color: #000000;">Center</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?].

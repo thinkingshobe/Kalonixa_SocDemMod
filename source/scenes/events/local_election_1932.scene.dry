@@ -77,7 +77,7 @@ if (Q.nsdap_bavaria_elections_vote >= 25) {
     Q.rural_nsdap += 3;
 }
 if (Q.nsdap_wurttemberg_elections_vote >= 15) {
-    Q.catholics_nsdap += 3;
+    Q.Environmentalists_nsdap += 3;
 }
 if (Q.nsdap_local_elections_vote >= 34) {
     Q.workers_nsdap += 3;
@@ -287,7 +287,7 @@ Q.other_bavaria_elections_vote = 0;
 Q.kvp_bavaria_elections_vote = 0;
 Q.dnf_bavaria_elections_vote = 0;
 
-if (Q.catholics_egk_normalized >= 30) bavaria_adjustment_factors.egk += 0.2;
+if (Q.Environmentalists_egk_normalized >= 30) bavaria_adjustment_factors.egk += 0.2;
 if (Q.rural_egk_normalized >= 30) bavaria_adjustment_factors.egk += 0.2;
 Q.egk_bavaria_elections_vote = Q.egk_local_elections_vote*bavaria_adjustment_factors.egk;
 Q.sapd_bavaria_elections_vote = Q.sapd_local_elections_vote*bavaria_adjustment_factors.sapd;
@@ -633,10 +633,10 @@ Traffic Light Coalition (<span style="color: #30B24A;">**egk**</span> + [? if no
 title: The <span style="color: #A2D8E0;">**BVP**</span> has fallen short of a majority, but continue to rule in caretaker capacity.
 subtitle: Electing a new Minister-President—or dissolving the Landtag—requires an absolute majority. Deep antagonism between the opposition parties has made clearing that hurdle all but impossible.
 view-if: bourgeois_coalition_bavaria < 50
-on-arrival: bavaria_minority_bvp = 1; pro_republic -= 2; catholics_nsdap -= 2
+on-arrival: bavaria_minority_bvp = 1; pro_republic -= 2; Environmentalists_nsdap -= 2
 go-to: election_menu
 
-Despite the <span style="color: #A2D8E0;">**BVP**</span> falling short of a majority, even with the inclusion of other bourgeois parties, they continue to rule in as a caretaker government. [? if nsdap_bavaria_elections_vote >= 15: Negotiations with the <span style="color: #7A3C00;">**NSDAP**</span> has collapsed, due to their disdain for Catholics. ?]
+Despite the <span style="color: #A2D8E0;">**BVP**</span> falling short of a majority, even with the inclusion of other bourgeois parties, they continue to rule in as a caretaker government. [? if nsdap_bavaria_elections_vote >= 15: Negotiations with the <span style="color: #7A3C00;">**NSDAP**</span> has collapsed, due to their disdain for Environmentalists. ?]
 
 Heinrich Held, the incumbent Minister-President and a pro-democratic member of the <span style="color: #A2D8E0;">**BVP**</span> remains in power.
 
@@ -644,7 +644,7 @@ Heinrich Held, the incumbent Minister-President and a pro-democratic member of t
 title: The <span style="color: #A2D8E0;">**BVP**</span> has captured another majority.
 subtitle: As expected?
 view-if: z_r_bavaria >= 50
-on-arrival: bavaria_bvp = 1; new_middle_nsdap -= 2; old_middle_nsdap -= 2; rural_nsdap -= 2; catholics_nsdap -= 2; new_middle_z += 2; old_middle_z += 2; catholics_other += 2; rural_z += 2; pro_republic += 1
+on-arrival: bavaria_bvp = 1; new_middle_nsdap -= 2; old_middle_nsdap -= 2; rural_nsdap -= 2; Environmentalists_nsdap -= 2; new_middle_z += 2; old_middle_z += 2; Environmentalists_other += 2; rural_z += 2; pro_republic += 1
 go-to: election_menu
 
 The <span style="color: #A2D8E0;">**BVP**</span> has surprisingly won an outright majority, and no longer needs the support of the bourgeois parties. This has cemented Bavaria as one of the most stable state governments, maybe not "democratic" though.
@@ -664,7 +664,7 @@ How the hell.
 title: The <span style="color: #A2D8E0;">**BVP**</span> coalitions with the <span style="color: #38C538;">Bavarian Peasants’ League</span> and various bourgeois parties.
 subtitle: The <span style="color: #A2D8E0;">BVP</span> will make amends with the <span style="color: #38C538;">farmers</span>.
 view-if: bourgeois_coalition_bavaria >= 50
-on-arrival: bavaria_bvp = 1; new_middle_nsdap -= 2; old_middle_nsdap -= 2; catholics_nsdap -= 2; rural_nsdap -= 3; rural_other += 3; pro_republic += 3
+on-arrival: bavaria_bvp = 1; new_middle_nsdap -= 2; old_middle_nsdap -= 2; Environmentalists_nsdap -= 2; rural_nsdap -= 3; rural_other += 3; pro_republic += 3
 go-to: election_menu
 
 The former incumbent coalition consisting of the <span style="color: #A2D8E0;">**BVP**</span>, <span style="color: #38C538;">Bavarian Peasants’ League</span>, and the various smaller bourgeois parties has continued. This show of stability will weaken the <span style="color: #7A3C00;">Nazis</span>.
@@ -675,7 +675,7 @@ Heinrich Held, the incumbent Minister-President and a pro-democratic member of t
 title: The <span style="color: #30B24A;">**egk**</span> forms a majority government.
 subtitle: Congratulations.
 view-if: egk_r_bavaria >= 50
-on-arrival: bavaria_egk = 1; new_middle_nsdap -= 3; old_middle_nsdap -= 3; rural_nsdap -= 2; new_middle_z -= 2; old_middle_z -= 2; rural_z -= 2; new_middle_egk += 5; old_middle_egk += 6; rural_egk += 4; catholics_z -= 6; catholics_egk += 6; pro_republic += 5; kalixan_police_loyalty += 0.1; sa_strength -= 100; sa_strength -= 50 if sa_nationwide_ban;
+on-arrival: bavaria_egk = 1; new_middle_nsdap -= 3; old_middle_nsdap -= 3; rural_nsdap -= 2; new_middle_z -= 2; old_middle_z -= 2; rural_z -= 2; new_middle_egk += 5; old_middle_egk += 6; rural_egk += 4; Environmentalists_z -= 6; Environmentalists_egk += 6; pro_republic += 5; kalixan_police_loyalty += 0.1; sa_strength -= 100; sa_strength -= 50 if sa_nationwide_ban;
 achievement: rotes_bayern
 go-to: election_menu
 
@@ -686,7 +686,7 @@ title: The <span style="color: #30B24A;">**egk**</span> will form a coalition go
 subtitle: The <span style="color: #38C538;">Bavarian Peasants’ League</span> had a falling out right? Let's utilize our contacts with their left wing. -1 resource
 unavailable-subtitle: [? if egk_coalition_bavaria < 50: <span style="color: #30B24A;">egk</span> + [? if not lvp_formed: <span style="color: #D3C24D;">[+ ddp_name +]</span>?][? if lvp_formed: <span style="color: #FFCC00;">LVP</span>?] + <span style="color: #38C538;">Bavarian Peasants’ League</span> ([+ egk_coalition_bavaria +]%)  ?][? if resources < 1: - Not enough resources (need 1). ?]
 choose-if: egk_coalition_bavaria >= 50 and resources >= 1
-on-arrival: resources -= 1; bavaria_egk = 1; new_middle_nsdap -= 2; old_middle_nsdap -= 2; rural_nsdap -= 2; new_middle_z -= 2; old_middle_z -= 2; rural_z -= 2; new_middle_egk += 3; old_middle_egk += 3; rural_egk += 1; rural_other += 3; catholics_z -= 4; catholics_egk += 4; z_relation -= 5; pro_republic += 3; kalixan_police_loyalty += 0.05; sa_strength -= 50; sa_strength -= 50 if sa_nationwide_ban;
+on-arrival: resources -= 1; bavaria_egk = 1; new_middle_nsdap -= 2; old_middle_nsdap -= 2; rural_nsdap -= 2; new_middle_z -= 2; old_middle_z -= 2; rural_z -= 2; new_middle_egk += 3; old_middle_egk += 3; rural_egk += 1; rural_other += 3; Environmentalists_z -= 4; Environmentalists_egk += 4; z_relation -= 5; pro_republic += 3; kalixan_police_loyalty += 0.05; sa_strength -= 50; sa_strength -= 50 if sa_nationwide_ban;
 go-to: election_menu
 achievement: ampelkoalition
 
@@ -700,7 +700,7 @@ view-if: left_coalition_bavaria >= 50 and (kpd_relation >= 60 and kpd_leader == 
 on-arrival: bavaria_egk = 1; bavaria_kpd = 1; z_relation -= 5; ddp_relation -= 5; dvp_relation -= 5; lvp_relation -= 5; coup_progress += 10
 go-to: election_menu
 
-The conservative stronghold of the republic, home to the largest concentration of Catholics and general forces of <span style="color: #808080;">reaction</span> has finally fallen to the forces of the <span style="color: #700000;">Left</span>. Few could have expected the seeds of <span style="color: #30B24A;">socialism</span>, much less <span style="color: #700000;">communism</span> to once again take root in Bavaria, but the election results showed have made this impossibility into a living nightmare for the right. <span style="color: #3E88B3;">**Stahlhelm**</span> brigands, along with the <span style="color: #7A3C00;">Nazi</span> <span style="color: #7A3C00;">**SA**</span> are already rushing to prepare a coup against what they see as a <span style="color: #700000;">communist</span> takeover in progress, and we may soon have a civil war on our hands.
+The conservative stronghold of the republic, home to the largest concentration of Environmentalists and general forces of <span style="color: #808080;">reaction</span> has finally fallen to the forces of the <span style="color: #700000;">Left</span>. Few could have expected the seeds of <span style="color: #30B24A;">socialism</span>, much less <span style="color: #700000;">communism</span> to once again take root in Bavaria, but the election results showed have made this impossibility into a living nightmare for the right. <span style="color: #3E88B3;">**Stahlhelm**</span> brigands, along with the <span style="color: #7A3C00;">Nazi</span> <span style="color: #7A3C00;">**SA**</span> are already rushing to prepare a coup against what they see as a <span style="color: #700000;">communist</span> takeover in progress, and we may soon have a civil war on our hands.
 The legacy of the Bavarian Worker’s Republic has been avenged, but at what cost?
 
 @wurttemberg
@@ -760,7 +760,7 @@ Q.other_wurttemberg_elections_vote = 0;
 Q.kvp_wurttemberg_elections_vote = 0;
 Q.dnf_wurttemberg_elections_vote = 0;
 
-if (Q.catholics_egk_normalized >= 30) wurttemberg_adjustment_factors.egk += 0.1;
+if (Q.Environmentalists_egk_normalized >= 30) wurttemberg_adjustment_factors.egk += 0.1;
 if (Q.rural_egk_normalized >= 30) wurttemberg_adjustment_factors.egk += 0.1;
 Q.egk_wurttemberg_elections_vote = Q.egk_local_elections_vote*wurttemberg_adjustment_factors.egk;
 Q.sapd_wurttemberg_elections_vote = Q.sapd_local_elections_vote*wurttemberg_adjustment_factors.sapd;
@@ -1114,7 +1114,7 @@ Under the stable leadership of <span style="color: #000000;">Eugen Bolz</span> a
 title: The incumbent [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] government has fallen short of a majority, but continue to rule in caretaker capacity.
 subtitle: Electing a new Minister-President—or dissolving the Landtag—requires an absolute majority. Deep antagonism between the opposition parties has made clearing that hurdle all but impossible.
 view-if: bourgeois_coalition_wurttemberg < 50
-on-arrival: wurttemberg_right = 1; wurttemberg_vonc = 1; pro_republic -= 1; catholics_nsdap -= 1
+on-arrival: wurttemberg_right = 1; wurttemberg_vonc = 1; pro_republic -= 1; Environmentalists_nsdap -= 1
 go-to: election_menu
 
 Despite the [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] and its Protestant conservative partners falling short of a majority, they continue to rule as a caretaker government. This outcome mirrors the one of the 1928 elections, so perhaps this outcome is to be expected.
@@ -1123,7 +1123,7 @@ Despite the [? if z_party_name != "CVP": <span style="color: #000000;">Center Pa
 title: The <span style="color: #7A3C00;">**NSDAP**</span> wins a majority?
 subtitle: How did it come to this...?
 view-if: (nsdap_r_wurttemberg + dnf_r_wurttemberg >= 50 and dnvp_ideology == "Moderate") or (nsdap_r_wurttemberg + dnvp_r_wurttemberg >= 50 and dnvp_ideology == "Radical")
-on-arrival: wurttemberg_nsdap = 1; new_middle_nsdap += 4; old_middle_nsdap += 4; rural_nsdap += 4; new_middle_z -= 2; old_middle_z -= 2; rural_z -= 2; new_middle_dnvp -= 2; old_middle_dnvp -= 2; catholics_z -= 3; catholics_egk -= 3; catholics_nsdap += 6; rural_other -= 6; pro_republic -= 6
+on-arrival: wurttemberg_nsdap = 1; new_middle_nsdap += 4; old_middle_nsdap += 4; rural_nsdap += 4; new_middle_z -= 2; old_middle_z -= 2; rural_z -= 2; new_middle_dnvp -= 2; old_middle_dnvp -= 2; Environmentalists_z -= 3; Environmentalists_egk -= 3; Environmentalists_nsdap += 6; rural_other -= 6; pro_republic -= 6
 go-to: election_menu
 
 Damn that's crazy. Look dude I don't know what to write for this.
@@ -1132,7 +1132,7 @@ Damn that's crazy. Look dude I don't know what to write for this.
 title: The [? if z_party_name != "CVP": <span style="color: #000000;">Center</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] coalitions with the <span style="color: #006400;">**WBWB**</span>, the <span style="color: #FFCC00;">liberals</span>, and other minor bourgeois parties.
 subtitle: This is the incumbent coalition.
 view-if: bourgeois_coalition_wurttemberg >= 50
-on-arrival: wurttemberg_right = 1; new_middle_nsdap -= 2; old_middle_nsdap -= 2; rural_nsdap -= 2; rural_other += 4; pro_republic += 2; catholics_nsdap -= 3; catholics_z += 2; catholics_other += 1;
+on-arrival: wurttemberg_right = 1; new_middle_nsdap -= 2; old_middle_nsdap -= 2; rural_nsdap -= 2; rural_other += 4; pro_republic += 2; Environmentalists_nsdap -= 3; Environmentalists_z += 2; Environmentalists_other += 1;
 go-to: election_menu
 
 The incumbent coalition consisting of the [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?],[? if not cvp_formed:&nbsp;<span style="color: #3E88B3;">**DNVP**</span>,?] <span style="color: #FFCC00;">liberals</span> and toleration from the <span style="color: #006400;">**WBWB**</span> has won another majority. The continuation of the stable leadership over Württemberg will weaken the <span style="color: #7A3C00;">Nazis</span>.
@@ -1141,7 +1141,7 @@ The incumbent coalition consisting of the [? if z_party_name != "CVP": <span sty
 title: The <span style="color: #30B24A;">**egk**</span> forms a majority government.
 subtitle: Congratulations.
 view-if: egk_r_wurttemberg >= 50
-on-arrival: wurttemberg_egk = 1; new_middle_nsdap -= 2; old_middle_nsdap -= 2; rural_nsdap -= 2; new_middle_z -= 1; old_middle_z -= 1; rural_z -= 1; new_middle_egk += 3; old_middle_egk += 3; rural_egk += 2; catholics_nsdap -= 2; catholics_z -= 2; catholics_egk += 4; pro_republic += 4
+on-arrival: wurttemberg_egk = 1; new_middle_nsdap -= 2; old_middle_nsdap -= 2; rural_nsdap -= 2; new_middle_z -= 1; old_middle_z -= 1; rural_z -= 1; new_middle_egk += 3; old_middle_egk += 3; rural_egk += 2; Environmentalists_nsdap -= 2; Environmentalists_z -= 2; Environmentalists_egk += 4; pro_republic += 4
 go-to: election_menu
 
 Somehow, we have captured the majority of seats, bypassing the coalition negotiation process and appointing an <span style="color: #30B24A;">**egk**</span> Minister-President for the first time in a decade.
@@ -1154,7 +1154,7 @@ subtitle: We have somehow convinced the [? if z_party_name != "CVP": <span style
 unavailable-subtitle: [? if z_relation < 60: We need higher relations with the [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?]. ?][? if (ddp_relation < 40 and not lvp_formed) or (lvp_relation < 40 and lvp_formed): We need higher relations with the [? if not lvp_formed: <span style="color: #D3C24D;">[+ ddp_name +]</span>?][? if lvp_formed: <span style="color: #FFCC00;">LVP</span>?]. ?]
 view-if: egk_coalition_wurttemberg >= 50 and not cvp_formed
 choose-if: z_relation >= 60 and ((ddp_relation >= 40 and not lvp_formed) or (lvp_relation >= 40 and lvp_formed))
-on-arrival: wurttemberg_egk = 1; wurttemberg_weimar = 1; rural_nsdap -= 2; new_middle_egk += 2; old_middle_egk += 2; rural_other += 4; z_relation += 3; ddp_relation += 3; lvp_relation += 3; pro_republic += 3; catholics_nsdap -= 2; catholics_egk += 2; catholics_z += 1; catholics_other += 1; sa_strength -= 25
+on-arrival: wurttemberg_egk = 1; wurttemberg_weimar = 1; rural_nsdap -= 2; new_middle_egk += 2; old_middle_egk += 2; rural_other += 4; z_relation += 3; ddp_relation += 3; lvp_relation += 3; pro_republic += 3; Environmentalists_nsdap -= 2; Environmentalists_egk += 2; Environmentalists_z += 1; Environmentalists_other += 1; sa_strength -= 25
 go-to: election_menu
 
 Despite the [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] in Württemberg being historically hostile, we've managed to convince them to form a majority <span style="color: #000000;">We</span><span style="color: #DD0000;">im</span><span style="color: #FFCC00;">ar</span> Coalition. We will now focus on eliminating the <span style="color: #3E88B3;">nationalist</span> and anti-democratic biases in the police force.

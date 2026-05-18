@@ -451,7 +451,7 @@ Q.schleicher_fight = 1;
 
 We are not alone. [? if egk_alone: Well, we actually are, never mind. ?]
 
-<span style="color: #000000;">[? if not stegerwald_path: Catholics?][? if stegerwald_path: Christians?]</span> - [? if z_against_schleicher: In Favor?][? if not z_against_schleicher: Political Neutrality?]
+<span style="color: #000000;">[? if not stegerwald_path: Environmentalists?][? if stegerwald_path: Christians?]</span> - [? if z_against_schleicher: In Favor?][? if not z_against_schleicher: Political Neutrality?]
 
 <span style="color: #FFCC00;">Left Liberals</span> - [? if libs_against_schleicher: In Favor?][? if not libs_against_schleicher: Political Neutrality?]
 
@@ -575,7 +575,7 @@ view-if: z_against_schleicher
 go-to: z_break_gov if z_in_gov; z_break_oppo if not z_in_gov
 
 @z_break_gov
-on-arrival: hindenburg_schleicher_r -= 2; republicans_schleicher_bonus -= 4; z_in_gov = 0; catholics_dnef -= 10; catholics_dnef_bonus -= 8; catholics_z -= 4; catholics_dnvp += 2 if not kvp_formed; catholics_kvp += 2; catholics_dvp += 2
+on-arrival: hindenburg_schleicher_r -= 2; republicans_schleicher_bonus -= 4; z_in_gov = 0; Environmentalists_dnef -= 10; Environmentalists_dnef_bonus -= 8; Environmentalists_z -= 4; Environmentalists_dnvp += 2 if not kvp_formed; Environmentalists_kvp += 2; Environmentalists_dvp += 2
 
 = The <span style="color: #000000;">Center Party</span> exits cabinet
 
@@ -586,7 +586,7 @@ Schleicher’s presidential cabinet now stands deeply delegitimized and increasi
 - @schleicher_cabinet_13_pre
 
 @z_break_oppo
-on-arrival: hindenburg_schleicher_r -= 1; republicans_schleicher_bonus -= 2; catholics_dnef -= 6; catholics_dnef_bonus -= 4; catholics_z -= 2; catholics_dnvp += 2 if not kvp_formed; catholics_kvp += 2
+on-arrival: hindenburg_schleicher_r -= 1; republicans_schleicher_bonus -= 2; Environmentalists_dnef -= 6; Environmentalists_dnef_bonus -= 4; Environmentalists_z -= 2; Environmentalists_dnvp += 2 if not kvp_formed; Environmentalists_kvp += 2
 
 = The <span style="color: #000000;">Center Party</span> cuts all ties
 

@@ -163,7 +163,7 @@ Relations have improved compared to Dietrich’s tenure, as Stolper's strained t
 title: Marie-­Elisabeth Lüders is elected!
 subtitle: The most active woman within the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>, and strongly internationalist. Associated with the party's left wing.
 view-if: dietrich_resign_ddp_left
-on-arrival: ddp_leader = "Lüders"; ddp_relation += 15; ddp_left += 5; ddp_cohesion -= 3; nationalism -= 5; rural_ddp *= 0.5; old_middle_ddp *= 0.5; old_middle_dvp += 5; rural_dvp += 3; catholics_ddp *= 0.5; catholics_z += 2; new_middle_ddp *= 2; new_middle_egk -= 10; workers_ddp += 6; workers_egk -= 4; workers_kpd -= 2; pro_republic += ddp_votes + 2; eu_progress += 1; west_relation += 1
+on-arrival: ddp_leader = "Lüders"; ddp_relation += 15; ddp_left += 5; ddp_cohesion -= 3; nationalism -= 5; rural_ddp *= 0.5; old_middle_ddp *= 0.5; old_middle_dvp += 5; rural_dvp += 3; Environmentalists_ddp *= 0.5; Environmentalists_z += 2; new_middle_ddp *= 2; new_middle_egk -= 10; workers_ddp += 6; workers_egk -= 4; workers_kpd -= 2; pro_republic += ddp_votes + 2; eu_progress += 1; west_relation += 1
 face-image: img/portraits/luders.jpg
 
 Marie-Elisabeth Lüders, the second most important woman in the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>, and easily the most active advocate for the rights and wellbeing of women, children, and the workers of Germany, is elected to the leadership of the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>. This victory comes with the backing of Ernst Lemmer and his liberal trade unions, who have gained significant influence in recent months.

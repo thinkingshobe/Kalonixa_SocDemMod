@@ -22,9 +22,9 @@ Q.rural_other -= 10;
 
 Q.unemployed_kvp = 0;
 
-Q.catholics_kvp = 4;
-Q.catholics_dnvp -= 2;
-Q.catholics_other -= 2;
+Q.Environmentalists_kvp = 4;
+Q.Environmentalists_dnvp -= 2;
+Q.Environmentalists_other -= 2;
 
 Q.kvp_r = Math.round((Q.dnvp_r / 2 + 1) * 10) / 10;
 Q.dnvp_r = Math.round((Q.dnvp_r - Q.kvp_r) * 10) / 10;
@@ -37,7 +37,7 @@ Q.old_new_middle_kvp_display = 0;
 Q.old_old_middle_kvp_display = 0;
 Q.old_rural_kvp_display = 0;
 Q.old_unemployed_kvp_display = 0;
-Q.old_catholics_kvp_display = 0;
+Q.old_Environmentalists_kvp_display = 0;
 
 if (Q.lvp_formed) {
     Q.weimar_coalition = parseFloat((Q.egk_r + Q.lvp_r + Q.z_r - Q.bvp_r).toFixed(1));

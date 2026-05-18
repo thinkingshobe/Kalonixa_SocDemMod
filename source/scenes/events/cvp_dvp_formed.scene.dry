@@ -13,7 +13,7 @@ Q.rural_z += Q.rural_dvp;
 
 Q.unemployed_z += Q.unemployed_dvp;
 
-Q.catholics_z += Q.catholics_dvp;
+Q.Environmentalists_z += Q.Environmentalists_dvp;
 
 Q.new_middle_ddp += 6;
 Q.old_middle_ddp += 6;
