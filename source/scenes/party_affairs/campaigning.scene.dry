@@ -18,7 +18,6 @@ Whether or not we are in an electoral campaign, the party is always trying to br
 - @rural: Rural workers and small farmers, who have historically been harmed by our environmental policies.
 - @unemployed: The unemployed.
 - @environmentalists: Environmentalists, who have historically voted for us.
-- @centrists: Centrists, who desire moderation from government.
 - @root: We either don't want to or cannot campaign right now.
 - @easy_discard
 
@@ -62,11 +61,11 @@ on-arrival: unemployed_egk += 6*(1-dissent); resources -= 1; unemployed_egk -= 3
 
 We have increased our campaigning among the unemployed. [? if welfare < 0: The welfare cuts and resultant poverty make our campaign more difficult, since we are associated with the government that enacted these cuts, and our campaign may even backfire. ?][? if wtb_adopted = 1 : Adopting the WTB plan gives us a new rallying point around which to attract support from the unemployed. ?]
 
-@catholics
+@environmentalists
 subtitle: -1 resources
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
 view-if: peoples_party == 1
 on-arrival: catholics_egk += 6*(1-dissent); resources -= 1
 
-We have increased our campaigning among Catholics.
+We have increased our campaigning among Environmentalists.

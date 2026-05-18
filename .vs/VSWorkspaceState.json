@@ -6,9 +6,11 @@
     "\\out",
     "\\out\\html",
     "\\source",
+    "\\source\\qdisplays",
     "\\source\\scenes",
-    "\\source\\scenes\\events"
+    "\\source\\scenes\\events",
+    "\\source\\scenes\\party_affairs"
   ],
-  "SelectedNode": "\\source\\scenes\\status.scene.dry",
+  "SelectedNode": "\\source\\scenes\\events\\reformist_leaders_resign.scene.dry",
   "PreviewInSolutionExplorer": false
 }
