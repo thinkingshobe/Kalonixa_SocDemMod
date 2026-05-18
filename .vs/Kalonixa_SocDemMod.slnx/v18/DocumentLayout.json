@@ -235,8 +235,7 @@
               "RelativeToolTip": "source\\scenes\\status.scene.dry",
               "ViewState": "AgIAAFIAAAAAAAAAAAAqwF0AAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-05-14T16:25:10.795Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-14T16:25:10.795Z"
             },
             {
               "$type": "Document",
@@ -284,8 +283,7 @@
               "RelativeToolTip": "out\\html\\game.js",
               "ViewState": "AgIAALEAAAAAAAAAAAAgwMcAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-05-15T20:27:15.398Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-15T20:27:15.398Z"
             },
             {
               "$type": "Document",
@@ -297,8 +295,7 @@
               "RelativeToolTip": "out\\html\\game.css",
               "ViewState": "AgIAAMwCAAAAAAAAAAAAAOYCAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-05-15T20:28:49.391Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-15T20:28:49.391Z"
             },
             {
               "$type": "Document",
@@ -310,8 +307,7 @@
               "RelativeToolTip": "out\\html\\d3-parliament.js",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-05-15T20:30:01.652Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-15T20:30:01.652Z"
             },
             {
               "$type": "Document",
@@ -323,8 +319,7 @@
               "RelativeToolTip": "out\\html\\d3-linegraph.js",
               "ViewState": "AgIAAL8AAAAAAAAAAAAAwBkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-05-18T19:22:14.663Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-18T19:22:14.663Z"
             },
             {
               "$type": "Document",
@@ -336,8 +331,7 @@
               "RelativeToolTip": "out\\html\\.jshintrc",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-05-18T17:14:52.54Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-18T17:14:52.54Z"
             },
             {
               "$type": "Document",
@@ -349,8 +343,7 @@
               "RelativeToolTip": "out\\html\\d3.v7.min.js",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-05-18T17:14:50.255Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-18T17:14:50.255Z"
             },
             {
               "$type": "Document",
@@ -360,7 +353,7 @@
               "RelativeDocumentMoniker": ".github\\workflows\\build.yaml",
               "ToolTip": "C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\.github\\workflows\\build.yaml",
               "RelativeToolTip": ".github\\workflows\\build.yaml",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAAC0AAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACYAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
               "WhenOpened": "2026-04-27T23:12:28.795Z",
               "EditorCaption": ""
