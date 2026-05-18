@@ -33,7 +33,7 @@ if (Q.dvp_leader == "Luther") {
 if (Q.pro_republic >= 50) {
     Q.lvp_formation_points += 1;
 }
-if (Q.spd_votes >= 32) {
+if (Q.egk_votes >= 32) {
     Q.lvp_formation_points += 2;
 }
 !}

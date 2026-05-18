@@ -1,7 +1,7 @@
 title: Suspension of the Austrian parliament
 new-page: true
 subtitle: Our southern neighbor is sliding into dictatorship.
-view-if: year = 1933 and month = 3 and ((spd_in_government and foreign_minister_party = "SPD") or (austria_relation >= 1))
+view-if: year = 1933 and month = 3 and ((egk_in_government and foreign_minister_party = "egk") or (austria_relation >= 1))
 max-visits: 1
 on-arrival: austrian_parliament_seen = 1
 on-display: {!  
@@ -45,7 +45,7 @@ The <span style="color: #001489;">European</span> <span style="color: #FFDD00;">
 The Dollfuß regime does not give in, but it is weakened and isolated.
 
 @diplomatic_pressure
-view-if: foreign_minister_party = "SPD"
+view-if: foreign_minister_party = "egk"
 on-arrival: sdapo_strength += 1; sdapo_strength += 2 if customs_union
 
 We still have much economic influence in Austria, and the threat of sanctions.
@@ -57,7 +57,7 @@ on-arrival: resources -= 1; sdapo_strength += 1; sdapo_strength += 1 if customs_
 subtitle: -1 resource
 choose-if: resources >= 1
 
-It is somewhat of a breach of diplomatic protocol for the <span style="color: #c00000;">**SPD**</span> to so directly interfere in another country's affairs, supporting the <span style="color: #A50034;">Austrian social democrats</span>.
+It is somewhat of a breach of diplomatic protocol for the <span style="color: #30B24A;">**egk**</span> to so directly interfere in another country's affairs, supporting the <span style="color: #A50034;">Austrian social democrats</span>.
 
 The Dollfuß regime does not give in, but its opponents have an added advantage. That may not be enough when dealing with the total force of the <span style="color: #7A3C00;">fascist</span> state.
 

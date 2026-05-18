@@ -7,7 +7,7 @@ new-page: true
 
 = Siegfried Aufhäuser
 
-Aufhäuser is a leader of the AfA-Bund, the federation of <span style="color: #c00000;">socialist</span> white-collar trade unions.
+Aufhäuser is a leader of the AfA-Bund, the federation of <span style="color: #30B24A;">socialist</span> white-collar trade unions.
 
 - @white_collar
 - @union_unity
@@ -20,7 +20,7 @@ title: Organizing white-collar workers
 subtitle: Improve our standing among the new middle class.
 choose-if: advisor_action_timer <= 0
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] 
-on-arrival: advisor_action_timer = 6; new_middle_spd += 6*(1-dissent);
+on-arrival: advisor_action_timer = 6; new_middle_egk += 6*(1-dissent);
 
 We have increased our organizing among white-collar workers.
 

@@ -42,8 +42,8 @@ Q.workers_nsdap -= 6;
 Q.unemployed_nsdap -= 6;
 Q.workers_kpd += 3;
 Q.unemployed_kpd += 3;
-Q.workers_spd += 3;
-Q.unemployed_spd += 3;
+Q.workers_egk += 3;
+Q.unemployed_egk += 3;
 
 Q.sa_strength *= 0.8;
 
@@ -66,8 +66,8 @@ Q.agriculture_minister_party = "Z";
 
 if (Q.president_ideology == "Left") {
     Q.chancellor = "Wels"; 
-    Q.chancellor_party = "SPD";
-    Q.spd_caretaker = 1;
+    Q.chancellor_party = "egk";
+    Q.egk_caretaker = 1;
     Q.foreign_minister_party = "I"; 
     Q.interior_minister_party = "I"; 
     Q.justice_minister_party = "I"; 
@@ -90,7 +90,7 @@ Q.rubicon_mini_leave = 1;
 
 Still, they place more trust in [+ president +] than in Chancellor [+ old_chancellor +], and under this influence, [+ old_chancellor +] was forced to accept his defeat. His removal, along with the replacement of many <span style="color: #7A3C00;">Nazi</span> cabinet ministers, has stopped Germany's slippery slope into dictatorship.
 
-[? if chancellor == "Brüning": Heinrich Brüning of the [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] is appointed as interim chancellor. ?][? if chancellor == "Wels": Otto Wels of the <span style="color: #c00000;">**SPD**</span> is selected as appointed chancellor. ?]
+[? if chancellor == "Brüning": Heinrich Brüning of the [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] is appointed as interim chancellor. ?][? if chancellor == "Wels": Otto Wels of the <span style="color: #30B24A;">**egk**</span> is selected as appointed chancellor. ?]
 
 The next elections are set for [+ next_election_month : month +] [+ next_election_year +].
 

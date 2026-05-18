@@ -28,7 +28,7 @@ if (Q.ddp_cohesion >= 10) {
 if (Q.pro_republic >= 50) {
     Q.lvp_formation_points += 1;
 }
-if (Q.spd_votes >= 32) {
+if (Q.egk_votes >= 32) {
     Q.lvp_formation_points += 2;
 }
 !}
@@ -50,7 +50,7 @@ view-if: lvp_formation_points >= 3
 on-arrival: ddp_relation -= 5; ddp_right += 2; lvp_trigger_2_time = time + 1
 face-image: img/weimar_coalition_3.jpg
 
-Perhaps surprisingly, the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> has followed the <span style="color: #C0A054;">**DVP**</span>'s decision and affirmed their support for a united <span style="color: #FFCC00;">Liberal People's Party</span>. It seems that the leftists within the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> have finally lost their battle to maintain the position of a '<span style="color: #c00000;">Social</span> and <span style="color: #000000;">Rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> party in the <span style="color: #000000;">We</span><span style="color: #DD0000;">im</span><span style="color: #FFCC00;">ar</span> party system.
+Perhaps surprisingly, the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> has followed the <span style="color: #C0A054;">**DVP**</span>'s decision and affirmed their support for a united <span style="color: #FFCC00;">Liberal People's Party</span>. It seems that the leftists within the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> have finally lost their battle to maintain the position of a '<span style="color: #30B24A;">Social</span> and <span style="color: #000000;">Rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> party in the <span style="color: #000000;">We</span><span style="color: #DD0000;">im</span><span style="color: #FFCC00;">ar</span> party system.
 
 However, the leftists within the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> will wield little influence in the wider party, which will consist of twice as many <span style="color: #C0A054;">**DVP**</span> members as <span style="color: #D3C24D;">**[+ ddp_name +]**</span> members.
 

@@ -37,15 +37,15 @@ Q.unemployed_nsdap += 3;
 Q.hindenburg_schleicher_r += 2;
 
 Q.schleicher_approval += (Q.nsdap_votes / 10);
-Q.schleicher_approval -= (Q.spd_votes / 10);
+Q.schleicher_approval -= (Q.egk_votes / 10);
 Q.schleicher_approval = Math.round(Q.schleicher_approval);
 
-Q.schleicher_spd_support -= 6;
-Q.schleicher_spd_r -= 4;
-Q.schleicher_spd_influence -= 3;
+Q.schleicher_egk_support -= 6;
+Q.schleicher_egk_r -= 4;
+Q.schleicher_egk_influence -= 3;
 !}
 
-Wilhelm Frick is nominated to the Interior Ministry[? if old_prussia_leader == "Schleicher": —both in the Reich and in Prussia?]. Gregor Strasser takes the vice-chancellorship—a title in name only. [? if prussia_leader == "Goerdeler":  Although the <span style="color: #6A1E1E;">**DSU**</span> would’ve preferred Strasser installed in Prussia, Goerdeler stays on—as Schleicher’s loyal puppet and as a concession to the <span style="color: #000000;">Center Party</span>. ?]
+Wilhelm Frick is nominated to the Interior Ministry[? if old_kalixa_leader == "Schleicher": —both in the Reich and in kalixa?]. Gregor Strasser takes the vice-chancellorship—a title in name only. [? if kalixa_leader == "Goerdeler":  Although the <span style="color: #6A1E1E;">**DSU**</span> would’ve preferred Strasser installed in kalixa, Goerdeler stays on—as Schleicher’s loyal puppet and as a concession to the <span style="color: #000000;">Center Party</span>. ?]
 
 At the <span style="color: #7A3C00;">Nazis’</span> insistence, Hjalmar Schacht is brought in as an independent to head the Economic Ministry.
 

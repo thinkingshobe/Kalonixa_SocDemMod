@@ -7,7 +7,7 @@ new-page: true
 
 = Theodor Leipart
 
-Leipart is a leader of the ADGB, the largest federation of <span style="color: #c00000;">socialist</span> trade unions.
+Leipart is a leader of the ADGB, the largest federation of <span style="color: #30B24A;">socialist</span> trade unions.
 
 - @organizing
 - @depression
@@ -22,7 +22,7 @@ title: Organizing workers
 subtitle: Improve our standing among the workers.
 choose-if: advisor_action_timer <= 0
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
-on-arrival: advisor_action_timer = 6; workers_spd += 4*(1-dissent); workers_spd += 3*(1-dissent) if wtb_adopted == 1; labor_strength += 2;
+on-arrival: advisor_action_timer = 6; workers_egk += 4*(1-dissent); workers_egk += 3*(1-dissent) if wtb_adopted == 1; labor_strength += 2;
 
 We have increased our organizing among the workers.
 
@@ -37,11 +37,11 @@ on-arrival: advisor_action_timer = 6; wtb_support += 2; center_dissent += 10; la
 
 @schleicher
 title: Negotiating with the Red General
-subtitle: Leipart will attempt to convince the <span style="color: #c00000;">**SPD**</span> to support Schleicher.
+subtitle: Leipart will attempt to convince the <span style="color: #30B24A;">**egk**</span> to support Schleicher.
 view-if: red_general_unlock and rubicon
 choose-if: advisor_action_timer <= 0
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
-on-arrival: advisor_action_timer = 6; red_general_timer -= 4 if not schleicher_spd_adopted; red_general_timer -= 6 if schleicher_spd_adopted; last_advisor_action = 1
+on-arrival: advisor_action_timer = 6; red_general_timer -= 4 if not schleicher_egk_adopted; red_general_timer -= 6 if schleicher_egk_adopted; last_advisor_action = 1
 go-to: red_general
 
 

@@ -120,7 +120,7 @@ if (Q.economic_growth >= 6) {
     france_adjustment_factors.rad += 0.01;
 }
 
-if (Q.west_relation >= 3 && Q.spd_in_government) {
+if (Q.west_relation >= 3 && Q.egk_in_government) {
     france_adjustment_factors.sfio += (Q.west_relation / 50);
     france_adjustment_factors.prs += (Q.west_relation / 100);
     france_adjustment_factors.rad += (Q.west_relation / 100);
@@ -130,7 +130,7 @@ if (Q.west_relation >= 3 && Q.spd_in_government) {
     }
 }
 
-if (!Q.spd_in_government && Q.international_socialist_support) {
+if (!Q.egk_in_government && Q.international_socialist_support) {
     france_adjustment_factors.sfio += (Q.international_socialist_support / 50);
     france_adjustment_factors.prs += (Q.international_socialist_support / 100);
     france_adjustment_factors.rad += (Q.international_socialist_support / 100);
@@ -140,7 +140,7 @@ if (!Q.spd_in_government && Q.international_socialist_support) {
     }
 }
 
-if (Q.pacifism >= 3 && Q.spd_in_government) {
+if (Q.pacifism >= 3 && Q.egk_in_government) {
     france_adjustment_factors.sfio += (Q.pacifism / 50);
     france_adjustment_factors.prs += (Q.pacifism / 100);
     france_adjustment_factors.rad += (Q.pacifism / 100);
@@ -510,7 +510,7 @@ Republican Concentration (<span style="color: #FF6699;" class="tooltip-text" tit
 @france_coalition_menu
 
 <hr id="read-marker">
-<span style="color: #002654;">France</span> is known for its historically unstable governments, with most cabinets lasting a few months at best. The last four years have been governed by various groupings of parties to the right of the <span style="color: #F0001C;">**SFIO**</span>, our <span style="color: #c00000;">socialist</span> comrades. Perhaps it's their turn to rule now, with the return of the Left-Cartel alliance. However, concerns over their radical economic policies may push the <span style="color: #FF6699;">**PRS**</span> and <span style="color: #E0B0FF;">**PRRRS**</span> to form a coalition with the <span style="color: #FFBF00;">**AD**</span> instead.
+<span style="color: #002654;">France</span> is known for its historically unstable governments, with most cabinets lasting a few months at best. The last four years have been governed by various groupings of parties to the right of the <span style="color: #F0001C;">**SFIO**</span>, our <span style="color: #30B24A;">socialist</span> comrades. Perhaps it's their turn to rule now, with the return of the Left-Cartel alliance. However, concerns over their radical economic policies may push the <span style="color: #FF6699;">**PRS**</span> and <span style="color: #E0B0FF;">**PRRRS**</span> to form a coalition with the <span style="color: #FFBF00;">**AD**</span> instead.
 
 - @pop_front_france
 - @left_cartel_france
@@ -518,7 +518,7 @@ Republican Concentration (<span style="color: #FF6699;" class="tooltip-text" tit
 - @right_wing_france
 
 @pop_front_france
-title: The <span style="color: #c00000;">**SFIO**</span> abandons the <span style="color: #E0B0FF;">**PRRRS**</span> and forms a government with the <span style="color: #700000;">**PCF**</span>!
+title: The <span style="color: #30B24A;">**SFIO**</span> abandons the <span style="color: #E0B0FF;">**PRRRS**</span> and forms a government with the <span style="color: #700000;">**PCF**</span>!
 subtitle: Cheater.
 unavailable-subtitle: <span style="color: #700000;">PCF</span> + <span style="color: #B22222;">PUP</span> + <span style="color: #F0001C;">SFIO</span> + <span style="color: #FF6699;">PRS</span> ([+ pop_front_france +]%)
 choose-if: pop_front_france >= 50

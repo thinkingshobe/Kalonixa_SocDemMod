@@ -26,7 +26,7 @@ subtitle: A two-thirds majority in the Reichstag is required to succeed.
 on-arrival: {!
 Q.impeachment_votes = 0;
 
-Q.impeachment_votes += Q.spd_r;
+Q.impeachment_votes += Q.egk_r;
 Q.impeachment_votes += Q.kpd_r;
 if (Q.sapd_r) Q.impeachment_votes += Q.sapd_r;
 if (!Q.dstp_maintained && !Q.lvp_formed) {
@@ -56,7 +56,7 @@ Q.impeachment_votes = parseFloat(Q.impeachment_votes.toFixed(1));
 !}
 max-visits: 1
 
-We are able to gather the support of [+ spd_r + kpd_r + sapd_r +]% of the Reichstag, with all <span style="color: #c00000;">**SPD**</span>, <span style="color: #700000;">**KPD**</span>[? if sapd_formed:&nbsp;and <span style="color: #9B0000;">**SAPD**</span>?] deputies expected to vote in favor.
+We are able to gather the support of [+ egk_r + kpd_r + sapd_r +]% of the Reichstag, with all <span style="color: #30B24A;">**egk**</span>, <span style="color: #700000;">**KPD**</span>[? if sapd_formed:&nbsp;and <span style="color: #9B0000;">**SAPD**</span>?] deputies expected to vote in favor.
 
 [? if impeachment_ddp: The <span style="color: #D3C24D;">**[+ ddp_name +]**</span> has been one of the only bourgeois parties standing up for the <span style="color: #000000;">We</span><span style="color: #DD0000;">im</span><span style="color: #FFCC00;">ar</span> Republic and the constitution the party's founders drafted. We are expected to see their deputies vote with us. ?][? if not impeachment_ddp and not lvp_formed: Unfortunately, the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> has strayed too far from its former <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> ideals, and now sees support for Hindenburg as a hard but necessary choice in the national interest. ?]
 
@@ -68,7 +68,7 @@ We are able to gather the support of [+ spd_r + kpd_r + sapd_r +]% of the Reichs
 
 [? if impeachment_bvp: Even the <span style="color: #A2D8E0;">**BVP**</span>—once deeply loyal to Hindenburg—has grown disillusioned with his anti-constitutionalist and erratic behavior, and now supports our effort. ?][? if not impeachment_bvp: The <span style="color: #A2D8E0;">**BVP**</span> has, as expected, remained loyal to President Hindenburg, despite their reported discontent over his anti-constitutional conduct. ?]
 
-The right-wing parties and <span style="color: #3E88B3;">nationalists</span> remain Hindenburg’s most loyal supporters. Even Hugenberg recognizes the danger of a potential <span style="color: #c00000;">socialist</span> president should Hindenburg be removed from office.
+The right-wing parties and <span style="color: #3E88B3;">nationalists</span> remain Hindenburg’s most loyal supporters. Even Hugenberg recognizes the danger of a potential <span style="color: #30B24A;">socialist</span> president should Hindenburg be removed from office.
 
 The <span style="color: #7A3C00;">**NSDAP**</span>[? if nvf_exist:&nbsp;and <span style="color: #142e20;">**NVF**</span>?] will break with the <span style="color: #6A1E1E;">**DSU**</span> on the vote, and vote to impeach the president that has impeded their progress over and over again.
 
@@ -180,6 +180,6 @@ subtitle: The German parliamentary system desperately needs legitimacy. Forcing 
 choose-if: reformist_strength + social_patriot_strength >= left_strength + center_strength
 unavailable-subtitle: Our parliamentary delegation won't listen to us. Again.
 
-Hindenburg is furious at what he sees as Treviranus’s betrayal—that he would even consider working with the <span style="color: #c00000;">socialists</span>. After much deliberation, the President moves decisively: Treviranus is sacked, and a new successor is chosen under Papen’s influence.
+Hindenburg is furious at what he sees as Treviranus’s betrayal—that he would even consider working with the <span style="color: #30B24A;">socialists</span>. After much deliberation, the President moves decisively: Treviranus is sacked, and a new successor is chosen under Papen’s influence.
 
 - @schizo

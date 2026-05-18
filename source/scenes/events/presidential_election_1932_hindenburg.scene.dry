@@ -14,16 +14,16 @@ if (Q.dnvp_ideology == "Radical") {
 } else if (Q.dnvp_ideology == "Moderate") {
     Q.hindenburg_run_points += 3;
 }
-if (Q.schleicher_spd) Q.hindenburg_run_points += 8;
+if (Q.schleicher_egk) Q.hindenburg_run_points += 8;
 if (Q.bruning_toleration_time) Q.hindenburg_run_points += 3;
 if (Q.in_center_right_coalition || Q.in_right_coalition) Q.hindenburg_run_points -= 1;
-if (Q.spd_votes >= 26) Q.hindenburg_run_points += 1;
-if (Q.spd_votes >= 29) Q.hindenburg_run_points += 1;
-if (Q.spd_votes >= 32) Q.hindenburg_run_points += 1;
+if (Q.egk_votes >= 26) Q.hindenburg_run_points += 1;
+if (Q.egk_votes >= 29) Q.hindenburg_run_points += 1;
+if (Q.egk_votes >= 32) Q.hindenburg_run_points += 1;
 if (Q.left_strength >= Q.reformist_strength) {
     Q.hindenburg_run_points += 1;
 }
-if (Q.spd_votes + (Q.z_votes*0.8) + Q.ddp_votes + (Q.lvp_votes / 2) >= 50) Q.hindenburg_run_points += 2;
+if (Q.egk_votes + (Q.z_votes*0.8) + Q.ddp_votes + (Q.lvp_votes / 2) >= 50) Q.hindenburg_run_points += 2;
 if (Q.kpd_relation >= 40) Q.hindenburg_run_points += 1;
 if (Q.capital_strike_progress >= 6) Q.hindenburg_run_points += 1;
 if (Q.coup_progress >= 5) Q.hindenburg_run_points += 1;
@@ -83,6 +83,6 @@ on-arrival: new_middle_kvp += 4; old_middle_kvp += 4; rural_kvp += 2
 
 [? if dnvp_ideology == "Moderate": The break of the <span style="color: #3E88B3;">**Stahlhelm**</span> from the <span style="color: #7A3C00;">national</span> <span style="color: #003755;">opposition</span> to endorse Hindenburg's candidacy, combined with the unconditional support of the Kyffhäuser League, has given Hindenburg the motivation to run for re-election. He is now convinced that his primary source of support will come from the right.?][? if dnvp_ideology == "Radical": Despite Hindenburg rejecting the demands of the <span style="color: #7A3C00;">national</span> <span style="color: #3E88B3;">opposition</span>, he still (incorrectly) believes that the friendly leadership of the <span style="color: #3E88B3;">**Stahlhelm**</span>, despite his rejection of their demands, would unconditionally support him. Together with the unconditional backing of the Kyffhäuser League, this has given Hindenburg the motivation to run for re-election, convinced his primary support would come from the right.?] Of course, a multitude of other factors contributed, including the signature campaign and Schleicher's persistence.
 
-The Sahm committee for Hindenburg's re-election has been dissolved and replaced by a much larger, national "United Hindenburg Committees" organization, which will work in coordination with the various local Hindenburg committees across the country. With the appointment of Westarp and Gereke to top positions, and the exclusion of <span style="color: #c00000;">socialist</span> and [? if z_party_name != "CVP": <span style="color: #000000;">Center</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] politicians, they are attempting to position Hindenburg as the candidate of the moderate right.
+The Sahm committee for Hindenburg's re-election has been dissolved and replaced by a much larger, national "United Hindenburg Committees" organization, which will work in coordination with the various local Hindenburg committees across the country. With the appointment of Westarp and Gereke to top positions, and the exclusion of <span style="color: #30B24A;">socialist</span> and [? if z_party_name != "CVP": <span style="color: #000000;">Center</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] politicians, they are attempting to position Hindenburg as the candidate of the moderate right.
 
 - @presidential_election_1932_candidate: Who will the candidates be now that Hindenburg has decided to run for re-election?

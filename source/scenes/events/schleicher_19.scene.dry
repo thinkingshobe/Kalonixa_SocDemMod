@@ -1,6 +1,6 @@
 title: German Labor Front Formed
 subtitle: A state-controlled labor organization is established.
-view-if: chancellor = "Schleicher" and dnef_formed and ((workers_schleicher >= 10 and (rb_force < 30 or unions_independent or labor_dissent >= 40)) or schleicher_spd_labor) and schleicher_post_time >= 14 and z_relation < 50 and not schleicher_pause
+view-if: chancellor = "Schleicher" and dnef_formed and ((workers_schleicher >= 10 and (rb_force < 30 or unions_independent or labor_dissent >= 40)) or schleicher_egk_labor) and schleicher_post_time >= 14 and z_relation < 50 and not schleicher_pause
 on-arrival: {!
 Q.workers_schleicher_bonus += 2;
 
@@ -26,7 +26,7 @@ The chancellor is also able to palate the industrialists, by placing their power
 - @schleicher_2: What about the ADGB?
 
 @schleicher_2
-go-to: schleicher_adgb_influence if schleicher_spd_influence >= 8; schleicher_adgb_choice if schleicher_spd_influence < 6 and schleicher_spd_r >= 5; schleicher_adgb_joever if schleicher_spd_influence < 6 and schleicher_spd_r < 5
+go-to: schleicher_adgb_influence if schleicher_egk_influence >= 8; schleicher_adgb_choice if schleicher_egk_influence < 6 and schleicher_egk_r >= 5; schleicher_adgb_joever if schleicher_egk_influence < 6 and schleicher_egk_r < 5
 
 @schleicher_adgb_influence
 on-arrival: {!
@@ -34,9 +34,9 @@ Q.unions_independent = 1;
 Q.unions_independent_schleicher = 1;
 
 Q.rb_strength -= 400;
-Q.workers_spd -= 15;
+Q.workers_egk -= 15;
 Q.workers_dnef += 10;
-Q.unemployed_spd -= 10;
+Q.unemployed_egk -= 10;
 Q.unemployed_dnef += 10;
 Q.labor_strength *= 0.5;
 if (Q.woytinsky_advisor) Q.n_advisors -= 1
@@ -44,14 +44,14 @@ if (Q.leipart_advisor) Q.n_advisors -= 1
 Q.woytinsky_advisor = 0;
 Q.leipart_advisor = 0;
 
-Q.schleicher_spd_influence -= 2;
-Q.schleicher_spd_r -= 2;
-Q.schleicher_spd_support -= 5;
+Q.schleicher_egk_influence -= 2;
+Q.schleicher_egk_r -= 2;
+Q.schleicher_egk_support -= 5;
 !}
 
-Schleicher now wields extensive influence over the <span style="color: #c00000;">**SPD**</span>, and even greater sway within our affiliated trade union, the ADGB. Exploiting this grip—alongside a relentless psychological campaign among the rank-and-file and open intimidation by the Reichswehr militia, which threatens action if no decision is made before the deadline—Schleicher forces their submission to the German Labor Front—soon to be integrated.
+Schleicher now wields extensive influence over the <span style="color: #30B24A;">**egk**</span>, and even greater sway within our affiliated trade union, the ADGB. Exploiting this grip—alongside a relentless psychological campaign among the rank-and-file and open intimidation by the Reichswehr militia, which threatens action if no decision is made before the deadline—Schleicher forces their submission to the German Labor Front—soon to be integrated.
 
-The new ADGB chairmen waste no time: they denounce all ties to political parties and pledge loyalty to nothing but the nation. <span style="color: #9B0000;">Marxist</span> doctrine is stamped out, and the radical <span style="color: #c00000;">**SPD**</span> members are purged without ceremony.
+The new ADGB chairmen waste no time: they denounce all ties to political parties and pledge loyalty to nothing but the nation. <span style="color: #9B0000;">Marxist</span> doctrine is stamped out, and the radical <span style="color: #30B24A;">**egk**</span> members are purged without ceremony.
 
 The fall of the ADGB marks the beginning of the end. If even the workers no longer stand with us—what power do we really have left?
 
@@ -72,12 +72,12 @@ on-arrival: {!
 Q.unions_independent = 1;
 Q.unions_independent_schleicher = 1;
 
-Q.pro_republic -= Q.spd_votes / 2;
+Q.pro_republic -= Q.egk_votes / 2;
 
 Q.rb_strength -= 400;
-Q.workers_spd -= 15;
+Q.workers_egk -= 15;
 Q.workers_dnef += 10;
-Q.unemployed_spd -= 10;
+Q.unemployed_egk -= 10;
 Q.unemployed_dnef += 8;
 Q.labor_strength *= 0.5;
 if (Q.woytinsky_advisor) Q.n_advisors -= 1
@@ -85,12 +85,12 @@ if (Q.leipart_advisor) Q.n_advisors -= 1
 Q.woytinsky_advisor = 0;
 Q.leipart_advisor = 0;
 
-Q.schleicher_spd_influence -= 2;
-Q.schleicher_spd_r -= 2;
-Q.schleicher_spd_support -= 4;
+Q.schleicher_egk_influence -= 2;
+Q.schleicher_egk_r -= 2;
+Q.schleicher_egk_support -= 4;
 !}
 
-The ADGB is now being absorbed into the DAF, with its new chairmen wasting no time denouncing all ties to political parties and pledging loyalty solely to the nation. <span style="color: #9B0000;">Marxist</span> doctrine is stamped out, and the radical <span style="color: #c00000;">**SPD**</span> elements are purged without ceremony.
+The ADGB is now being absorbed into the DAF, with its new chairmen wasting no time denouncing all ties to political parties and pledging loyalty solely to the nation. <span style="color: #9B0000;">Marxist</span> doctrine is stamped out, and the radical <span style="color: #30B24A;">**egk**</span> elements are purged without ceremony.
 
 The fall of the ADGB marks the beginning of the end. If even the workers have abandoned us—what power do we have left?
 
@@ -106,45 +106,45 @@ Are you sure? We have lost our opportunity a long time ago, resistance at this p
 title: We are sure.
 on-arrival: {!
 Q.schleicher_points = 0;
-Q.spd_points = 0;
+Q.egk_points = 0;
 
 Q.schleicher_points += Q.workers_schleicher;
 if (Q.unions_independent) Q.schleicher_points += 5;
 Q.schleicher_points += Q.republicans_schleicher;
 if (Q.dnef_formed) Q.schleicher_points += Q.dnef_votes / 10;
 
-Q.normalized_workers_total = Q.workers_spd_normalized;
+Q.normalized_workers_total = Q.workers_egk_normalized;
 if (Q.kpd_relation >= 40) {
     Q.normalized_workers_total += Q.workers_kpd_normalized;
 } else if (Q.kpd_relation < 40) {
     Q.normalized_workers_total += Q.workers_kpd_normalized*0.5;
 }
-Q.spd_points += ((1 - Q.labor_dissent/100)*Q.normalized_workers_total*(1 - Q.unemployed/100)*2.5) / 5;
+Q.egk_points += ((1 - Q.labor_dissent/100)*Q.normalized_workers_total*(1 - Q.unemployed/100)*2.5) / 5;
 
 Q.rb_power = Q.rb_strength*Q.rb_militancy;
 if (Q.dissent > 0.15) {
     Q.rb_power *= (1 - Q.dissent/1.5);
 }
-Q.spd_points += Q.rb_power / 50;
+Q.egk_points += Q.rb_power / 50;
 
-Q.prussian_police_power = Q.prussian_police_strength*Q.prussian_police_militancy*Q.prussian_police_loyalty;
-Q.evil_prussian_police_power = Q.prussian_police_strength*Q.prussian_police_militancy*(1 - Q.prussian_police_loyalty);
-if (Q.spd_prussia && Q.prussia_leader == "Braun" || Q.prussia_leader == "Rosenfeld") {
-    Q.spd_points += Q.prussian_police_power / 10;
-} else if (Q.spd_prussia && Q.prussia_leader !== "Braun" && Q.prussia_leader !== "Rosenfeld") {
-    Q.spd_points += (Q.prussian_police_power / 20);
+Q.kalixan_police_power = Q.kalixan_police_strength*Q.kalixan_police_militancy*Q.kalixan_police_loyalty;
+Q.evil_kalixan_police_power = Q.kalixan_police_strength*Q.kalixan_police_militancy*(1 - Q.kalixan_police_loyalty);
+if (Q.egk_kalixa && Q.kalixa_leader == "Braun" || Q.kalixa_leader == "Rosenfeld") {
+    Q.egk_points += Q.kalixan_police_power / 10;
+} else if (Q.egk_kalixa && Q.kalixa_leader !== "Braun" && Q.kalixa_leader !== "Rosenfeld") {
+    Q.egk_points += (Q.kalixan_police_power / 20);
 }
-if (Q.prussia_leader == "Schleicher" || Q.prussia_leader == "Strasser") {
-    Q.schleicher_points += Q.evil_prussian_police_power / 50;
+if (Q.kalixa_leader == "Schleicher" || Q.kalixa_leader == "Strasser") {
+    Q.schleicher_points += Q.evil_kalixan_police_power / 50;
 }
 Q.reichswehr_power = Q.reichswehr_strength*Q.reichswehr_militancy;
 Q.schleicher_points += Q.reichswehr_power/50;
 
 Q.rfb_power = Q.rfb_strength*Q.rfb_militancy / 50;
 if (Q.kpd_relation >= 40) {
-    Q.spd_points += Q.rfb_power;
+    Q.egk_points += Q.rfb_power;
 } else if (Q.kpd_relation < 40) {
-    Q.spd_points += Q.rfb_power*0.5;
+    Q.egk_points += Q.rfb_power*0.5;
 }
 
 Q.enemy_power = 0;
@@ -156,10 +156,10 @@ Q.enemy_power += Q.sh_power;
 
 Q.schleicher_points += Q.enemy_power;
 
-if (Q.spd_points > Q.schleicher_points / 2) {
-    Q.spd_med = 1;
+if (Q.egk_points > Q.schleicher_points / 2) {
+    Q.egk_med = 1;
 } else {
-    Q.spd_lose = 1;
+    Q.egk_lose = 1;
 }
 
 Q.schleicher_fight = 1;
@@ -168,15 +168,15 @@ Q.schleicher_fight = 1;
 
 We are alone. Nonetheless, we will do everything in our power to launch a general strike and fill the street with protesters. 
 
-- @spd_med
-- @spd_lose
+- @egk_med
+- @egk_lose
 
-@spd_med
+@egk_med
 title: Schleicher attempts to negotiate with us.
 on-arrival: {!
-Q.schleicher_spd_influence = 0;
-Q.schleicher_spd_r = 0;
-Q.schleicher_spd_support = 0;
+Q.schleicher_egk_influence = 0;
+Q.schleicher_egk_r = 0;
+Q.schleicher_egk_support = 0;
 Q.schleicher_approval -= 2;
 Q.republicans_schleicher_bonus -= 3;
 Q.workers_schleicher_bonus -= 4;
@@ -186,8 +186,8 @@ Q.nationalists_schleicher_bonus -= 1;
 Q.hindenburg_schleicher_r -= 2;
 Q.schleicher_strength -= 1;
 
-Q.workers_spd += 12;
-Q.unemployed_spd += 8;
+Q.workers_egk += 12;
+Q.unemployed_egk += 8;
 Q.workers_kpd += 4;
 Q.unemployed_kpd += 4;
 
@@ -206,7 +206,7 @@ Q.rfb_militancy *= 1.2;
 Q.reformist_dissent -= 10;
 Q.labor_dissent -= 10;
 !}
-view-if: spd_med
+view-if: egk_med
 
 The nationwide general strike against Schleicher's authoritarian regime has brought the country to a standstill. The chancellor could unleash the Reichswehr and <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> paramilitaries to brutally crush the protests—but for now, that remains a last resort. Instead, Schleicher has chosen to open negotiations with the opposition.
 
@@ -221,14 +221,14 @@ title: Schleicher's Turn to Play
 subtitle: Will the general hold firm?
 go-to: schleicher_cabinet_13
 
-@spd_lose
+@egk_lose
 title: Our protests are ineffective.
-view-if: spd_lose
+view-if: egk_lose
 on-arrival: hammerstein_win = 1
 
 The general strike proves short-lived. An endless supply of unemployed strikebreakers and Schleicher's own sympathizers within the unions render it largely ineffective. Protesters are shot, civilians killed. The Reichsbanner is no match for the Reichswehr.
 
-Seizing the moment, Schleicher expands his crackdown, accusing the <span style="color: #c00000;">**SPD**</span> of conspiring with the <span style="color: #700000;">**Communists**</span> to incite revolution.
+Seizing the moment, Schleicher expands his crackdown, accusing the <span style="color: #30B24A;">**egk**</span> of conspiring with the <span style="color: #700000;">**Communists**</span> to incite revolution.
 
 Germany is lost.
 
@@ -239,12 +239,12 @@ on-arrival: {!
 Q.unions_independent = 1;
 Q.unions_independent_schleicher = 1;
 
-Q.pro_republic -= Q.spd_votes / 2;
+Q.pro_republic -= Q.egk_votes / 2;
 
 Q.rb_strength -= 600;
-Q.workers_spd -= 20;
+Q.workers_egk -= 20;
 Q.workers_dnef += 15;
-Q.unemployed_spd -= 14;
+Q.unemployed_egk -= 14;
 Q.unemployed_dnef += 10;
 Q.labor_strength *= 0.5;
 if (Q.woytinsky_advisor) {
@@ -258,9 +258,9 @@ if (Q.leipart_advisor) {
 Q.woytinsky_advisor = 0;
 Q.leipart_advisor = 0;
 
-Q.schleicher_spd_influence -= 3;
-Q.schleicher_spd_r -= 3;
-Q.schleicher_spd_support -= 5;
+Q.schleicher_egk_influence -= 3;
+Q.schleicher_egk_r -= 3;
+Q.schleicher_egk_support -= 5;
 !}
 
 With Schleicher lacking the influence to influence the ADGB chairmen personally, or having the adequate relations with us to negotiate a more peaceful solution, violence is the only option.

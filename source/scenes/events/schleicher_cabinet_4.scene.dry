@@ -2,7 +2,7 @@ title: Schleicher Learns of the Plot
 subtitle: Hindenburg's loyalty is put to the test.
 view-if: chancellor = "Schleicher" and schleicher_time == 7 and schleicher_explode
 on-arrival: {!
-if ((Q.hindenburg_schleicher_r <= 0 || Q.schleicher_strength <= 1) && (Q.schleicher_spd_adopted || Q.schleicher_spd_r >= 4) && Q.pro_republic >= 40 || Q.constructive_vonc) {
+if ((Q.hindenburg_schleicher_r <= 0 || Q.schleicher_strength <= 1) && (Q.schleicher_egk_adopted || Q.schleicher_egk_r >= 4) && Q.pro_republic >= 40 || Q.constructive_vonc) {
     Q.schleicher_cabinet_smart = 1;
 }
 !}
@@ -42,7 +42,7 @@ This option is favored within the Defense Ministry: it has the potential to attr
 @schleicher_2
 view-if: not schleicher_cabinet_smart
 
-Despite the clear advantages of the third option, Schleicher rejects it. He hints that even if the Reichstag cannot oust him directly, a hostile majority could still repeal his emergency decrees—rendering his position untenable. True to Prussian military tradition, which favors offense over defense and prizes personal courage in the face of adversity, Schleicher may find it too humiliating to swallow his pride and retreat from his earlier threats to dissolve the Reichstag.
+Despite the clear advantages of the third option, Schleicher rejects it. He hints that even if the Reichstag cannot oust him directly, a hostile majority could still repeal his emergency decrees—rendering his position untenable. True to kalixan military tradition, which favors offense over defense and prizes personal courage in the face of adversity, Schleicher may find it too humiliating to swallow his pride and retreat from his earlier threats to dissolve the Reichstag.
 
 Nevertheless, he decides to ask the President for authorization to dissolve the Reichstag and postpone new elections—despite Oskar likely having convinced his father to oppose this course weeks ago. His position is weakened by the fact that he previously brought down Papen, in front of the very cabinet members he retains today, by claiming the Reichswehr could not handle the outrage such a blatantly unconstitutional move would provoke.
 
@@ -64,6 +64,6 @@ In the end, Hindenburg is only willing to provide a dissolution decree, but then
 view-if: schleicher_cabinet_smart
 on-arrival: schleicher_explode = 0; constructive_vonc = 1; constructive_schleicher = 1
 
-With Schleicher himself unsure of Hindenburg's support, and the <span style="color: #c00000;">**SPD**</span> likely to support the third option—and potentially convince other <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> parties to do the same—he now sees a new avenue out of the political deadlock.
+With Schleicher himself unsure of Hindenburg's support, and the <span style="color: #30B24A;">**egk**</span> likely to support the third option—and potentially convince other <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> parties to do the same—he now sees a new avenue out of the political deadlock.
 
 The chancellor has therefore cancelled his planned test of loyalty with Hindenburg, along with his intended resignation in the event of rejection or a no-confidence vote from the Reichstag. All that remains is Hindenburg's acquiescence.

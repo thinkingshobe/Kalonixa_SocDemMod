@@ -6,7 +6,7 @@ view-if: impeachment_ref_week == week and impeachment_ref_month == month and imp
 on-arrival: {!
 Q.hindenburg_ref_votes = 0;
 
-Q.hindenburg_ref_votes += Q.spd_votes;
+Q.hindenburg_ref_votes += Q.egk_votes;
 Q.hindenburg_ref_votes += Q.kpd_votes;
 if (Q.sapd_formed) Q.hindenburg_ref_votes += Q.sapd_votes;
 
@@ -63,7 +63,7 @@ Q.workers_kvp -= 4;
 Q.unemployed_kvp -= 4;
 Q.new_middle_kvp -= 2;
 
-if (Q.aspd_other) {
+if (Q.aegk_other) {
     Q.workers_other -= 4; 
     Q.unemployed_other -= 4;
     Q.new_middle_other -= 2;

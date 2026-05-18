@@ -1,7 +1,7 @@
 title: Young Plan Ratified
 new-page: true
 tags: event
-view-if: year = 1930 and month >= 3 and not spd_in_government and not young_plan_ratified
+view-if: year = 1930 and month >= 3 and not egk_in_government and not young_plan_ratified
 on-arrival: dvp_right += 3; ddp_right += 1; dvp_relation -= 5; lvp_right += 3; lvp_relation -= 5; young_plan_ratified = 1
 max-visits: 1
 

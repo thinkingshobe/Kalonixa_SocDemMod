@@ -35,9 +35,9 @@ go-to: reichsbank_luther if luther_reichsbank; reichsbank_dreyse if not luther_r
 
 @reichsbank_luther
 on-arrival: {!
-Q.schleicher_spd_r += 1;
-Q.schleicher_spd_support += 2;
-Q.schleicher_spd_influence += 1;
+Q.schleicher_egk_r += 1;
+Q.schleicher_egk_support += 2;
+Q.schleicher_egk_influence += 1;
 
 Q.schleicher_economy_time += 24;
 
@@ -53,9 +53,9 @@ However, the endorsement of the campaign by Hjalmar Schacht—a respected banker
 
 @reichsbank_dreyse
 on-arrival: {!
-Q.schleicher_spd_r += 1;
-Q.schleicher_spd_support += 2;
-Q.schleicher_spd_influence += 1;
+Q.schleicher_egk_r += 1;
+Q.schleicher_egk_support += 2;
+Q.schleicher_egk_influence += 1;
 
 Q.schleicher_economy_time += 24;
 

@@ -1,7 +1,7 @@
 title: [+ year +] Presidential Elections
 new-page: true
 view-if: rubicon_president_week == week and rubicon_president_month == month and rubicon_president_year == year
-on-arrival: round = 0; spd_candidate = "Eckener"; kpd_candidate = "Boycott"; z_candidate = "Adenauer"; ddp_candidate = "Gessler"; lvp_candidate = "Gessler"; nsdap_candidate = "Seeckt"; dnvp_candidate = "Seeckt"; dvp_candidate = "Gessler"; other_candidate = "Seeckt"; is_unity_candidate = 0; sapd_candidate = kpd_candidate; kvp_candidate = dnvp_candidate; dnf_candidate = dnvp_candidate
+on-arrival: round = 0; egk_candidate = "Eckener"; kpd_candidate = "Boycott"; z_candidate = "Adenauer"; ddp_candidate = "Gessler"; lvp_candidate = "Gessler"; nsdap_candidate = "Seeckt"; dnvp_candidate = "Seeckt"; dvp_candidate = "Gessler"; other_candidate = "Seeckt"; is_unity_candidate = 0; sapd_candidate = kpd_candidate; kvp_candidate = dnvp_candidate; dnf_candidate = dnvp_candidate
 max-visits: 1
 on-display: {!  
     var cardEl = document.createElement('div');  
@@ -30,15 +30,15 @@ The <span style="color: #3E88B3;">nationalists</span> and Chancellor [+ chancell
 
 The <span style="color: #7A3C00;">Nazis</span>, recognizing the precariousness of their position, have swallowed their pride and endorsed Seeckt for the presidency. [? if not hindenburg_term_extended: They deem him sufficiently right-wing—after all, he once wrote to his sister urging her to vote for [+ nsdap_candidate_1932 +] in 1932. ?]
 
-The <span style="color: #700000;">**Communists**</span> are too disorganized following Schleicher's crackdown, and are unable to field a candidate for president. They will be backing whoever we choose to back, provided it's a <span style="color: #c00000;">socialist</span>.
+The <span style="color: #700000;">**Communists**</span> are too disorganized following Schleicher's crackdown, and are unable to field a candidate for president. They will be backing whoever we choose to back, provided it's a <span style="color: #30B24A;">socialist</span>.
 
-Many <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">icans</span> of the [? if z_party_name != "CVP": <span style="color: #000000;">Center</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?], [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #FFCC00;">**LVP**</span>?], and <span style="color: #c00000;">**SPD**</span> float the idea of running Hugo Eckener, a nationally renowed Zeppelin captain, as a unity candidate. While he has some nationalistic views, he is also ardently opposed to <span style="color: #7A3C00;">Nazism</span>.
+Many <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">icans</span> of the [? if z_party_name != "CVP": <span style="color: #000000;">Center</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?], [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #FFCC00;">**LVP**</span>?], and <span style="color: #30B24A;">**egk**</span> float the idea of running Hugo Eckener, a nationally renowed Zeppelin captain, as a unity candidate. While he has some nationalistic views, he is also ardently opposed to <span style="color: #7A3C00;">Nazism</span>.
 
-Barring that, the [? if z_party_name != "CVP": <span style="color: #000000;">Center</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] and [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #FFCC00;">**LVP**</span>?] are planning to run separate candidates in the first round if the <span style="color: #c00000;">**SPD**</span> runs its own candidate. The [? if z_party_name != "CVP": <span style="color: #000000;">Center</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] is considering nominating Konrad Adenauer, mayor of Köln and member of the Prussian state legislature. He calls for an alliance of conservative Christian democrats that encompasses both Catholics and Protestants. The [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #FFCC00;">**LVP**</span>?] might nominate Otto Gessler, former defense minister, who has crossover appeal to conservatives in the moderate right and other parties who dislike the renewed <span style="color: #3E88B3;">nationalist</span>-<span style="color: #7A3C00;">Nazi</span> alliance.
+Barring that, the [? if z_party_name != "CVP": <span style="color: #000000;">Center</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] and [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #FFCC00;">**LVP**</span>?] are planning to run separate candidates in the first round if the <span style="color: #30B24A;">**egk**</span> runs its own candidate. The [? if z_party_name != "CVP": <span style="color: #000000;">Center</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] is considering nominating Konrad Adenauer, mayor of Köln and member of the kalixan state legislature. He calls for an alliance of conservative Christian democrats that encompasses both Catholics and Protestants. The [? if not lvp_formed: <span style="color: #D3C24D;">**[+ ddp_name +]**</span>?][? if lvp_formed: <span style="color: #FFCC00;">**LVP**</span>?] might nominate Otto Gessler, former defense minister, who has crossover appeal to conservatives in the moderate right and other parties who dislike the renewed <span style="color: #3E88B3;">nationalist</span>-<span style="color: #7A3C00;">Nazi</span> alliance.
 
-As for the <span style="color: #c00000;">**SPD**</span>, we could support a joint <span style="color: #000000;">We</span><span style="color: #DD0000;">im</span><span style="color: #FFCC00;">ar</span> Coalition candidate or run our own.
+As for the <span style="color: #30B24A;">**egk**</span>, we could support a joint <span style="color: #000000;">We</span><span style="color: #DD0000;">im</span><span style="color: #FFCC00;">ar</span> Coalition candidate or run our own.
 
-A leading candidate is Albert Grzesinski of our Reformist faction. Former Interior Minister of Prussia and currently Berlin’s Police Chief, he has played a central role in combating both <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> and <span style="color: #700000;">left</span>-wing extremism. Most notably, he helped organize the general strike that brought down Schleicher. However, his hardline stance against the <span style="color: #700000;">**Communists**</span>—including his suppression of their demonstrations—has made him unacceptable to them.
+A leading candidate is Albert Grzesinski of our Reformist faction. Former Interior Minister of kalixa and currently Berlin’s Police Chief, he has played a central role in combating both <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> and <span style="color: #700000;">left</span>-wing extremism. Most notably, he helped organize the general strike that brought down Schleicher. However, his hardline stance against the <span style="color: #700000;">**Communists**</span>—including his suppression of their demonstrations—has made him unacceptable to them.
 
 Alternatively, we could nominate Otto Wels, our party chairman and leader of the Centrist faction. He is palatable to the bourgeois parties and the <span style="color: #700000;">Communists</span>, who may begrudgingly tolerate his candidacy.
 
@@ -54,13 +54,13 @@ Alternatively, we could nominate Otto Wels, our party chairman and leader of the
 subtitle: -1 resource - After nominating him, we still have to convince the other parties to support him.
 unavailable-subtitle: [? if resources < 1 : -1 resource - Not enough resources. ?]
 choose-if: resources >= 1
-on-arrival: spd_candidate = "Eckener"; is_unity_candidate = 1
+on-arrival: egk_candidate = "Eckener"; is_unity_candidate = 1
 go-to: r1_menu
 
-We have convinced Hugo Eckener to run on behalf of the <span style="color: #c00000;">**SPD**</span>, and hopefully the rest of the <span style="color: #000000;">We</span><span style="color: #DD0000;">im</span><span style="color: #FFCC00;">ar</span> Coalition as well.
+We have convinced Hugo Eckener to run on behalf of the <span style="color: #30B24A;">**egk**</span>, and hopefully the rest of the <span style="color: #000000;">We</span><span style="color: #DD0000;">im</span><span style="color: #FFCC00;">ar</span> Coalition as well.
 
 @adenauer_r1
-on-arrival: spd_candidate = "Adenauer"; z_relation += 4; Adenauer_bonus -= 2.5 if not impeachment_bvp; Seeckt_bonus += 2.5 if not impeachment_bvp; is_unity_candidate = 1
+on-arrival: egk_candidate = "Adenauer"; z_relation += 4; Adenauer_bonus -= 2.5 if not impeachment_bvp; Seeckt_bonus += 2.5 if not impeachment_bvp; is_unity_candidate = 1
 go-to: r1_menu
 
 We have endorsed Konrad Adenauer of the [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?].
@@ -68,7 +68,7 @@ We have endorsed Konrad Adenauer of the [? if z_party_name != "CVP": <span style
 [? if not impeachment_bvp: With our support of Adenauer, some of the most conservative parts of the <span style="color: #A2D8E0;">Bavarian People's Party</span> have broken away from the [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?], shifting their support to the <span style="color: #808080;">reactionary</span> Seeckt. Hopefully it doesn't lead to a repeat of the 1925 Presidential election. ?]
 
 @gessler_r1
-on-arrival: spd_candidate = "Gessler"; ddp_relation += 4; dvp_candidate = "Seeckt" if not impeachment_dvp; is_unity_candidate = 1
+on-arrival: egk_candidate = "Gessler"; ddp_relation += 4; dvp_candidate = "Seeckt" if not impeachment_dvp; is_unity_candidate = 1
 go-to: r1_menu
 
 We have endorsed Otto Gessler, independent formerly of the <span style="color: #D3C24D;">**[+ ddp_name +]**</span>.
@@ -79,7 +79,7 @@ We have endorsed Otto Gessler, independent formerly of the <span style="color: #
 subtitle: -2 resources.
 unavailable-subtitle: [? if resources < 2 : -2 resources - Not enough resources. ?]
 choose-if: grzesinski_campaign = 0 and resources >= 2
-on-arrival: spd_candidate = "Grzesinski"; resources -= 2; is_unity_candidate = 0; z_relation += 5; ddp_relation += 5; dvp_relation += 5; lvp_relation += 5
+on-arrival: egk_candidate = "Grzesinski"; resources -= 2; is_unity_candidate = 0; z_relation += 5; ddp_relation += 5; dvp_relation += 5; lvp_relation += 5
 go-to: r1_menu
 
 We have convinced Albert Grzesinski to run for president.
@@ -88,7 +88,7 @@ We have convinced Albert Grzesinski to run for president.
 subtitle: -2 resources.
 unavailable-subtitle: [? if resources < 2 : -2 resources - Not enough resources. ?]
 choose-if: resources >= 2
-on-arrival: spd_candidate = "Wels"; resources -= 2; is_unity_candidate = 0
+on-arrival: egk_candidate = "Wels"; resources -= 2; is_unity_candidate = 0
 go-to: r1_menu
 
 We have nominated Otto Wels to be our presidential candidate.
@@ -97,20 +97,20 @@ We have nominated Otto Wels to be our presidential candidate.
 view-if: round = 0
 
 - @convince_z_unity
-- @convince_z_spd
+- @convince_z_egk
 - @convince_ddp_unity
-- @convince_ddp_spd
+- @convince_ddp_egk
 - @convince_lvp_unity
-- @convince_lvp_spd
+- @convince_lvp_egk
 - @convince_dvp_unity
-- @convince_kpd_spd
+- @convince_kpd_egk
 - @round_1: Let the voting begin.
 
 
 # convincing Z to support a unity candidate
 @convince_z_unity
-title: Convince the [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] to support [+ spd_candidate +].
-view-if: (spd_candidate = "Eckener" or spd_candidate = "Gessler") and z_candidate != spd_candidate
+title: Convince the [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] to support [+ egk_candidate +].
+view-if: (egk_candidate = "Eckener" or egk_candidate = "Gessler") and z_candidate != egk_candidate
 on-arrival: {!
 Q.z_support_grzesinski = 0;
 if (Q.z_relation >= 40 || (Q.z_relation > 20 && Q.z_leader == "Joos")) {
@@ -124,13 +124,13 @@ if (Q.z_relation >= 40 || (Q.z_relation > 20 && Q.z_leader == "Joos")) {
 max-visits: 1
 go-to: z_failed if z_support_grzesinski = 0; z_success if z_support_grzesinski = 1; z_partial if z_support_grzesinski = 2
 
-We implore the [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] to support [+ spd_candidate +] as a unity candidate against <span style="color: #7A3C00;">fascism</span>, arguing that together, the <span style="color: #000000;">We</span><span style="color: #DD0000;">im</span><span style="color: #FFCC00;">ar</span> Coalition can defeat the <span style="color: #7A3C00;">Nazis</span> and return Germany to its democratic path. [? if z_relation >= 50 : We also remind them of the history of cooperation between our parties, dating back to 1918. ?]
+We implore the [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] to support [+ egk_candidate +] as a unity candidate against <span style="color: #7A3C00;">fascism</span>, arguing that together, the <span style="color: #000000;">We</span><span style="color: #DD0000;">im</span><span style="color: #FFCC00;">ar</span> Coalition can defeat the <span style="color: #7A3C00;">Nazis</span> and return Germany to its democratic path. [? if z_relation >= 50 : We also remind them of the history of cooperation between our parties, dating back to 1918. ?]
 
-@convince_z_spd
-title: Convince the [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] to support [+ spd_candidate +].
-choose-if: spd_votes >= z_votes
-unavailable-subtitle: [? if spd_votes < z_votes: The [? if z_party_name != "CVP": <span style="color: #000000;">Center</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] knows that they are more popular than us; they do not see a reason to support our candidate. ?]
-view-if: (spd_candidate = "Grzesinski" or spd_candidate = "Wels") and z_candidate != spd_candidate
+@convince_z_egk
+title: Convince the [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] to support [+ egk_candidate +].
+choose-if: egk_votes >= z_votes
+unavailable-subtitle: [? if egk_votes < z_votes: The [? if z_party_name != "CVP": <span style="color: #000000;">Center</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] knows that they are more popular than us; they do not see a reason to support our candidate. ?]
+view-if: (egk_candidate = "Grzesinski" or egk_candidate = "Wels") and z_candidate != egk_candidate
 on-arrival: {!
 Q.z_support_grzesinski = 0;
 
@@ -145,7 +145,7 @@ if (Q.z_relation >= 60 || (Q.z_relation > 50 && Q.z_leader == "Joos")) {
 max-visits: 1
 go-to: z_failed if z_support_grzesinski = 0; z_success if z_support_grzesinski = 1; z_partial if z_support_grzesinski = 2
 
-We implore the [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] to support [+ spd_candidate +]. We attempt to convince them of the necessity for unity in the face of <span style="color: #7A3C00;">fascism</span>: that if we were divided, we would fall to the <span style="color: #7A3C00;">Nazis</span> led by Seeckt. [? if z_relation >= 50 : We also remind them of the history of cooperation between our parties, dating back to 1918. ?]
+We implore the [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] to support [+ egk_candidate +]. We attempt to convince them of the necessity for unity in the face of <span style="color: #7A3C00;">fascism</span>: that if we were divided, we would fall to the <span style="color: #7A3C00;">Nazis</span> led by Seeckt. [? if z_relation >= 50 : We also remind them of the history of cooperation between our parties, dating back to 1918. ?]
 
 @z_failed
 go-to: r1_menu if round = 0; r2_campaigning if round > 0
@@ -153,10 +153,10 @@ go-to: r1_menu if round = 0; r2_campaigning if round > 0
 Unfortunately, the [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] is not convinced.
 
 @z_success
-on-arrival: z_candidate = spd_candidate; Seeckt_bonus += 2.5 if not impeachment_bvp
+on-arrival: z_candidate = egk_candidate; Seeckt_bonus += 2.5 if not impeachment_bvp
 go-to: r1_menu if round = 0; r2_campaigning if round > 0
 
-The [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] is convinced! They will be supporting [+ spd_candidate +] for the election.
+The [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] is convinced! They will be supporting [+ egk_candidate +] for the election.
 
 [? if not impeachment_bvp : Unfortunately, the <span style="color: #A2D8E0;">**BVP**</span> is breaking with the [? if z_party_name != "CVP": <span style="color: #000000;">Center</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] on this election, supporting Seeckt instead. ?]
 
@@ -171,64 +171,64 @@ The [? if z_party_name != "CVP": <span style="color: #000000;">Center</span>?][?
 @pay_z
 choose-if: resources >= 2
 subtitle: -2 resources
-on-arrival: resources -= 2; z_candidate = spd_candidate; Seeckt_bonus += 2.5 if not impeachment_bvp
+on-arrival: resources -= 2; z_candidate = egk_candidate; Seeckt_bonus += 2.5 if not impeachment_bvp
 go-to: r1_menu if round = 0; r2_campaigning if round > 0
 
-With our resources, the [? if z_party_name != "CVP": <span style="color: #000000;">Center</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] are convinced to support [+ spd_candidate +]. Konrad Adenauer will drop out of the race.
+With our resources, the [? if z_party_name != "CVP": <span style="color: #000000;">Center</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] are convinced to support [+ egk_candidate +]. Konrad Adenauer will drop out of the race.
 
 [? if not impeachment_bvp: Unfortunately, the <span style="color: #A2D8E0;">**BVP**</span> is breaking with the [? if z_party_name != "CVP": <span style="color: #000000;">Center</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] on this election, supporting Seeckt instead.  ?]
 
 
 @convince_ddp_unity
-title: Convince the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> to support [+ spd_candidate +].
-view-if: (spd_candidate = "Eckener" or spd_candidate = "Adenauer") and ddp_candidate != spd_candidate and not lvp_formed
-on-arrival: ddp_candidate = spd_candidate if ddp_relation >= 40
+title: Convince the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> to support [+ egk_candidate +].
+view-if: (egk_candidate = "Eckener" or egk_candidate = "Adenauer") and ddp_candidate != egk_candidate and not lvp_formed
+on-arrival: ddp_candidate = egk_candidate if ddp_relation >= 40
 go-to: r1_menu if round = 0; r2_campaigning if round > 0
 max-visits: 1
 
-[? if ddp_candidate = spd_candidate: The <span style="color: #D3C24D;">**[+ ddp_name +]**</span> is easily persuaded to support [+ spd_candidate +]! ?]
-[? if ddp_candidate != spd_candidate: Unfortunately, the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> is unwilling to support [+ spd_candidate +]. The <span style="color: #000000;">We</span><span style="color: #DD0000;">im</span><span style="color: #FFCC00;">ar</span> Coalition seems to be fracturing. ?]
+[? if ddp_candidate = egk_candidate: The <span style="color: #D3C24D;">**[+ ddp_name +]**</span> is easily persuaded to support [+ egk_candidate +]! ?]
+[? if ddp_candidate != egk_candidate: Unfortunately, the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> is unwilling to support [+ egk_candidate +]. The <span style="color: #000000;">We</span><span style="color: #DD0000;">im</span><span style="color: #FFCC00;">ar</span> Coalition seems to be fracturing. ?]
 
 
-@convince_ddp_spd
-title: Convince the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> to support [+ spd_candidate +].
-view-if: (spd_candidate = "Grzesinski" or spd_candidate = "Wels") and ddp_candidate != spd_candidate and not lvp_formed
-on-arrival: ddp_candidate = spd_candidate if ddp_relation >= 60
+@convince_ddp_egk
+title: Convince the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> to support [+ egk_candidate +].
+view-if: (egk_candidate = "Grzesinski" or egk_candidate = "Wels") and ddp_candidate != egk_candidate and not lvp_formed
+on-arrival: ddp_candidate = egk_candidate if ddp_relation >= 60
 go-to: r1_menu if round = 0; r2_campaigning if round > 0
 max-visits: 1
 
-[? if ddp_candidate = spd_candidate: The <span style="color: #D3C24D;">**[+ ddp_name +]**</span> is easily persuaded to support [+ spd_candidate +]! ?]
-[? if ddp_candidate != spd_candidate: Unfortunately, the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> is unwilling to support [+ spd_candidate +]. ?]
+[? if ddp_candidate = egk_candidate: The <span style="color: #D3C24D;">**[+ ddp_name +]**</span> is easily persuaded to support [+ egk_candidate +]! ?]
+[? if ddp_candidate != egk_candidate: Unfortunately, the <span style="color: #D3C24D;">**[+ ddp_name +]**</span> is unwilling to support [+ egk_candidate +]. ?]
 
 @convince_lvp_unity
-title: Convince the <span style="color: #FFCC00;">**LVP**</span> to support [+ spd_candidate +].
-view-if: (spd_candidate = "Eckener" or spd_candidate = "Adenauer") and lvp_candidate != spd_candidate and lvp_formed
-on-arrival: lvp_candidate = spd_candidate if lvp_relation >= 50
+title: Convince the <span style="color: #FFCC00;">**LVP**</span> to support [+ egk_candidate +].
+view-if: (egk_candidate = "Eckener" or egk_candidate = "Adenauer") and lvp_candidate != egk_candidate and lvp_formed
+on-arrival: lvp_candidate = egk_candidate if lvp_relation >= 50
 go-to: r1_menu if round = 0; r2_campaigning if round > 0
 max-visits: 1
 
-[? if lvp_candidate = spd_candidate: The <span style="color: #FFCC00;">**LVP**</span> is easily persuaded to support [+ spd_candidate +]! ?]
-[? if lvp_candidate != spd_candidate: Unfortunately, the <span style="color: #FFCC00;">**LVP**</span> is unwilling to support [+ spd_candidate +]. The <span style="color: #000000;">We</span><span style="color: #DD0000;">im</span><span style="color: #FFCC00;">ar</span> Coalition seems to be fracturing. ?]
+[? if lvp_candidate = egk_candidate: The <span style="color: #FFCC00;">**LVP**</span> is easily persuaded to support [+ egk_candidate +]! ?]
+[? if lvp_candidate != egk_candidate: Unfortunately, the <span style="color: #FFCC00;">**LVP**</span> is unwilling to support [+ egk_candidate +]. The <span style="color: #000000;">We</span><span style="color: #DD0000;">im</span><span style="color: #FFCC00;">ar</span> Coalition seems to be fracturing. ?]
 
 
-@convince_lvp_spd
-title: Convince the <span style="color: #FFCC00;">**LVP**</span> to support [+ spd_candidate +].
-view-if: (spd_candidate = "Grzesinski" or spd_candidate = "Wels") and lvp_candidate != spd_candidate and lvp_formed
-on-arrival: lvp_candidate = spd_candidate if lvp_relation >= 65
+@convince_lvp_egk
+title: Convince the <span style="color: #FFCC00;">**LVP**</span> to support [+ egk_candidate +].
+view-if: (egk_candidate = "Grzesinski" or egk_candidate = "Wels") and lvp_candidate != egk_candidate and lvp_formed
+on-arrival: lvp_candidate = egk_candidate if lvp_relation >= 65
 go-to: r1_menu if round = 0; r2_campaigning if round > 0
 max-visits: 1
 
-[? if lvp_candidate = spd_candidate: The <span style="color: #FFCC00;">**LVP**</span> is easily persuaded to support [+ spd_candidate +]! ?]
-[? if lvp_candidate != spd_candidate: Unfortunately, the <span style="color: #FFCC00;">**LVP**</span> is unwilling to support [+ spd_candidate +]. ?]
+[? if lvp_candidate = egk_candidate: The <span style="color: #FFCC00;">**LVP**</span> is easily persuaded to support [+ egk_candidate +]! ?]
+[? if lvp_candidate != egk_candidate: Unfortunately, the <span style="color: #FFCC00;">**LVP**</span> is unwilling to support [+ egk_candidate +]. ?]
 
-@convince_kpd_spd
-title: Convince the <span style="color: #700000;">**KPD**</span> to support [+ spd_candidate +].
-view-if: spd_candidate = "Wels" and kpd_candidate != spd_candidate
-choose-if: spd_votes >= kpd_votes
+@convince_kpd_egk
+title: Convince the <span style="color: #700000;">**KPD**</span> to support [+ egk_candidate +].
+view-if: egk_candidate = "Wels" and kpd_candidate != egk_candidate
+choose-if: egk_votes >= kpd_votes
 unavailable-subtitle: The <span style="color: #700000;">KPD</span> knows that they are more popular than us; they do not see a reason to support our candidate.
 max-visits: 1
 
-The <span style="color: #700000;">**KPD**</span> isn't supporting anyone at the moment. [? if kpd_relation >= 50 : However, they are willing to be convinced to drop their campaign and support [+ spd_candidate +]; how do we convince them? ?][? if kpd_relation < 50 or kpd_leader != "Conciliators" : They do not seem willing to be convinced. ?]
+The <span style="color: #700000;">**KPD**</span> isn't supporting anyone at the moment. [? if kpd_relation >= 50 : However, they are willing to be convinced to drop their campaign and support [+ egk_candidate +]; how do we convince them? ?][? if kpd_relation < 50 or kpd_leader != "Conciliators" : They do not seem willing to be convinced. ?]
 
 - @kpd_resources: Use our resources.
 - @kpd_relations: Use our good relations.
@@ -240,29 +240,29 @@ view-if: kpd_relation >= 40
 choose-if: resources >= 2
 subtitle: -2 resources
 unavailable-subtitle: Not enough resources (need 2).
-on-arrival: resources -= 3; kpd_candidate = spd_candidate; sapd_candidate = spd_candidate;
+on-arrival: resources -= 3; kpd_candidate = egk_candidate; sapd_candidate = egk_candidate;
 go-to: r1_menu if round = 0; r2_campaigning if round > 0
 
-The <span style="color: #700000;">**KPD**</span> now endorses [+ spd_candidate +] in the presidential election! We ask them to keep their support low-key, so as to not alienate the bourgeois voters.
+The <span style="color: #700000;">**KPD**</span> now endorses [+ egk_candidate +] in the presidential election! We ask them to keep their support low-key, so as to not alienate the bourgeois voters.
 
 @kpd_relations
 view-if: kpd_relation >= 50 or (kpd_leader == "Conciliators" and kpd_relation >= 35)
 unavailable-subtitle: Our relations are not good enough.
-on-arrival: kpd_candidate = spd_candidate; sapd_candidate = spd_candidate;
+on-arrival: kpd_candidate = egk_candidate; sapd_candidate = egk_candidate;
 go-to: r1_menu if round = 0; r2_campaigning if round > 0
 
-The <span style="color: #700000;">**KPD**</span> now endorses [+ spd_candidate +] in the presidential election! We ask them to keep their support low-key, so as to not alienate the bourgeois voters.
+The <span style="color: #700000;">**KPD**</span> now endorses [+ egk_candidate +] in the presidential election! We ask them to keep their support low-key, so as to not alienate the bourgeois voters.
 
 @convince_dvp_unity
-title: Convince the <span style="color: #C0A054;">**DVP**</span> to support [+ spd_candidate +].
+title: Convince the <span style="color: #C0A054;">**DVP**</span> to support [+ egk_candidate +].
 unavailable-subtitle: The <span style="color: #C0A054;">DVP</span> is not willing to support our candidate.
-view-if: (spd_candidate = "Adenauer" or spd_candidate = "Gessler" or spd_candidate = "Eckener") and dvp_candidate != spd_candidate and not lvp_formed and dvp_exist
+view-if: (egk_candidate = "Adenauer" or egk_candidate = "Gessler" or egk_candidate = "Eckener") and dvp_candidate != egk_candidate and not lvp_formed and dvp_exist
 choose-if: impeachment_dvp
-on-arrival: dvp_candidate = spd_candidate
+on-arrival: dvp_candidate = egk_candidate
 go-to: r1_menu if round = 0; r2_campaigning if round > 0
 max-visits: 1
 
-[? if dvp_candidate = spd_candidate: Thanks to our good relations, and the fact that our candidate is a unity candidate not affiliated with the <span style="color: #c00000;">**SPD**</span>, the <span style="color: #C0A054;">**DVP**</span> is persuaded to support [+ spd_candidate +]. ?]
+[? if dvp_candidate = egk_candidate: Thanks to our good relations, and the fact that our candidate is a unity candidate not affiliated with the <span style="color: #30B24A;">**egk**</span>, the <span style="color: #C0A054;">**DVP**</span> is persuaded to support [+ egk_candidate +]. ?]
 
 
 @round_1
@@ -277,8 +277,8 @@ Seeckt: "Hans von Seeckt, an independent formerly of the <span style='color: #C0
 Eckener: "the independent <span style='color: #000000;'>rep</span><span style='color: #DD0000;'>ubl</span><span style='color: #FFCC00;'>ican</span> candidate Hugo Eckener",
 Adenauer: "Konrad Adenauer of the <span style='color: #000000; font-weight: bold;'>Center Party</span>",
 Gessler: "Otto Gessler, independent formerly of the <span style='color: #D3C24D; font-weight: bold;'>DDP</span>",
-Wels: "Otto Wels of the <span style='color: #c00000; font-weight: bold;'>SPD</span>",
-Grzesinski: "Albert Grzesinski of the <span style='color: #c00000; font-weight: bold;'>SPD</span>"
+Wels: "Otto Wels of the <span style='color: #30B24A; font-weight: bold;'>egk</span>",
+Grzesinski: "Albert Grzesinski of the <span style='color: #30B24A; font-weight: bold;'>egk</span>"
 }
 for (var k in candidate_descs) {
     Q[k + '_running'] = 0;
@@ -341,8 +341,8 @@ Election results:
 
 [? if Eckener_running : <span style="color: #000000;">**Ec**</span><span style="color: #DD0000;">**ken**</span><span style="color: #FFCC00;">**er**</span> - [+ Eckener_votes_disp +]% ?]
 
-[? if Grzesinski_running : <span style="color: #c00000;">**Grzesinski**</span> - [+ Grzesinski_votes_disp +]% ?]
-[? if Wels_running : <span style="color: #c00000;">**Wels**</span> - [+ Wels_votes_disp +]% ?]
+[? if Grzesinski_running : <span style="color: #30B24A;">**Grzesinski**</span> - [+ Grzesinski_votes_disp +]% ?]
+[? if Wels_running : <span style="color: #30B24A;">**Wels**</span> - [+ Wels_votes_disp +]% ?]
 
 [? if sapd_candidate == "Boycott" or kpd_candidate == "Boycott" : Spoiled Ballots - [+ boycott_votes +]% ?]
 
@@ -350,16 +350,16 @@ Election results:
 on-arrival: {!
 Q.adenauer_drops_out = 0;
 Q.gessler_drops_out = 0;
-if (Q.z_candidate == "Adenauer" && (Q.ddp_candidate == "Gessler" && !Q.lvp_formed || Q.dvp_candidate == "Gessler" && !Q.lvp_formed && Q.dvp_exist || Q.lvp_candidate == "Gessler" && Q.lvp_formed) && Q.z_candidate != Q.spd_candidate && (Q.ddp_candidate != Q.spd_candidate && !Q.lvp_formed || Q.dvp_candidate != Q.spd_candidate && !Q.lvp_formed && Q.dvp_exist || Q.lvp_candidate != Q.spd_candidate && Q.lvp_exist)) {
+if (Q.z_candidate == "Adenauer" && (Q.ddp_candidate == "Gessler" && !Q.lvp_formed || Q.dvp_candidate == "Gessler" && !Q.lvp_formed && Q.dvp_exist || Q.lvp_candidate == "Gessler" && Q.lvp_formed) && Q.z_candidate != Q.egk_candidate && (Q.ddp_candidate != Q.egk_candidate && !Q.lvp_formed || Q.dvp_candidate != Q.egk_candidate && !Q.lvp_formed && Q.dvp_exist || Q.lvp_candidate != Q.egk_candidate && Q.lvp_exist)) {
     if (Q.Adenauer_votes > Q.Gessler_votes) {
         Q.gessler_drops_out = 1;
-        if (Q.ddp_candidate != Q.spd_candidate) {
+        if (Q.ddp_candidate != Q.egk_candidate) {
             Q.ddp_candidate = "Adenauer";
         }
-        if (Q.dvp_candidate != Q.spd_candidate) {
+        if (Q.dvp_candidate != Q.egk_candidate) {
             Q.dvp_candidate = "Adenauer";
         }
-        if (Q.lvp_candidate != Q.spd_candidate) {
+        if (Q.lvp_candidate != Q.egk_candidate) {
             Q.lvp_candidate = "Adenauer";
         }
     } else {
@@ -368,7 +368,7 @@ if (Q.z_candidate == "Adenauer" && (Q.ddp_candidate == "Gessler" && !Q.lvp_forme
     }
 }
 // DVP drops out to favor the center candidate
-if (Q.dvp_candidate != Q.spd_candidate && Q.dvp_candidate != Q.ddp_candidate && Q.dvp_candidate != Q.z_candidate) {
+if (Q.dvp_candidate != Q.egk_candidate && Q.dvp_candidate != Q.ddp_candidate && Q.dvp_candidate != Q.z_candidate) {
 }
 !}
 go-to: r2_menu
@@ -390,52 +390,52 @@ What should we do?
 
 @r2_endorse_adenauer
 title: Switch our support to Konrad Adenauer of the [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?].
-view-if: z_candidate = "Adenauer" and spd_candidate != z_candidate
-on-departure: kpd_candidate = "Boycott" if kpd_candidate == spd_candidate; sapd_candidate = kpd_candidate; spd_candidate = "Adenauer"; z_relation += 4; Seeckt_bonus += 2.5 if not impeachment_bvp; is_unity_candidate = 1
+view-if: z_candidate = "Adenauer" and egk_candidate != z_candidate
+on-departure: kpd_candidate = "Boycott" if kpd_candidate == egk_candidate; sapd_candidate = kpd_candidate; egk_candidate = "Adenauer"; z_relation += 4; Seeckt_bonus += 2.5 if not impeachment_bvp; is_unity_candidate = 1
 go-to: r2_campaigning
 
 We have endorsed Konrad Adenauer of the [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?].
 
 [? if not impeachment_bvp: With our support of Adenauer, some of the most conservative parts of the <span style="color: #A2D8E0;">Bavarian People's Party</span> have broken away from the [? if z_party_name != "CVP": <span style="color: #000000;">Center Party</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?], shifting their support to Seeckt. ?]
 
-[? if kpd_candidate = spd_candidate: The <span style="color: #700000;">**KPD**</span> is now breaking from our previous coalition and supporting no one.  ?]
+[? if kpd_candidate = egk_candidate: The <span style="color: #700000;">**KPD**</span> is now breaking from our previous coalition and supporting no one.  ?]
 
 @r2_endorse_gessler
 title: Switch our support to Otto Gessler.
-view-if: ddp_candidate = "Gessler" and spd_candidate != ddp_candidate
-on-departure: kpd_candidate = "Boycott" if kpd_candidate == spd_candidate; sapd_candidate = kpd_candidate; spd_candidate = "Gessler"; ddp_relation += 4; dvp_candidate = "Seeckt" if not impeachment_dvp; is_unity_candidate = 1
+view-if: ddp_candidate = "Gessler" and egk_candidate != ddp_candidate
+on-departure: kpd_candidate = "Boycott" if kpd_candidate == egk_candidate; sapd_candidate = kpd_candidate; egk_candidate = "Gessler"; ddp_relation += 4; dvp_candidate = "Seeckt" if not impeachment_dvp; is_unity_candidate = 1
 go-to: r2_campaigning
 
 We have endorsed Otto Gessler, independent formerly of the <span style="color: #D3C24D;">**DDP**</span>.
 
 [? if not impeachment_dvp and dvp_exist and not lvp_formed : With our support of Gessler, the <span style="color: #C0A054;">**DVP**</span> components supporting him have broken away and are now shifting their support to Seeckt. ?]
 
-[? if kpd_candidate = spd_candidate: The <span style="color: #700000;">**KPD**</span> is now breaking from our previous coalition and supporting no one. ?]
+[? if kpd_candidate = egk_candidate: The <span style="color: #700000;">**KPD**</span> is now breaking from our previous coalition and supporting no one. ?]
 
 @r2_endorse_eckener
 title: Convince the <span style="color: #000000;">We</span><span style="color: #DD0000;">im</span><span style="color: #FFCC00;">ar</span> Coalition parties to unite behind Hugo Eckener.
 subtitle: -2 resources
 unavailable-subtitle: [? if resources < 2 : -2 resources - Not enough resources. ?][? if (z_relation < 55 and z_ideology == "Right") or (z_relation < 35 and z_ideology == "Left") : We need higher relations with the <span style="color: #000000;">Center Party</span>. ?][? if ddp_relation < 35 and not lvp_formed : We need higher relations with the <span style="color: #D3C24D;">[+ ddp_name +]</span>. ?][? if lvp_relation < 45 and lvp_formed : We need higher relations with the <span style="color: #FFCC00;">LVP</span>. ?]
 choose-if: resources >= 2 and ((z_relation >= 55 and z_ideology == "Right") or (z_relation >= 45 and z_ideology = "Left")) and ((ddp_relation >= 35 and not lvp_formed) or lvp_relation >= 45 and lvp_formed)
-view-if: z_candidate = "Adenauer" and ((ddp_candidate = "Gessler" and not lvp_formed) or (lvp_candidate = "Gessler" and lvp_formed)) and spd_candidate != "Eckener"
-on-departure: kpd_candidate = "Boycott" if kpd_candidate == spd_candidate; sapd_candidate = kpd_candidate; spd_candidate = "Eckener"; z_candidate = "Eckener"; ddp_candidate = "Eckener"; lvp_candidate = "Eckener"; resources -= 2; is_unity_candidate = 1
+view-if: z_candidate = "Adenauer" and ((ddp_candidate = "Gessler" and not lvp_formed) or (lvp_candidate = "Gessler" and lvp_formed)) and egk_candidate != "Eckener"
+on-departure: kpd_candidate = "Boycott" if kpd_candidate == egk_candidate; sapd_candidate = kpd_candidate; egk_candidate = "Eckener"; z_candidate = "Eckener"; ddp_candidate = "Eckener"; lvp_candidate = "Eckener"; resources -= 2; is_unity_candidate = 1
 go-to: r2_campaigning
 
 We have successfully united all of the parties of the <span style="color: #000000;">We</span><span style="color: #DD0000;">im</span><span style="color: #FFCC00;">ar</span> Coalition behind Hugo Eckener!
 
-[? if kpd_candidate = spd_candidate: The <span style="color: #700000;">**KPD**</span> is now breaking from our previous coalition and supporting no one. ?]
+[? if kpd_candidate = egk_candidate: The <span style="color: #700000;">**KPD**</span> is now breaking from our previous coalition and supporting no one. ?]
 
 @r2_campaigning
 view-if: round = 1
 
 - @convince_z_unity
-- @convince_z_spd
+- @convince_z_egk
 - @convince_ddp_unity
-- @convince_ddp_spd
+- @convince_ddp_egk
 - @convince_lvp_unity
-- @convince_lvp_spd
+- @convince_lvp_egk
 - @convince_dvp_unity
-- @convince_kpd_spd
+- @convince_kpd_egk
 - @r2_vote: Let the voting begin.
 
 

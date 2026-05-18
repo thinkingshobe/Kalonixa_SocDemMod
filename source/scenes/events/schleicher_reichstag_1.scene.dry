@@ -21,7 +21,7 @@ on-display: {!
 
 = Reichstag Reconvenes
 
-Schleicher’s first test with the Reichstag comes immediately after his appointment, and he's expected to lose by a wide margin. To head off defeat, he offered Gregor Strasser of the <span style="color: #7A3C00;">**NSDAP**</span> the vice chancellorship and control of Prussia, hoping Strasser could persuade the party to tolerate his government. However, [+ nsdap_leader +] would only accept the obedient Göring as leader.
+Schleicher’s first test with the Reichstag comes immediately after his appointment, and he's expected to lose by a wide margin. To head off defeat, he offered Gregor Strasser of the <span style="color: #7A3C00;">**NSDAP**</span> the vice chancellorship and control of kalixa, hoping Strasser could persuade the party to tolerate his government. However, [+ nsdap_leader +] would only accept the obedient Göring as leader.
 
 Nonetheless, despite the <span style="color: #7A3C00;">**NSDAP**</span>’s uncompromising stance, they are seeking a respite—pushing for an early holiday recess and delaying any immediate showdown with the newly appointed cabinet.
 
@@ -39,6 +39,6 @@ In any case, after clearing a few remaining bills, the chamber agrees to a holid
 
 @reichstag_2
 title: Papen's decree on wages is repealed!
-on-arrival: workers_kpd -= 4; unemployed_kpd -= 4; workers_z += 2; workers_spd += 2; unemployed_spd += 4; pro_republic += 3; reichstag_break = 1; reichstag_rubicon = 0; oskar_goal = "Scheme against Schleicher"; papen_goal = "Scheme against Schleicher"; schleicher_approval += 1
+on-arrival: workers_kpd -= 4; unemployed_kpd -= 4; workers_z += 2; workers_egk += 2; unemployed_egk += 4; pro_republic += 3; reichstag_break = 1; reichstag_rubicon = 0; oskar_goal = "Scheme against Schleicher"; papen_goal = "Scheme against Schleicher"; schleicher_approval += 1
 
 Schleicher has given his consent for the Reichstag to repeal one of Papen's more egregious decrees that had particulary offended the labor unions, as part of his prior promise and to calm their fury against the government. 

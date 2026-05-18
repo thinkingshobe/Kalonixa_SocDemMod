@@ -2,7 +2,7 @@ title: Second Emergency Decree for Economy and Finance
 subtitle: Chancellor [+ chancellor +] enacts his most controversial emergency decree yet.
 new-page: true
 view-if: total_bruning_time == 15 and bruning_toleration_time and reparations >= 0 and not hoover_moratorium_seen and not emergency_act_alt_seen and not lautenbach_adopted and not bruning_sigma_time and not bruning_skibidi_time
-on-arrival: emergency_decree_seen = 1; ddp_right += 3; dvp_right += 5; lvp_right += 3; ddp_cohesion -= 3; pro_republic -= 5; new_middle_nsdap += new_middle_ddp*0.2; old_middle_nsdap += old_middle_ddp*0.2; new_middle_nsdap += new_middle_dvp*0.2; old_middle_nsdap += old_middle_dvp*0.2; new_middle_ddp *= 0.6; old_middle_ddp *= 0.6; new_middle_dvp *= 0.6; old_middle_dvp *= 0.6; new_middle_nsdap += new_middle_lvp*0.2; old_middle_nsdap += old_middle_lvp*0.2; new_middle_lvp *= 0.8; old_middle_lvp *= 0.8; hindenburg_angry_bruning += 10; liberal_cooperation -= 3; bourgeois_cooperation -= 3; dnvp_angry += 1 if spd_toleration_right
+on-arrival: emergency_decree_seen = 1; ddp_right += 3; dvp_right += 5; lvp_right += 3; ddp_cohesion -= 3; pro_republic -= 5; new_middle_nsdap += new_middle_ddp*0.2; old_middle_nsdap += old_middle_ddp*0.2; new_middle_nsdap += new_middle_dvp*0.2; old_middle_nsdap += old_middle_dvp*0.2; new_middle_ddp *= 0.6; old_middle_ddp *= 0.6; new_middle_dvp *= 0.6; old_middle_dvp *= 0.6; new_middle_nsdap += new_middle_lvp*0.2; old_middle_nsdap += old_middle_lvp*0.2; new_middle_lvp *= 0.8; old_middle_lvp *= 0.8; hindenburg_angry_bruning += 10; liberal_cooperation -= 3; bourgeois_cooperation -= 3; dnvp_angry += 1 if egk_toleration_right
 tags: event
 face-image: img/article48.jpg
 max-visits: 1
@@ -18,7 +18,7 @@ The decree is deeply unpopular, provoking widespread outrage across German socie
 - @vote_yes
 
 @nothing_to_do
-view-if: spd_toleration == 0
+view-if: egk_toleration == 0
 on-arrival: {!
 Q.unemployed += 3;
 Q.budget += 1;
@@ -74,12 +74,12 @@ The emergency policy passes under emergency rules, as the Reichstag is currently
 @vote_no
 title: Vote against this measure, ending the toleration agreement.
 subtitle: The decree has already been signed by [+ president +], we are powerless to prevent it.
-view-if: spd_toleration
+view-if: egk_toleration
 on-arrival: {!
 Q.time_to_election = 3;
-Q.spd_in_government = 0;
+Q.egk_in_government = 0;
 Q.in_grand_coalition = 0;
-Q.spd_toleration = 0
+Q.egk_toleration = 0
 Q.unemployed += 3;
 Q.budget += 1;
 Q.inflation -= 3;
@@ -137,18 +137,18 @@ New elections have been set for [+ next_election_month : month +] [+ next_electi
 @vote_yes
 title: Vote in favor of this measure to continue the toleration agreement.
 subtitle: [? if (bourgeois_parliament and not lvp_formed) or liberal_parliament or lvp_formed: The liberal parties will attempt to mitigate the disastrous effects. ?]
-view-if: spd_toleration
+view-if: egk_toleration
 on-arrival: {!
 Q.kpd_relation -= 5;
 Q.left_dissent += 15;
 Q.labor_dissent += 5;
-Q.new_middle_spd -= 4;
+Q.new_middle_egk -= 4;
 Q.new_middle_nsdap += 3;
 Q.new_middle_kpd += 1;
-Q.workers_spd -= 3; 
+Q.workers_egk -= 3; 
 Q.workers_kpd += 2;
 Q.workers_nsdap += 1;
-Q.unemployed_spd -= 2;
+Q.unemployed_egk -= 2;
 Q.unemployed_kpd += 2;
 Q.unemployed += 3;
 Q.budget += 1;

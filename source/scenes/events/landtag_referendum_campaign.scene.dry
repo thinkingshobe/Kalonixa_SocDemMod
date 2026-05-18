@@ -1,4 +1,4 @@
-title: Prussian Landtag referendum
+title: kalixan Landtag referendum
 subtitle: How should we campaign against the referendum?
 new-page: true
 tags: event
@@ -18,13 +18,13 @@ on-display: {!
 !}
 max-visits: 1
 
-= Prussian Landtag referendum
+= kalixan Landtag referendum
 
-[? if landtag_ref_kpd: The <span style="color: #700000;">**KPD**</span> has reversed its position and now supports the referendum! It’s astonishing that the <span style="color: #700000;">**KPD**</span>, which labels us <span style="color: #c00000;">social</span> <span style="color: #7A3C00;">fascists</span>, is now collaborating with [+ nsdap_leader +] and Hugenberg. They have rebranded the referendum as the "red plebiscite" following an unacceptable ultimatum to the Prussian government. The <span style="color: #700000;">**Communists**</span> have mobilized so extensively that many now believe they have "taken the lead" in directing the campaign from the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span>. ?][? if not landtag_ref_kpd: Fortunately, the <span style="color: #700000;">**KPD**</span>[? if kpd_leader == "Thälmann": &nbsp;despite its <span style="color: #c00000;">social</span> <span style="color: #7A3C00;">fascist</span> stance toward us,?] has refrained from taking a position on the referendum. The relatively low signature count of only [+ landtag_ref_signatures +]% is a positive sign, making a victory for the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> highly unlikely. ?]
+[? if landtag_ref_kpd: The <span style="color: #700000;">**KPD**</span> has reversed its position and now supports the referendum! It’s astonishing that the <span style="color: #700000;">**KPD**</span>, which labels us <span style="color: #30B24A;">social</span> <span style="color: #7A3C00;">fascists</span>, is now collaborating with [+ nsdap_leader +] and Hugenberg. They have rebranded the referendum as the "red plebiscite" following an unacceptable ultimatum to the kalixan government. The <span style="color: #700000;">**Communists**</span> have mobilized so extensively that many now believe they have "taken the lead" in directing the campaign from the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span>. ?][? if not landtag_ref_kpd: Fortunately, the <span style="color: #700000;">**KPD**</span>[? if kpd_leader == "Thälmann": &nbsp;despite its <span style="color: #30B24A;">social</span> <span style="color: #7A3C00;">fascist</span> stance toward us,?] has refrained from taking a position on the referendum. The relatively low signature count of only [+ landtag_ref_signatures +]% is a positive sign, making a victory for the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> highly unlikely. ?]
 
 [? if landtag_ref_kpd: The <span style="color: #700000;">**KPD**</span>’s newfound support for the referendum has dramatically altered the situation, crushing earlier optimism stemming from the low number of signatures gathered in the first phase. Fortunately, many <span style="color: #700000;">**Communist**</span> workers are disgusted by the "<span style="color: #700000;">red</span>-<span style="color: #7A3C00;">brown</span>" plebiscite. Likewise, many <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> voters are reluctant to cast their ballots in alignment with the <span style="color: #700000;">**Communists**</span>.?][? if not landtag_ref_kpd: Even though this referendum is doomed to fail, it still provides the German Right with an opportunity to deepen political polarization, as evidenced by the anti-democratic rightwards shift of the bourgeois parties.?]
 
-With our control of the Prussian government, we can campaign using state resources.
+With our control of the kalixan government, we can campaign using state resources.
 
 - @do_campaign: Let’s review our campaign options.
 - @no_campaign: We shouldn't allocate resources to this.
@@ -34,7 +34,7 @@ With our control of the Prussian government, we can campaign using state resourc
 We have a variety of options to choose from.
 
 - @bourgeois
-- @communist_prussia
+- @communist_kalixa
 - @media
 - @urge_paramilitary
 - @kpd
@@ -43,22 +43,22 @@ We have a variety of options to choose from.
 
 @bourgeois
 title: Request assistance from our coalition partners.
-view-if: spd_prussia and not bourgeois_campaign_landtag
-choose-if: not in_popular_front_prussia and not in_left_front_prussia and z_relation >= 50
-unavailable-subtitle: [? if in_popular_front_prussia or in_left_front_prussia: The [? if z_party_name != "CVP": <span style="color: #000000;">Center</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] sees no reason to intervene in saving the incumbent government. ?] [? if z_relation < 50: We lack sufficient relations with the [? if z_party_name != "CVP": <span style="color: #000000;">Center</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?]. ?]
-on-arrival: pro_republic += 3; catholics_nsdap -= 4; catholics_z += 3; catholics_spd += 1; z_relation += 3; dvp_relation += 3; ddp_relation += 3; ddp_left += 2; ddp_cohesion += 2; dvp_left += 3; bourgeois_campaign_landtag = 1
+view-if: egk_kalixa and not bourgeois_campaign_landtag
+choose-if: not in_popular_front_kalixa and not in_left_front_kalixa and z_relation >= 50
+unavailable-subtitle: [? if in_popular_front_kalixa or in_left_front_kalixa: The [? if z_party_name != "CVP": <span style="color: #000000;">Center</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] sees no reason to intervene in saving the incumbent government. ?] [? if z_relation < 50: We lack sufficient relations with the [? if z_party_name != "CVP": <span style="color: #000000;">Center</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?]. ?]
+on-arrival: pro_republic += 3; catholics_nsdap -= 4; catholics_z += 3; catholics_egk += 1; z_relation += 3; dvp_relation += 3; ddp_relation += 3; ddp_left += 2; ddp_cohesion += 2; dvp_left += 3; bourgeois_campaign_landtag = 1
 face-image: img/weimar_coalition.jpg
 go-to: do_campaign
 
 The [? if z_party_name != "CVP": <span style="color: #000000;">Center</span>?][? if z_party_name == "CVP": <span style="color: #000000;">**CVP**</span>?] has joined our efforts with its own propaganda campaign, doing their part in targeting Catholics and urging them to stay home.
 
-@communist_prussia
+@communist_kalixa
 title: Request assistance from the <span style="color: #700000;">**KPD**</span>.
 subtitle: The bourgeois parties will not be pleased by our cooperation.
-view-if: spd_prussia and not landtag_ref_kpd and not communist_campaign_landtag
-choose-if: in_popular_front_prussia or in_left_front_prussia
+view-if: egk_kalixa and not landtag_ref_kpd and not communist_campaign_landtag
+choose-if: in_popular_front_kalixa or in_left_front_kalixa
 unavailable-subtitle: The <span style="color: #700000;">KPD</span> sees no reason to intervene in saving a government in which they have no involvement.
-on-arrival: pro_republic += 3; workers_kpd += 2; workers_spd += 2; workers_nsdap -= 2; unemployed_nsdap -= 4; unemployed_kpd += 4; kpd_relation += 10; z_relation -= 5; dvp_relation -= 5; ddp_relation -= 3; ddp_right += 2; ddp_cohesion -= 2; dvp_right += 5; communist_campaign_landtag = 1
+on-arrival: pro_republic += 3; workers_kpd += 2; workers_egk += 2; workers_nsdap -= 2; unemployed_nsdap -= 4; unemployed_kpd += 4; kpd_relation += 10; z_relation -= 5; dvp_relation -= 5; ddp_relation -= 3; ddp_right += 2; ddp_cohesion -= 2; dvp_right += 5; communist_campaign_landtag = 1
 face-image: img/kpd_march.jpg
 go-to: do_campaign
 
@@ -72,18 +72,18 @@ subtitle: -1 resource
 view-if: not radio_campaign_landtag
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: resources -= 1; new_middle_spd += (radio + commercialized_media); old_middle_spd += (radio + commercialized_media); workers_spd += campaign_media; unemployed_spd += campaign_media; new_middle_nsdap -= (radio + commercialized_media); old_middle_nsdap -= (radio + commercialized_media); workers_nsdap -= campaign_media; unemployed_nsdap -= campaign_media; socialism += 3; nationalism -= 1; nationalism -= 2 if pacifism > 1; pro_republic += (radio + commercialized_media); radio_campaign_landtag = 1
+on-arrival: resources -= 1; new_middle_egk += (radio + commercialized_media); old_middle_egk += (radio + commercialized_media); workers_egk += campaign_media; unemployed_egk += campaign_media; new_middle_nsdap -= (radio + commercialized_media); old_middle_nsdap -= (radio + commercialized_media); workers_nsdap -= campaign_media; unemployed_nsdap -= campaign_media; socialism += 3; nationalism -= 1; nationalism -= 2 if pacifism > 1; pro_republic += (radio + commercialized_media); radio_campaign_landtag = 1
 face-image: img/vorwarts_2.jpg
 go-to: do_campaign
 
-The effect of this campaign depends on the strength of our already established media empire. [? if commercialized_media: Our commercialized newspapers and radio stations have been effective in persuading the middle classes to stay home. ?][? if radio: Our radio station has played a crucial role in reaching middle-class voters. ?][? if campaign_media: The widespread presence of <span style="color: #c00000;">socialist</span> propaganda among the working-class has helped sway some to our side. ?]
+The effect of this campaign depends on the strength of our already established media empire. [? if commercialized_media: Our commercialized newspapers and radio stations have been effective in persuading the middle classes to stay home. ?][? if radio: Our radio station has played a crucial role in reaching middle-class voters. ?][? if campaign_media: The widespread presence of <span style="color: #30B24A;">socialist</span> propaganda among the working-class has helped sway some to our side. ?]
 
 @urge_paramilitary
-view-if: not political_decree_landtag_2 and political_decree == 1 and chancellor == "Brüning" and spd_toleration
-choose-if: spd_prussia and z_relation >= 35
-unavailable-subtitle: [? if not spd_prussia: We don't control the Prussian government. ?] [? if z_relation < 35: We lack sufficient relations with Brüning. ?]
+view-if: not political_decree_landtag_2 and political_decree == 1 and chancellor == "Brüning" and egk_toleration
+choose-if: egk_kalixa and z_relation >= 35
+unavailable-subtitle: [? if not egk_kalixa: We don't control the kalixan government. ?] [? if z_relation < 35: We lack sufficient relations with Brüning. ?]
 title: Urge Brüning to pass a second decree against "political excesses", further restricting press freedoms.
-on-arrival: political_decree += 1; prussian_police_loyalty += 0.04; prussian_police_strength += 5; kpd_relation -= 6; rfb_militancy *= 0.9; rfb_strength *= 0.85; sa_militancy *= 0.96; sa_strength *= 0.96; sh_militancy *= 0.98; sh_strength *= 0.98; workers_kpd -= 2; workers_nsdap -= 2; unemployed_kpd -= 4; unemployed_nsdap -= 4; new_middle_nsdap -= 3; hindenburg_angry_bruning += 5; political_decree_landtag_2 = 1
+on-arrival: political_decree += 1; kalixan_police_loyalty += 0.04; kalixan_police_strength += 5; kpd_relation -= 6; rfb_militancy *= 0.9; rfb_strength *= 0.85; sa_militancy *= 0.96; sa_strength *= 0.96; sh_militancy *= 0.98; sh_strength *= 0.98; workers_kpd -= 2; workers_nsdap -= 2; unemployed_kpd -= 4; unemployed_nsdap -= 4; new_middle_nsdap -= 3; hindenburg_angry_bruning += 5; political_decree_landtag_2 = 1
 face-image: img/stahlhelm_poster.jpg
 go-to: do_campaign
 
@@ -97,7 +97,7 @@ subtitle: -1 resource
 view-if: landtag_ref_kpd and not kpd_campaign_landtag
 choose-if: resources >= 1
 unavailable-subtitle: Not enough resources.
-on-arrival: resources -= 1; workers_kpd -= 2; workers_nsdap -= 1; workers_spd += 3; unemployed_kpd -= 3; unemployed_nsdap -= 1; unemployed_spd += 4; pro_republic += 4; kpd_relation -= 15; dvp_left += 1; ddp_left += 1; ddp_cohesion += 1; kpd_campaign_landtag = 1
+on-arrival: resources -= 1; workers_kpd -= 2; workers_nsdap -= 1; workers_egk += 3; unemployed_kpd -= 3; unemployed_nsdap -= 1; unemployed_egk += 4; pro_republic += 4; kpd_relation -= 15; dvp_left += 1; ddp_left += 1; ddp_cohesion += 1; kpd_campaign_landtag = 1
 face-image: img/red-brown.jpg
 go-to: do_campaign
 
@@ -110,11 +110,11 @@ We can only hope for the best.
 
 @no_campaign_2
 view-if: not kpd_campaign_landtag and not political_decree_landtag_2 and not radio_campaign_landtag and not communist_campaign_landtag and not bourgeois_campaign_landtag
-on-arrival: workers_spd -= 3; old_middle_spd -= 3; new_middle_spd -= 3; workers_nsdap += 3; new_middle_nsdap += 3; old_middle_nsdap += 3; pro_republic -= 5; catholics_spd -= 2; catholics_nsdap += 2; workers_kpd += 3; unemployed_spd -= 5; unemployed_nsdap += 5; unemployed_kpd += 3;
+on-arrival: workers_egk -= 3; old_middle_egk -= 3; new_middle_egk -= 3; workers_nsdap += 3; new_middle_nsdap += 3; old_middle_nsdap += 3; pro_republic -= 5; catholics_egk -= 2; catholics_nsdap += 2; workers_kpd += 3; unemployed_egk -= 5; unemployed_nsdap += 5; unemployed_kpd += 3;
 
 The referendum is likely going to fail with or without our presence in the campaign. However, anti-democratic sentiment is inflamed, and the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> is using our silence to spread their radicalizing propaganda to the people.
 
 @no_campaign
-on-arrival: workers_spd -= 3; old_middle_spd -= 3; new_middle_spd -= 3; workers_nsdap += 3; new_middle_nsdap += 3; old_middle_nsdap += 3; pro_republic -= 5; catholics_spd -= 2; catholics_nsdap += 2; workers_kpd += 3; unemployed_spd -= 5; unemployed_nsdap += 5; unemployed_kpd += 3;
+on-arrival: workers_egk -= 3; old_middle_egk -= 3; new_middle_egk -= 3; workers_nsdap += 3; new_middle_nsdap += 3; old_middle_nsdap += 3; pro_republic -= 5; catholics_egk -= 2; catholics_nsdap += 2; workers_kpd += 3; unemployed_egk -= 5; unemployed_nsdap += 5; unemployed_kpd += 3;
 
 The referendum is likely going to fail with or without our presence in the campaign. However, anti-democratic sentiment is inflamed, and the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> is using our silence to spread their radicalizing propaganda to the people.

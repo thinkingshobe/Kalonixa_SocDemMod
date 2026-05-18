@@ -695,66 +695,63 @@ th {
 }
 
 /* Styles for parties */
-.seat.kpd {
-  fill: #700000;
+.seat.klp {
+    fill: #FF5E5E;
+}
+.seat.ksp {
+    fill: #A33E7E;
+
+.seat.egk {
+        fill: 30B24A;
+        stroke: var(--border-color);
+        stroke-width: 1.5px;
+    }
+}
+.seat.pn {
+    fill: #5DCCAC;
+}
+.seat.lp {
+    fill: #FFE16B;
 }
 
-.seat.spd {
-  fill: #E3000F;
-  stroke: var(--border-color);
-  stroke-width: 1.5px;
+.seat.clp {
+    fill: #89A4DD;
 }
 
-.seat.ddp {
-  fill: #D3C24D;
-}
-
-.seat.z {
-  fill: #000;
-}
-
-.seat.bvp {
-  fill: #A2D8E0;
-}
-
-.seat.dvp {
-  fill: #D5AC27;
+.seat.snp {
+    fill: #26473E;
 }
 
 .seat.other {
   fill: #909090;
 }
 
-.seat.dnvp {
-  fill: #3E88B3;
+.seat.kb {
+    fill: #FF7200;
 }
 
-.seat.nsdap {
-  fill: #7A3C00;
+.seat.kpp {
+    fill: #225FE2;
 }
 
-.seat.dsu {
-  fill: #6A1E1E;
+.seat.yfl {
+    fill: #BF5D5D;
 }
 
-.seat.nvf {
-  fill: #142e20;
+.seat.fkp {
+    fill: #630091;
 }
 
-.seat.sapd {
-  fill: #9B0000;
-}
-
-.seat.dnf {
-  fill: #003755;
+.seat.kpf {
+    fill: #FF358C;
 }
 
 .seat.kvp {
   fill: #0087DC;
 }
 
-.seat.lvp {
-  fill: #FFCC00;
+.seat.ulp {
+    fill: #FFB76B;
 }
 
 .seat.dnef {
@@ -810,7 +807,7 @@ th {
   fill: #0075EB;
 }
 
-.seat.aspd {
+.seat.aegk {
   fill: #fe9e00;
 }
 

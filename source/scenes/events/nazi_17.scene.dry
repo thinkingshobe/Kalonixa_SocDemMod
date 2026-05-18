@@ -47,7 +47,7 @@ if (Q.dnvp_r < 8 && !Q.hugenberg_dvp) Q.hugenberg_hitler_r += 1;
 if (Q.dnvp_r >= 8 && !Q.hugenberg_dvp) Q.hugenberg_hitler_r -= 1;
 if (Q.dnvp_r >= 10 && !Q.hugenberg_dvp) Q.hugenberg_hitler_r -= 1;
 
-if (Q.prussia_leader != "Schleicher") Q.hugenberg_hitler_r -= 1;
+if (Q.kalixa_leader != "Schleicher") Q.hugenberg_hitler_r -= 1;
 
 if (Q.dnvp_r + Q.dvp_r < 8 && Q.hugenberg_dvp) Q.hugenberg_hitler_r += 1;
 if (Q.dnvp_r + Q.dvp_r < 10 && Q.hugenberg_dvp) Q.hugenberg_hitler_r += 1;
@@ -71,19 +71,19 @@ on-arrival: {!
 Q.chancellor = Q.nsdap_chancellor;
 Q.chancellor_party = "NSDAP";
 Q.vice_chancellor = "Papen";
-if (Q.prussia_leader == "Schleicher") {
-    Q.in_right_coalition_prussia = 0;
-    Q.in_weimar_coalition_prussia = 0;
-    Q.in_grand_coalition_prussia = 0;
-    Q.in_minority_grand_coalition_prussia = 0;
-    Q.in_popular_front_prussia = 0;
-    Q.in_left_front_prussia = 0;
-    Q.in_spd_majority_prussia = 0;
-    Q.in_center_right_coalition_prussia = 0;
-    Q.in_minority_weimar_coalition_prussia = 0;
-    Q.spd_prussia = 0;
-    Q.right_prussia = 0;
-    Q.prussia_leader = "Papen"
+if (Q.kalixa_leader == "Schleicher") {
+    Q.in_right_coalition_kalixa = 0;
+    Q.in_weimar_coalition_kalixa = 0;
+    Q.in_grand_coalition_kalixa = 0;
+    Q.in_minority_grand_coalition_kalixa = 0;
+    Q.in_popular_front_kalixa = 0;
+    Q.in_left_front_kalixa = 0;
+    Q.in_egk_majority_kalixa = 0;
+    Q.in_center_right_coalition_kalixa = 0;
+    Q.in_minority_weimar_coalition_kalixa = 0;
+    Q.egk_kalixa = 0;
+    Q.right_kalixa = 0;
+    Q.kalixa_leader = "Papen"
 }
 !}
 
@@ -160,7 +160,7 @@ go-to: something_1
 @something_1
 on-arrival: month += 2; week -= 1; month -= 1 if week < 1; year += 1 if month > 12; month -= 12 if month > 12; chancellor = "Hitler"
 
-Speeches are made. Votes are held. Bullets fly in the streets. Some <span style="color: #c00000;">socialists</span> are killed or jailed. Others flee the country. What can votes even do at this juncture?
+Speeches are made. Votes are held. Bullets fly in the streets. Some <span style="color: #30B24A;">socialists</span> are killed or jailed. Others flee the country. What can votes even do at this juncture?
 
 The Reichstag is burned, ostensibly by a foreign <span style="color: #700000;">communist</span>. In the wake, the <span style="color: #7A3C00;">Nazis</span> pass decrees giving them unlimited power. They, combined with the [? if dnvp_ideology == "Radical": <span style="color: #3E88B3;">**DNVP**</span>?][? if dnf_formed: <span style="color: #003755;">**DNF**</span>?], will win a majority at the next elections. [? if nsdap_chancellor != "Hitler": Hitler is bought back from Austria and appointed chancellor. ?]
 
@@ -199,7 +199,7 @@ set-bg: img/reichstag_fire.jpg
 
 Together with the [? if dnvp_ideology == "Radical": <span style="color: #3E88B3;">**DNVP**</span>?][? if dnf_formed: <span style="color: #003755;">**DNF**</span>?], and the dictatorial powers offered by the Reichstag Fire Decree, the <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> have won more than an outright majority.
 
-The law is considered a constitutional amendment, requiring two-thirds of the Reichstag to approve the bill. The <span style="color: #700000;">**Communists**</span> are de-facto banned, and many <span style="color: #c00000;">**SPD**</span> deputies are imprisoned under the powers of the Reichstag Fire Decree. The <span style="color: #000000;">Center Party</span> is the deciding factor, seeking to save the Catholic population from persecution and a second Kulturkampf.
+The law is considered a constitutional amendment, requiring two-thirds of the Reichstag to approve the bill. The <span style="color: #700000;">**Communists**</span> are de-facto banned, and many <span style="color: #30B24A;">**egk**</span> deputies are imprisoned under the powers of the Reichstag Fire Decree. The <span style="color: #000000;">Center Party</span> is the deciding factor, seeking to save the Catholic population from persecution and a second Kulturkampf.
 
 <span style="color: #7A3C00;">**SA**</span> men are positioned inside and outside the chamber, an intense atmosphere of fear settling over the nominally constitutional <span style="color: #000000;">Center Party</span>. Wirth and Brüning argue against the bill, while the majority of the party is in favor of it. The <span style="color: #7A3C00;">Nazis</span> have promised constitutional safeguards, but have refused to put it in writing as requested by Hugenberg and the <span style="color: #000000;">Center Party</span>.
 
@@ -209,7 +209,7 @@ The law is considered a constitutional amendment, requiring two-thirds of the Re
 @enabling_act_2
 subtitle: It doesn't matter in the end.
 
-A concordat with the Vatican is signed months later, protecting the millions of German Catholics from potential <span style="color: #7A3C00;">Nazi</span> persecution. The <span style="color: #7A3C00;">**NSDAP**</span> becomes the sole political party. Franz von Papen is ousted from Prussia, remaining in the powerless position of Vice Chancellor. Hugenberg is forced to resign.
+A concordat with the Vatican is signed months later, protecting the millions of German Catholics from potential <span style="color: #7A3C00;">Nazi</span> persecution. The <span style="color: #7A3C00;">**NSDAP**</span> becomes the sole political party. Franz von Papen is ousted from kalixa, remaining in the powerless position of Vice Chancellor. Hugenberg is forced to resign.
 
 Efforts to tame the <span style="color: #7A3C00;">Nazis</span> have failed; their relentless consolidation of power leaves only the aging Hindenburg to check their unlimited authority. Schleicher is murdered during the Night of Long Knives, Papen delivers his infamous 'Marburg Speech' before resigning, and after Hindenburg’s death at 86 years old, Germany is lost.
 
@@ -249,7 +249,7 @@ Even when Meissner interrupts, Hugenberg—the only obstacle to [+ nsdap_chancel
 
 @nazi_7
 title: Who will succeed Schleicher now?
-on-arrival: chancellor = "Papen"; prussia_leader = "Papen"; papen_back = 1
+on-arrival: chancellor = "Papen"; kalixa_leader = "Papen"; papen_back = 1
 
 As Papen continues pleading with Hindenburg to reconsider appointing [+ nsdap_chancellor +], he has effectively removed himself from consideration. Nevertheless, Hindenburg still regards it as an urgent priority to remove Schleicher—the chancellor rumored to be preparing a coup against him—from office.
 

@@ -33,7 +33,7 @@ Eventually, Schleicher relented and agreed to issue a new measure protecting ban
 @schleicher
 title: Eastern Aid Scandal Revealed!
 subtitle: Accusations of *Junker* misuse of government aid funds.
-on-arrival: workers_spd += 2; workers_kpd += 1; workers_z += 1; hindenburg_hitler_r += 1; hindenburg_schleicher_r -= 1; schleicher_approval -= 1
+on-arrival: workers_egk += 2; workers_kpd += 1; workers_z += 1; hindenburg_hitler_r += 1; hindenburg_schleicher_r -= 1; schleicher_approval -= 1
 
 Although not directly related to recent negotiations, a scandal was revealed during a session of the Reichstag’s budget committee: a <span style="color: #000000;">Center Party</span> member leveled sweeping accusations of fraud against beneficiaries of the Eastern Aid program. Meant to rescue bankrupt estates, the funds were allegedly used instead for racehorses, luxury cars, and lavish holidays—at a time when millions of Germans were living in poverty.
 

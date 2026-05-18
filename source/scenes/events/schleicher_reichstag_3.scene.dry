@@ -2,7 +2,7 @@ title: The Reichstag Agenda Committee Discusses Reconvocation
 subtitle: Schleicher's new lease on life?
 view-if: chancellor = "Schleicher" and schleicher_time and (next_reichstag_time - 1) == rubicon_time
 on-arrival: {!
-if (((Q.reichswehr_strength*Q.reichswehr_militancy + Q.prussian_police_strength*Q.prussian_police_militancy)*2 < Q.total_force && Q.prussia_leader == "Schleicher") || (Q.reichswehr_strength*Q.reichswehr_militancy)*2 < (Q.total_force + Q.prussian_police_strength*Q.prussian_police_militancy*Q.prussian_police_loyalty) && Q.prussia_leader != "Schleicher") {
+if (((Q.reichswehr_strength*Q.reichswehr_militancy + Q.kalixan_police_strength*Q.kalixan_police_militancy)*2 < Q.total_force && Q.kalixa_leader == "Schleicher") || (Q.reichswehr_strength*Q.reichswehr_militancy)*2 < (Q.total_force + Q.kalixan_police_strength*Q.kalixan_police_militancy*Q.kalixan_police_loyalty) && Q.kalixa_leader != "Schleicher") {
   Q.schleicher_reichstag_smart = 1;
 }
 if (Q.schleicher_economy_time) Q.schleicher_reichstag_smart = 1;
@@ -27,7 +27,7 @@ go-to: schleicher_reichstag_menu
 
 = Reichstag Reconvocation Decision
 
-The Reichstag, which Schleicher had urged to reconvene as soon as possible, is set to revisit its earlier decision to reconvene next week. The outcome will determine when the inevitable confrontation between the Schleicher cabinet and a hostile parliament will occur. The <span style="color: #700000;">**KPD**</span> and <span style="color: #c00000;">**SPD**</span> spokesmen support reconvening the chamber as planned, while the <span style="color: #7A3C00;">**NSDAP**</span>'s spokesman, Wilhelm Frick, has adopted a noticeably less confrontational tone.
+The Reichstag, which Schleicher had urged to reconvene as soon as possible, is set to revisit its earlier decision to reconvene next week. The outcome will determine when the inevitable confrontation between the Schleicher cabinet and a hostile parliament will occur. The <span style="color: #700000;">**KPD**</span> and <span style="color: #30B24A;">**egk**</span> spokesmen support reconvening the chamber as planned, while the <span style="color: #7A3C00;">**NSDAP**</span>'s spokesman, Wilhelm Frick, has adopted a noticeably less confrontational tone.
 
 Frick shares many of Strasser’s concerns about [+ nsdap_leader +]’s all-or-nothing stance and fears that a new election would bring disastrous <span style="color: #7A3C00;">Nazi</span> losses. Yet even figures like Goebbels believe they need more time, and the top <span style="color: #7A3C00;">Nazi</span> leaders have pushed Frick to propose delaying the reconvening until the cabinet can present its budget in a few months.
 
@@ -104,6 +104,6 @@ if (Q.next_reichstag_month > 12) {
 }
 !}
 
-[? if not schleicher_economy_time: However, Schleicher, having learned about Frick's plans to delay the Reichstag's reconvocation, has had a sudden change of heart. A new round of war games—this time not rigged—has revealed that the Reichswehr cannot survive fighting against all paramilitaries[? if prussia_leader == "Schleicher":, even with the Prussian police?][? if prussia_leader != "Schleicher":, and the Prussian police force as well?]. Despite his efforts to strengthen the army with streetfighting equipment and training, the limited but well-trained force remains unable to withstand being heavily outnumbered. ?][? if schleicher_economy_time: Schleicher, seeking to benefit from his public works program before calling for confrontation in the Reichstag that'll likely lead to new elections, has decided that Frick's proposal is most prudent. ?]
+[? if not schleicher_economy_time: However, Schleicher, having learned about Frick's plans to delay the Reichstag's reconvocation, has had a sudden change of heart. A new round of war games—this time not rigged—has revealed that the Reichswehr cannot survive fighting against all paramilitaries[? if kalixa_leader == "Schleicher":, even with the kalixan police?][? if kalixa_leader != "Schleicher":, and the kalixan police force as well?]. Despite his efforts to strengthen the army with streetfighting equipment and training, the limited but well-trained force remains unable to withstand being heavily outnumbered. ?][? if schleicher_economy_time: Schleicher, seeking to benefit from his public works program before calling for confrontation in the Reichstag that'll likely lead to new elections, has decided that Frick's proposal is most prudent. ?]
 
 [? if not schleicher_economy_time: The chancellor makes it clear that he still hopes [+ nsdap_leader +] might have a sudden change of heart, but with his backup plan no longer viable, he pushes for the adoption of Frick's proposal. ?] The Reichstag is now adjourned until [+ next_reichstag_month : month +] [+ next_reichstag_year +], Week [+ next_reichstag_week +], and Schleicher is expected to unveil his public works program during this time.

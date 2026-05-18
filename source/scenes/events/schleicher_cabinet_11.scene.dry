@@ -36,7 +36,7 @@ Q.catholics_dnef_bonus += 4;
 Q.stegerwald_points = 0;
 Q.bracht_points = 0;
 
-if (Q.prussian_concordat) Q.stegerwald_points += 1;
+if (Q.kalixan_concordat) Q.stegerwald_points += 1;
 if (Q.pro_republic < 10) {
   Q.bracht_points += 6;
 } else if (Q.pro_republic < 20) {
@@ -79,7 +79,7 @@ Having achieved his lifelong goal, Kaas sees little reason to remain as leader o
 
 The candidate backed by the <span style="color: #000000;">Christian</span> unions and those advocating for a more interconfessional <span style="color: #000000;">Center Party</span> rallies around Stegerwald.
 
-Franz Bracht, Schleicher's [? if not dsu_in_gov: former ?]Interior Minister[? if prussia_coup_lose:&nbsp;of Prussia and the Reich?], has rejoined the party and is Schleicher’s preferred candidate. Bracht is a true believer in Schleicher's vision for a new Germany—one less entangled in parliamentarianism—and aligns with the <span style="color: #000000;">Center</span>'s right wing, though not as far right as Papen. However, due to his lack of influence within the party and limited prior experience, having served only as Mayor of Essen for eight years, it is Schleicher's backing that remains the key to elevating him to leadership.
+Franz Bracht, Schleicher's [? if not dsu_in_gov: former ?]Interior Minister[? if kalixa_coup_lose:&nbsp;of kalixa and the Reich?], has rejoined the party and is Schleicher’s preferred candidate. Bracht is a true believer in Schleicher's vision for a new Germany—one less entangled in parliamentarianism—and aligns with the <span style="color: #000000;">Center</span>'s right wing, though not as far right as Papen. However, due to his lack of influence within the party and limited prior experience, having served only as Mayor of Essen for eight years, it is Schleicher's backing that remains the key to elevating him to leadership.
 
 - @bracht
 - @stegerwald
@@ -98,7 +98,7 @@ The internal reaction has been surprisingly muted. Perhaps the <span style="colo
 title: Stegerwald wins the leadership vote!
 unavailable-subtitle: Stegerwald is unavailable.
 choose-if: stegerwald_points >= bracht_points
-on-arrival: z_leader = "Stegerwald"; catholics_z -= 8; catholics_spd += 2; catholics_dnvp += 2; catholics -= 5; workers_z += 4; new_middle_z += 2; old_middle_z += 2; rural_z += 2; z_relation -= 5
+on-arrival: z_leader = "Stegerwald"; catholics_z -= 8; catholics_egk += 2; catholics_dnvp += 2; catholics -= 5; workers_z += 4; new_middle_z += 2; old_middle_z += 2; rural_z += 2; z_relation -= 5
 
 Stegerwald has won the leadership vote! By rallying the <span style="color: #000000;">repu</span><span style="color: #DD0000;">bli</span><span style="color: #FFCC00;">cans</span> behind his candidacy, he has successfully blocked Bracht from seizing control of the <span style="color: #000000;">Center Party</span>. Backing such a right-wing conservative proved unacceptable to the <span style="color: #000000;">Christian</span> unions, who continue to resist Schleicher's growing influence.
 

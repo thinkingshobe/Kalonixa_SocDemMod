@@ -7,35 +7,35 @@ on-arrival: {!
 Q.left_split = 1; 
 
 if (Q.left_strength < 10) {
-    Q.workers_spd -= 3; 
-    Q.unemployed_spd -= 3; 
+    Q.workers_egk -= 3; 
+    Q.unemployed_egk -= 3; 
     Q.workers_kpd += 3; 
     Q.rb_strength -= 300; 
     if (Q.rb_militancy >= 0.1) Q.rb_militancy -= 0.04; 
 } else if (Q.left_strength < 25) {
-    Q.workers_spd -= 4; 
-    Q.unemployed_spd -= 4; 
+    Q.workers_egk -= 4; 
+    Q.unemployed_egk -= 4; 
     Q.workers_kpd += 4; 
     Q.unemployed_kpd += 2;
     Q.rb_strength -= 350; 
     if (Q.rb_militancy >= 0.1) Q.rb_militancy -= 0.05; 
 } else if (Q.left_strength < 40) {
-    Q.workers_spd -= 5; 
-    Q.unemployed_spd -= 5; 
+    Q.workers_egk -= 5; 
+    Q.unemployed_egk -= 5; 
     Q.workers_kpd += 5; 
     Q.unemployed_kpd += 3;
     Q.rb_strength -= 400; 
     if (Q.rb_militancy >= 0.1) Q.rb_militancy -= 0.06; 
 } else if (Q.left_strength < 60) {
-    Q.workers_spd -= 6; 
-    Q.unemployed_spd -= 6; 
+    Q.workers_egk -= 6; 
+    Q.unemployed_egk -= 6; 
     Q.workers_kpd += 6; 
     Q.unemployed_kpd += 3;
     Q.rb_strength -= 500; 
     if (Q.rb_militancy >= 0.1) Q.rb_militancy -= 0.08; 
 } else {
-    Q.workers_spd -= 8; 
-    Q.unemployed_spd -= 8; 
+    Q.workers_egk -= 8; 
+    Q.unemployed_egk -= 8; 
     Q.workers_kpd += 8; 
     Q.unemployed_kpd += 4;
     Q.rb_strength -= 600; 
@@ -43,7 +43,7 @@ if (Q.left_strength < 10) {
 }
 
 Q.kpd_r += 1; 
-Q.spd_r -= 1; 
+Q.egk_r -= 1; 
 
 Q.left_strength = Q.left_strength / 2; 
 
@@ -75,5 +75,5 @@ max-visits: 1
 
 Our policy choices have greatly offended the left, and many of their leaders have split to form a new party, the <span style="color: #9B0000;">**SAPD**</span>, or <span style="color: #9B0000;">Socialist Worker's Party</span>. They do not count a huge section of our membership, so this should be survivable.
 
-[? if centrists_resign = 1 : Many former <span style="color: #c00000;">Centrist Marxists</span> have joined with the <span style="color: #9B0000;">**SAPD**</span>, the party formed by dissident leftists. They have brought their support base and organization skills to the party, leading to its growth as a nascent rival to the <span style="color: #c00000;">**SPD**</span> for the support of the working class. ?]
+[? if centrists_resign = 1 : Many former <span style="color: #30B24A;">Centrist Marxists</span> have joined with the <span style="color: #9B0000;">**SAPD**</span>, the party formed by dissident leftists. They have brought their support base and organization skills to the party, leading to its growth as a nascent rival to the <span style="color: #30B24A;">**egk**</span> for the support of the working class. ?]
 

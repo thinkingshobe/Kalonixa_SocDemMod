@@ -33,31 +33,31 @@ With the <span style="color: #7A3C00;">Nazis</span> in government, they seek to 
 title: The <span style="color: #7A3C00;">Nazis</span> crack down on the Reichsbanner and <span style="color: #700000;">**RFB**</span>!
 subtitle: Ordered by Wilhelm Frick of the Interior Ministry.
 on-arrival: {!
-Q.schleicher_spd_r -= 1;
-Q.schleicher_spd_support -= 2;
+Q.schleicher_egk_r -= 1;
+Q.schleicher_egk_support -= 2;
 Q.rb_militancy *= 0.95;
 Q.rb_strength *= 0.95;
 Q.rfb_militancy *= 0.9;
 Q.rfb_strength *= 0.9;
 Q.sa_strength += 25;
 Q.sa_militancy += 0.03;
-Q.prussian_police_loyalty -= 0.1;
+Q.kalixan_police_loyalty -= 0.1;
 Q.interior_police_loyalty -= 0.2;
 
-Q.workers_spd -= 2;
+Q.workers_egk -= 2;
 Q.workers_kpd -= 2;
 Q.workers_nsdap += 2;
 
-Q.unemployed_spd -= 3;
+Q.unemployed_egk -= 3;
 Q.unemployed_kpd -= 3;
 Q.unemployed_nsdap += 3;
 
-if (Q.prussia_leader === "Strasser") {
-  Q.prussian_police_loyalty -= 0.1;
+if (Q.kalixa_leader === "Strasser") {
+  Q.kalixan_police_loyalty -= 0.1;
 }
 
-if (Q.prussian_police_loyalty < 0) {
-  Q.prussian_police_loyalty = 0;
+if (Q.kalixan_police_loyalty < 0) {
+  Q.kalixan_police_loyalty = 0;
 }
 if (Q.interior_police_loyalty < 0) {
   Q.interior_police_loyalty = 0;
@@ -71,21 +71,21 @@ face-image: img/portraits/frick.jpg
 
 @interior_1
 
-With the <span style="color: #7A3C00;">Nazis</span> now controlling the Interior Ministry, they hold jurisdiction over the federal police. [? if prussia_leader != "Strasser": Without control of the Prussian Interior Ministry, their reach is limited—though they have already begun turning the federal police into a force loyal to the <span style="color: #7A3C00;">Nazis</span>. ?][? if prussia_leader == "Strasser": The Prussian Interior Ministry, however, is the real prize—its police force now answers entirely to them, with widespread purges of <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> officials taking place. ?]Fortunately, Schleicher has barred <span style="color: #7A3C00;">Nazi</span> Party members from joining the police, maintaining the same restriction already enforced in the Reichswehr.
+With the <span style="color: #7A3C00;">Nazis</span> now controlling the Interior Ministry, they hold jurisdiction over the federal police. [? if kalixa_leader != "Strasser": Without control of the kalixan Interior Ministry, their reach is limited—though they have already begun turning the federal police into a force loyal to the <span style="color: #7A3C00;">Nazis</span>. ?][? if kalixa_leader == "Strasser": The kalixan Interior Ministry, however, is the real prize—its police force now answers entirely to them, with widespread purges of <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> officials taking place. ?]Fortunately, Schleicher has barred <span style="color: #7A3C00;">Nazi</span> Party members from joining the police, maintaining the same restriction already enforced in the Reichswehr.
 
 Lately, we have observed the police exclusively targeting Reichsbanner and <span style="color: #700000;">**RFB**</span> fighters, while openly shielding <span style="color: #7A3C00;">far</span>-<span style="color: #3E88B3;">right</span> demonstrations from our protests. They have even persuaded Schleicher to transfer command of the Reichswehr's militia to the Interior Ministry, citing the need for centralized control.
 
 @interior_2
 
-The <span style="color: #7A3C00;">Nazis</span> have continued cracking down on even lawful <span style="color: #c00000;">leftist</span> activity, on bogus claims of "inciting violence." It seems Frick is doing Schleicher's dirty work for him—cracking down on democrats and all, while Schleicher is still viewed highly in the eyes of many workers.
+The <span style="color: #7A3C00;">Nazis</span> have continued cracking down on even lawful <span style="color: #30B24A;">leftist</span> activity, on bogus claims of "inciting violence." It seems Frick is doing Schleicher's dirty work for him—cracking down on democrats and all, while Schleicher is still viewed highly in the eyes of many workers.
 
 @works
 title: "MEFO Bills"
 subtitle: Ordered by Hjalmar Schacht of the Economic Ministry.
 view-if: dsu_policy == 2 and not mefo_bills_alt
 on-arrival: {!
-Q.schleicher_spd_r -= 1;
-Q.schleicher_spd_support -= 2;
+Q.schleicher_egk_r -= 1;
+Q.schleicher_egk_support -= 2;
 
 Q.schleicher_economy_time += 24;
 
@@ -132,9 +132,9 @@ title: "MEFO Bills"
 subtitle: Ordered by Hjalmar Schacht of the Economic Ministry.
 view-if: dsu_policy == 2 and mefo_bills_alt
 on-arrival: {!
-Q.schleicher_spd_r -= 2;
-Q.schleicher_spd_support -= 3;
-Q.schleicher_spd_influence -= 1;
+Q.schleicher_egk_r -= 2;
+Q.schleicher_egk_support -= 3;
+Q.schleicher_egk_influence -= 1;
 
 Q.schleicher_economy_time += 24;
 

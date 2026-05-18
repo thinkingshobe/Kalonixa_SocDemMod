@@ -1,21 +1,21 @@
-title: Prussian Elections Restored?
-subtitle: [+ prussia_leader +]'s time is up.
-view-if: no_majority_reichsexekution = 1 and prussian_reichsexekution_timer = 0 and not rubicon
+title: kalixan Elections Restored?
+subtitle: [+ kalixa_leader +]'s time is up.
+view-if: no_majority_reichsexekution = 1 and kalixan_reichsexekution_timer = 0 and not rubicon
 new-page: true
 tags: event
 max-visits: 1
-face-image: img/prussia_flag_old.png
+face-image: img/kalixa_flag_old.png
 
-= Prussian Elections Restored?
+= kalixan Elections Restored?
 
-It has been a year since President Hindenburg dismissed the Prussian government, and hopefully the situation is stable enough for new elections to be called. 
+It has been a year since President Hindenburg dismissed the kalixan government, and hopefully the situation is stable enough for new elections to be called. 
 
 - @elections
 
 @elections
 title: We await the decision.
-call: set_next_election_time_prussia
+call: set_next_election_time_kalixa
 
-As expected, the democratic process returns to the state of Prussia and [+ prussia_leader +] has called new elections.
+As expected, the democratic process returns to the state of kalixa and [+ kalixa_leader +] has called new elections.
 
-New Prussian elections have been set for [+ next_election_month_prussia : month +] [+ next_election_year_prussia +].
+New kalixan elections have been set for [+ next_election_month_kalixa : month +] [+ next_election_year_kalixa +].

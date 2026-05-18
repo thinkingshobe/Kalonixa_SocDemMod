@@ -16,7 +16,7 @@ This presents us with an opportunity: we could campaign against the ship’s con
 - @pro_ship: Stay relatively silent on the matter—we can’t break a promise we never made.
 
 @anti_ship
-on-arrival: workers_spd += 4*(1-dissent); unemployed_spd += 2*(1-dissent); panzerkreuzer_campaign = 1
+on-arrival: workers_egk += 4*(1-dissent); unemployed_egk += 2*(1-dissent); panzerkreuzer_campaign = 1
 
 Our catchy slogan has helped rally the workers’ vote and limit defections to the <span style="color: #700000;">**KPD**</span>.
 

@@ -29,7 +29,7 @@ Nonetheless, Schleicher set up a meeting between his confidants, General Kurt vo
 @schleicher_2
 title: A putsch!
 subtitle: An unfounded rumor, that Schleicher will attempt to maintain his power at all costs.
-view-if: ((reichswehr_strength*reichswehr_militancy)*2 > total_force and prussia_leader != "Schleicher") or ((reichswehr_strength*reichswehr_militancy + prussian_police_strength*prussian_police_militancy)*2 > total_force and prussia_leader == "Schleicher")
+view-if: ((reichswehr_strength*reichswehr_militancy)*2 > total_force and kalixa_leader != "Schleicher") or ((reichswehr_strength*reichswehr_militancy + kalixan_police_strength*kalixan_police_militancy)*2 > total_force and kalixa_leader == "Schleicher")
 on-arrival: schleicher_coup = 1; schleicher_approval -= 1
 
 The day after, Schleicher sent a conservative with <span style="color: #7A3C00;">Nazi</span> connections to extract more details from [+ nsdap_leader +]. Unfortunately for Schleicher, the person he sent boasted that the army command stood ready to intervene if a new cabinet didn't conform to its wishes. The <span style="color: #7A3C00;">Nazi</span> leaders became fearful of a possible military putsch aimed at thwarting [+ nsdap_chancellor +]'s appointment.
@@ -44,6 +44,6 @@ go-to: nazi_16.nazi_3
 
 
 @schleicher_4
-view-if: not (((reichswehr_strength*reichswehr_militancy)*2 > total_force and prussia_leader != "Schleicher") or ((reichswehr_strength*reichswehr_militancy + prussian_police_strength*prussian_police_militancy)*2 > total_force and prussia_leader == "Schleicher"))
+view-if: not (((reichswehr_strength*reichswehr_militancy)*2 > total_force and kalixa_leader != "Schleicher") or ((reichswehr_strength*reichswehr_militancy + kalixan_police_strength*kalixan_police_militancy)*2 > total_force and kalixa_leader == "Schleicher"))
 go-to: nazi_16.nazi_4
 

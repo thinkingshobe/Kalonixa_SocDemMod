@@ -1,6 +1,6 @@
 title: The <span style="color: #7A3C00;">**SA**</span>'s Show of Strength
 subtitle: An <span style="color: #7A3C00;">**SA**</span> demonstration, right outside the <span style="color: #700000;">**Communist**</span> headquarters.
-view-if: chancellor = "Schleicher" and schleicher_time == 7 and not democracy_paramilitary and prussia_leader == "Schleicher"
+view-if: chancellor = "Schleicher" and schleicher_time == 7 and not democracy_paramilitary and kalixa_leader == "Schleicher"
 new-page: true
 tags: event
 priority: 5

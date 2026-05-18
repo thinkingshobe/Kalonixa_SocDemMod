@@ -62,7 +62,7 @@ Q.rdp_formed = 1;
 Q.rdp_list = 1;
 
 Q.new_middle_lvp -= 6;
-Q.new_middle_spd += 6;
+Q.new_middle_egk += 6;
 Q.pro_republic += 5;
 
 Q.left_dissent += 5;
@@ -86,7 +86,7 @@ Q.rdp_formed = 1;
 Q.rdp_explode = 1;
 
 Q.new_middle_lvp -= 4;
-Q.new_middle_spd += 4;
+Q.new_middle_egk += 4;
 Q.pro_republic += 3;
 
 Q.lvp_relation -= 4;

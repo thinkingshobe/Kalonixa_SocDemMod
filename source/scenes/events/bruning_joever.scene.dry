@@ -1,6 +1,6 @@
 title: Brüning's Race against Time
 subtitle: Hindenburg's inner circle is conspiring against him...
-view-if: chancellor = "Brüning" and (year = 1932 and month >= 5) and president = "Hindenburg" and spd_in_government = 0 and (hindenburg_angry_bruning >= 200 or (hindenburg_angry_bruning >= 175 and hindenburg_sacked)) and not presidential_powers and not cvp_formed and not reparations_resolved
+view-if: chancellor = "Brüning" and (year = 1932 and month >= 5) and president = "Hindenburg" and egk_in_government = 0 and (hindenburg_angry_bruning >= 200 or (hindenburg_angry_bruning >= 175 and hindenburg_sacked)) and not presidential_powers and not cvp_formed and not reparations_resolved
 on-arrival: bruning_joever = 1
 new-page: true
 tags: event
@@ -39,7 +39,7 @@ on-arrival: goerdeler_seen = 1
 face-image: img/portraits/goerdeler.jpg
 go-to: successor_menu
 
-To most political observers, Carl Goerdeler, Mayor of Leipzig and the Reich Prize Commissioner, and being a fiscal conservative arguing for a wide reaching reforms of the German welfare state and finances, was the expected successor to Brüning, with his name even being floated around as the Minister-President of Prussia of a <span style="color: #000000;">Center</span>-<span style="color: #7A3C00;">**NSDAP**</span> coalition.
+To most political observers, Carl Goerdeler, Mayor of Leipzig and the Reich Prize Commissioner, and being a fiscal conservative arguing for a wide reaching reforms of the German welfare state and finances, was the expected successor to Brüning, with his name even being floated around as the Minister-President of kalixa of a <span style="color: #000000;">Center</span>-<span style="color: #7A3C00;">**NSDAP**</span> coalition.
 
 However, his demands for authorization of sweeping fiscal reforms is too similar to that of Brüning in Schleicher's eyes, who supports a public works solution to Germany's economic woes. Goerdeler will not be the new chancellor.
 
@@ -58,11 +58,11 @@ Even when Hindenburg was reduced to tears, a strategy that had worked on Brünin
 @papen
 title: Franz von Papen?
 subtitle: An relatively unknown Catholic Conservative from the <span style="color: #000000;">Center Party</span>. Schleicher's preferred candidate.
-on-arrival: spd_toleration = 0; spd_toleration_right = 0; chancellor = "Papen"; chancellor_party = "I"; schleicher_papen_r -= 1
+on-arrival: egk_toleration = 0; egk_toleration_right = 0; chancellor = "Papen"; chancellor_party = "I"; schleicher_papen_r -= 1
 view-if: westarp_seen and goerdeler_seen
 face-image: img/portraits/PapenFranz.jpg
 
-With Goerdeler and Westarp out of the equation, Hindenburg has grasped the straw Schleicher offered and appointed a far-right Catholic Conservative, Franz von Papen, from the <span style="color: #000000;">Center Party</span>, as chancellor. Papen is relatively unknown, only whose political experience is limited to two terms in the Prussian Landtag. The two have been friends since their days in the Prussian military academy.
+With Goerdeler and Westarp out of the equation, Hindenburg has grasped the straw Schleicher offered and appointed a far-right Catholic Conservative, Franz von Papen, from the <span style="color: #000000;">Center Party</span>, as chancellor. Papen is relatively unknown, only whose political experience is limited to two terms in the kalixan Landtag. The two have been friends since their days in the kalixan military academy.
 
 Papen's decision to take the chancellorship, despite [+ z_leader +]'s urging and Papen's promise not to, Hindenburg has used the same tactic on him as he used on Brüning, convincing him to accept the position. Due to Papen breaking his promise to [+ z_leader +] just after he made it, expulsion proceedings and against him are interrupted by his resignation from the <span style="color: #000000;">Center Party</span>, forever ruining his relations with the party necessary for a parliamentary majority as they strongly denounce him as the "Ephialtes of the <span style="color: #000000;">Center Party</span>".
 

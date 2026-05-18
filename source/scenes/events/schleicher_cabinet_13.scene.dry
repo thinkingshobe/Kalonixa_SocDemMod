@@ -14,7 +14,7 @@ go-to: reichstag
 on-arrival: {!
 Q.kpd_r_alt = 0;
 Q.sapd_r_alt = 0;
-Q.spd_r_alt = 0;
+Q.egk_r_alt = 0;
 Q.ddp_r_alt = 0;
 Q.lvp_r_alt = 0;
 Q.dvp_r_alt = 0;
@@ -24,26 +24,26 @@ Q.total_r_alt = 0;
 
 Q.kpd_r_alt = Q.kpd_r_pre;
 if (Q.sapd_formed && Q.sapd_r_pre) Q.sapd_r_alt = Q.sapd_r_pre;
-Q.spd_r_alt = Q.spd_r_pre;
+Q.egk_r_alt = Q.egk_r_pre;
 if (!Q.dstp_maintained && Q.libs_against_schleicher && !Q.lvp_formed) Q.ddp_r_alt = Q.ddp_r_pre;
 if (Q.libs_against_schleicher && Q.lvp_formed) Q.lvp_r_alt = Q.lvp_r_pre;
 if (Q.libs_against_schleicher && Q.dvp_relation >= 40 && Q.dvp_leader != "Dingeldey" && (Q.industrialists_schleicher < 4 || Q.republicans_schleicher <= 0) && Q.dvp_exist && !Q.lvp_formed) Q.dvp_r_alt = Q.dvp_r_pre;
 if (Q.z_against_schleicher) Q.z_r_alt = Q.z_r_pre - Q.bvp_r;
 
-Q.total_r_alt = parseFloat(Q.kpd_r_alt + Q.sapd_r_alt + Q.spd_r_alt + Q.ddp_r_alt + Q.dvp_r_alt + Q.z_r_alt + Q.lvp_r_alt).toFixed(1);
-Q.total_r_alt_2 = parseFloat(Q.kpd_r_alt + Q.sapd_r_alt + Q.spd_r_alt + Q.ddp_r_alt + Q.dvp_r_alt + Q.z_r_alt + Q.lvp_r_alt).toFixed(1);
+Q.total_r_alt = parseFloat(Q.kpd_r_alt + Q.sapd_r_alt + Q.egk_r_alt + Q.ddp_r_alt + Q.dvp_r_alt + Q.z_r_alt + Q.lvp_r_alt).toFixed(1);
+Q.total_r_alt_2 = parseFloat(Q.kpd_r_alt + Q.sapd_r_alt + Q.egk_r_alt + Q.ddp_r_alt + Q.dvp_r_alt + Q.z_r_alt + Q.lvp_r_alt).toFixed(1);
 
 if (Q.total_r_alt < 100) {
     let scale = 100 / Q.total_r_alt;
     Q.kpd_r_alt = Math.round(Q.kpd_r_alt * scale * 10) / 10;
     Q.sapd_r_alt = Math.round(Q.sapd_r_alt * scale * 10) / 10;
-    Q.spd_r_alt = Math.round(Q.spd_r_alt * scale * 10) / 10;
+    Q.egk_r_alt = Math.round(Q.egk_r_alt * scale * 10) / 10;
     Q.ddp_r_alt = Math.round(Q.ddp_r_alt * scale * 10) / 10;
     Q.dvp_r_alt = Math.round(Q.dvp_r_alt * scale * 10) / 10;
     Q.z_r_alt   = Math.round(Q.z_r_alt * scale * 10) / 10;
     Q.lvp_r_alt = Math.round(Q.lvp_r_alt * scale * 10) / 10;
 
-    Q.total_r_alt = Q.kpd_r_alt + Q.sapd_r_alt + Q.spd_r_alt + Q.ddp_r_alt + Q.dvp_r_alt + Q.z_r_alt + Q.lvp_r_alt;
+    Q.total_r_alt = Q.kpd_r_alt + Q.sapd_r_alt + Q.egk_r_alt + Q.ddp_r_alt + Q.dvp_r_alt + Q.z_r_alt + Q.lvp_r_alt;
 }
 
 for (var party of Q.parties) {
@@ -77,12 +77,12 @@ if (Q.sapd_formed && Q.sapd_r_alt) {
     });
 }
 
-if (Q.spd_r) {
+if (Q.egk_r) {
     data.push({
-        "id": "spd",
-        "legend": "SPD",
-        "name": "SPD",
-        "seats": Math.round(Q.spd_r * 2),
+        "id": "egk",
+        "legend": "egk",
+        "name": "egk",
+        "seats": Math.round(Q.egk_r * 2),
     });
 }
 
@@ -226,14 +226,14 @@ if (window && d3) {
     d3.select("#alt_reichstag").datum(data).call(parliament);
 }
 !}
-go-to: negotiation_menu_med if spd_med; negotiation_menu_win if spd_win
+go-to: negotiation_menu_med if egk_med; negotiation_menu_win if egk_win
 
 = Reichstag composition
 
 {!<svg id="alt_reichstag" style="width: 500px; height: 250px;"> </svg>!}
 
 {!<table>!}
-[? if not dnef_formed and dnef_r_alt: {!<tr><td><div class="box" style='background-color:#E3000F; outline: 2px; outline-style: solid;'> </div></td><td>!} **SPD:** {!</td><td>!} **[+ spd_r_alt +]%** {!</td></tr>!} ?]
+[? if not dnef_formed and dnef_r_alt: {!<tr><td><div class="box" style='background-color:#E3000F; outline: 2px; outline-style: solid;'> </div></td><td>!} **egk:** {!</td><td>!} **[+ egk_r_alt +]%** {!</td></tr>!} ?]
 [? if dnef_formed and dnef_r_alt: {!<tr><td><div class="box" style='background-color:#BFC8CC; outline: 2px; outline-style: solid;'> </div></td><td>!} **DNEF:** {!</td><td>!} **[+ dnef_r_alt +]%** {!</td></tr>!} ?]
 
 [? if not lvp_formed and dstp_dnef and ddp_r_alt: {!<tr><td><div class="box2" style='background-color:#A79A3F'> </div></td><td>!} [+ ddp_name +]: {!</td><td>!} [+ ddp_r_alt +]% {!</td></tr>!} ?]
@@ -252,7 +252,7 @@ go-to: negotiation_menu_med if spd_med; negotiation_menu_win if spd_win
 
 [? if nvf_exist and nvf_r_alt and nvf_dnef: {!<tr><td><div class="box2" style='background-color:#0F2116'> </div></td><td>!} NVF: {!</td><td>!} [+ nvf_r_alt +]% {!</td></tr>!} ?]
 
-[? if dnef_formed and spd_r_alt: {!<tr><td><div class="box" style='background-color:#E3000F;'> </div></td><td>!} SPD: {!</td><td>!} [+ spd_r_alt +]% {!</td></tr>!} ?]
+[? if dnef_formed and egk_r_alt: {!<tr><td><div class="box" style='background-color:#E3000F;'> </div></td><td>!} egk: {!</td><td>!} [+ egk_r_alt +]% {!</td></tr>!} ?]
 
 [? if sapd_formed and sapd_r_alt: {!<tr><td><div class="box" style='background-color:#9B0000'> </div></td><td>!} SAPD: {!</td><td>!} [+ sapd_r_alt +]% {!</td></tr>!} ?]
 
@@ -345,7 +345,7 @@ The Reichstag will convene on [+ next_reichstag_month : month +] [+ next_reichst
 @rights
 title: Demand the above, and [? if not reichstag_fire_decree_schleicher: also guarantees for democratic rights?][? if reichstag_fire_decree_schleicher: a repeal of the Reichstag Fire Decree?].
 unavailable-subtitle: Not enough leverage.
-choose-if: spd_win and total_r_alt_2 >= 35
+choose-if: egk_win and total_r_alt_2 >= 35
 on-arrival: {!
 Q.schleicher_post_protests = 1;
 Q.schleicher_rights = 1;
@@ -379,8 +379,8 @@ if (Q.next_reichstag_month > 12) {
 if (Q.pro_republic < 20) Q.pro_republic = 20;
 Q.pro_republic += 20;
 
-Q.workers_spd += 4;
-Q.unemployed_spd += 4;
+Q.workers_egk += 4;
+Q.unemployed_egk += 4;
 Q.new_middle_ddp += 2;
 Q.old_middle_ddp += 2;
 Q.new_middle_lvp += 2;
@@ -414,9 +414,9 @@ The Reichstag will convene on [+ next_reichstag_month : month +] [+ next_reichst
 @schemes
 title: Demand the above, and also guarantees for the continued independence of political organizations.
 subtitle: Including the <span style="color: #700000;">**KPD**</span>.
-unavailable-subtitle: [? if not spd_win or total_r_alt_2 < 50: Not enough leverage. ?][? if pro_republic < 50 and weimar_votes < 45 or reichstag_fire_decree_schleicher: Schleicher is dead-set on banning the <span style="color: #700000;">Communists</span>. ?]
+unavailable-subtitle: [? if not egk_win or total_r_alt_2 < 50: Not enough leverage. ?][? if pro_republic < 50 and weimar_votes < 45 or reichstag_fire_decree_schleicher: Schleicher is dead-set on banning the <span style="color: #700000;">Communists</span>. ?]
 view-if: dnef_formed
-choose-if: spd_win and (pro_republic >= 50 or weimar_votes >= 45) and total_r_alt_2 >= 50 and not reichstag_fire_decree_schleicher
+choose-if: egk_win and (pro_republic >= 50 or weimar_votes >= 45) and total_r_alt_2 >= 50 and not reichstag_fire_decree_schleicher
 on-arrival: {!
 Q.schleicher_post_protests = 1;
 Q.schleicher_rights = 1;
@@ -450,12 +450,12 @@ if (Q.next_reichstag_month > 12) {
 
 Q.pro_republic += 10;
 
-Q.workers_spd += 6;
-Q.unemployed_spd += 6;
-Q.new_middle_spd += 3;
-Q.old_middle_spd += 3;
-Q.rural_spd += 3;
-Q.catholics_spd += 3;
+Q.workers_egk += 6;
+Q.unemployed_egk += 6;
+Q.new_middle_egk += 3;
+Q.old_middle_egk += 3;
+Q.rural_egk += 3;
+Q.catholics_egk += 3;
 Q.new_middle_ddp += 3;
 Q.old_middle_ddp += 3;
 Q.new_middle_lvp += 3;

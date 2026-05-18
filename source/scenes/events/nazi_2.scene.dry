@@ -19,7 +19,7 @@ on-display: {!
 
 = Transport Strike in Berlin
 
-In the lead-up to the upcoming federal elections, a strike has been organized in response to the wage cuts negotiated between the BVG (Berlin Transport Company) and our own <span style="color: #c00000;">socialist</span> union, the Gesamtverband. Although the wage cuts have been reduced by roughly 90% due to the Gesamtverband's efforts, the <span style="color: #700000;">**RGO**</span> (the <span style="color: #700000;">**KPD**</span>'s union) has vehemently protested the change.
+In the lead-up to the upcoming federal elections, a strike has been organized in response to the wage cuts negotiated between the BVG (Berlin Transport Company) and our own <span style="color: #30B24A;">socialist</span> union, the Gesamtverband. Although the wage cuts have been reduced by roughly 90% due to the Gesamtverband's efforts, the <span style="color: #700000;">**RGO**</span> (the <span style="color: #700000;">**KPD**</span>'s union) has vehemently protested the change.
 
 The <span style="color: #700000;">**KPD**</span> is not protesting a modest reduction in the BVG workers’ relatively high wages—employees also benefit from company housing and sports clubs—but is seeking a political strike instead. Despite having a smaller share of workers, the <span style="color: #700000;">**RGO**</span> holds a stronger position due to the formation of "unity committees," which they dominate. Now, a newly formed strike committee that includes the Gesamtverband and the <span style="color: #7A3C00;">**NSBO**</span>, the <span style="color: #7A3C00;">Nazi</span> union, is set to vote on whether to proceed with the strike.
 
@@ -43,18 +43,18 @@ Through our active efforts to rally reluctant workers—despite the strike being
 
 @yay_strike_2
 title: The strike has begun.
-on-arrival:  workers_spd += 2; workers_kpd += 2; unemployed_spd += 2; unemployed_kpd += 2; pro_republic -= 8
+on-arrival:  workers_egk += 2; workers_kpd += 2; unemployed_egk += 2; unemployed_kpd += 2; pro_republic -= 8
 
-Three days before the election, the strike brings all public transport in Berlin to a halt, gaining significant sympathy among the city's working class. The <span style="color: #700000;">**KPD**</span> and <span style="color: #7A3C00;">**NSDAP**</span> quickly back the strikers, each hoping to make a breakthrough among working-class voters. However, the <span style="color: #c00000;">**SPD**</span> benefits the most, as most strikers are from the Gesamtverband, reigniting worker support for the party.
+Three days before the election, the strike brings all public transport in Berlin to a halt, gaining significant sympathy among the city's working class. The <span style="color: #700000;">**KPD**</span> and <span style="color: #7A3C00;">**NSDAP**</span> quickly back the strikers, each hoping to make a breakthrough among working-class voters. However, the <span style="color: #30B24A;">**egk**</span> benefits the most, as most strikers are from the Gesamtverband, reigniting worker support for the party.
 
-Chancellor [+ chancellor +] condemns the <span style="color: #7A3C00;">Nazi</span>-<span style="color: #700000;">Communist</span>-<span style="color: #c00000;">socialist</span> alliance as a national betrayal. Arbitrary arrests are made, paramilitary violence erupts, and clashes with police lead to numerous casualties.
+Chancellor [+ chancellor +] condemns the <span style="color: #7A3C00;">Nazi</span>-<span style="color: #700000;">Communist</span>-<span style="color: #30B24A;">socialist</span> alliance as a national betrayal. Arbitrary arrests are made, paramilitary violence erupts, and clashes with police lead to numerous casualties.
 
 Ultimately, the strike fizzles out after just a few days—unsustainable in a time of mass unemployment.
 
 @nay_strike
 title: Campaign against the strike.
 subtitle: We've stripped down the wage cut by 90%! What else do they want?
-go-to: nay_strike_2 if workers_spd_normalized + pro_republic < 100; nay_strike_3 if workers_spd_normalized + pro_republic >= 100
+go-to: nay_strike_2 if workers_egk_normalized + pro_republic < 100; nay_strike_3 if workers_egk_normalized + pro_republic >= 100
 
 @nay_strike_2
 on-arrival: z_relation += 3; ddp_relation += 3; lvp_relation += 3; dvp_relation += 3; kpd_relation -= 10; communist_coalition -= 1

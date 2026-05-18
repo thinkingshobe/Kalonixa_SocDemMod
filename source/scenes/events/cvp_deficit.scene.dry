@@ -2,7 +2,7 @@ title: Deficit Spending
 subtitle: This goes against our coalition agreement with the <span style="color: #000000;">**[+ z_party_name +]**</span>...
 new-page: true
 on-arrival: z_relation -= 8; hindenburg_angry += 20; coalition_dissent += 2; cvp_economy_accepted_time = time + 3
-view-if: spd_in_government and in_social_catholic_coalition and cvp_formed and cvp_economy_accepted and budget < 0 and time >= cvp_economy_accepted_time
+view-if: egk_in_government and in_social_catholic_coalition and cvp_formed and cvp_economy_accepted and budget < 0 and time >= cvp_economy_accepted_time
 tags: event
 
 = Deficit Spending

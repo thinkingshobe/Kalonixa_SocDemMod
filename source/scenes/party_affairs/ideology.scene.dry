@@ -10,15 +10,15 @@ max-visits: 3
 
 = Questions of Ideology
 
-The <span style="color: #c00000;">**SPD**</span> is torn between many different ideological currents. What should be our primary ideological guidance for now?
+The <span style="color: #30B24A;">**egk**</span> is torn between many different ideological currents. What should be our primary ideological guidance for now?
 
 [? if ideology != 0 : We have previously chosen a [+ ideology +] ideology. Changing it will likely have drawbacks. ?]
 
 - @class_struggle: Class struggle and preparing the proletariat for the revolution are our primary goals.
 - @centrist: The Center <span style="color: #9B0000;">Marxism</span> of Karl Kautsky remains the best way to resolve our internal contradictions.
 - @labor: We should work with the trade unions to improve the lives of workers.
-- @reform: Following Eduard Bernstein, we should work for ethical <span style="color: #c00000;">socialism</span>, strengthen democracy, and expand the party's electorate.
-- @socpat: Pursue the fusion of <span style='color: #c00000;'>socialism</span> and patriotism.
+- @reform: Following Eduard Bernstein, we should work for ethical <span style="color: #30B24A;">socialism</span>, strengthen democracy, and expand the party's electorate.
+- @socpat: Pursue the fusion of <span style='color: #30B24A;'>socialism</span> and patriotism.
 - @easy_discard
 
 @class_struggle
@@ -75,7 +75,7 @@ if (Q.ideology && Q.ideology != "socpat") {
 go-to: changed if changed = 1
 on-departure: ideology = "socpat"; social_patriot_strength += 10; left_dissent += 10; center_dissent += 10; reformist_dissent += 5; z_relation += 6; dvp_relation += 6; ddp_relation += 6; lvp_relation += 6; kpd_relation -= 15; dvp_left += 1; ddp_left += 0.5; ddp_cohesion += 0.5; lvp_left += 1
 
-The social patriot wing of the party, widely regarded as Schleicher's puppets, is the most supportive of the <span style='color: #c00000;'>**SPD**</span> and ADGB adopting a more nationalist stance.
+The social patriot wing of the party, widely regarded as Schleicher's puppets, is the most supportive of the <span style='color: #30B24A;'>**egk**</span> and ADGB adopting a more nationalist stance.
 
 @changed
 on-arrival: left_dissent += 5; center_dissent += 5; labor_dissent += 5; reformist_dissent += 5

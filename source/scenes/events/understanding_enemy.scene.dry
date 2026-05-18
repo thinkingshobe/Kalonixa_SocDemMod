@@ -8,7 +8,7 @@ tags: event
 
 = Understanding the Enemy
 
-The <span style="color: #7A3C00;">Nazis</span>' rise is unprecedented for a political party in modern Germany, and <span style="color: #c00000;">socialist</span> intellectuals are doing their best to come to terms with the rapid rise of this dangerous party.
+The <span style="color: #7A3C00;">Nazis</span>' rise is unprecedented for a political party in modern Germany, and <span style="color: #30B24A;">socialist</span> intellectuals are doing their best to come to terms with the rapid rise of this dangerous party.
 
 # Harsch p. 106-109
 
@@ -52,6 +52,6 @@ on-arrival: neorevisionist_strength += 10; nazi_urgency += 1; neorevisionism += 
 Working together with other "neorevisionists" such as Sergei Chakhotin, Mierendorff has developed new propaganda methods to fight the rise of the Nazis. They focus on visually striking symbols and repetitious slogans. Time will tell how effective they are.
 
 @p4
-on-arrival: left_strength += 4; center_strength += 4; labor_strength += 4; left_dissent -= 3; center_dissent -= 3; labor_dissent -= 3; workers_spd += 2*(1-dissent); unemployed_spd += 2*(1-dissent)
+on-arrival: left_strength += 4; center_strength += 4; labor_strength += 4; left_dissent -= 3; center_dissent -= 3; labor_dissent -= 3; workers_egk += 2*(1-dissent); unemployed_egk += 2*(1-dissent)
 
 The <span style="color: #7A3C00;">Nazis</span>' appeals are making in-roads even among the working class, so we must redouble our propaganda campaigns among our base in order to prevent any <span style="color: #7A3C00;">Nazi</span> attachment.

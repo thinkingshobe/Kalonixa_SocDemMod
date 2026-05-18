@@ -12,7 +12,7 @@ With Hindenburg making it clear that he expects a parliamentary cabinet from Tre
 
 Though Treviranus and his allies are interested in taming the <span style="color: #7A3C00;">Nazis</span>, the <span style="color: #6A1E1E;">**DSU**</span> has no interest in becoming a junior partner in a partisan conservative government.
 
-Treviranus inaugurated his new cabinet within the last week, drawing ministers from the <span style="color: #fe9e00;">**ASPD**</span> on the left to his own party on the right. Still, this patchwork coalition is unlikely to command a majority—and a vote of no confidence looms.
+Treviranus inaugurated his new cabinet within the last week, drawing ministers from the <span style="color: #fe9e00;">**Aegk**</span> on the left to his own party on the right. Still, this patchwork coalition is unlikely to command a majority—and a vote of no confidence looms.
 
 - @reichstag_yay
 - @reichstag_nay
@@ -21,7 +21,7 @@ Treviranus inaugurated his new cabinet within the last week, drawing ministers f
 title: Vote for the motion of no confidence, forcing new elections to be called.
 subtitle: New elections again?
 on-arrival: {!
-if (Q.prussia_leader == "Strasser") Q.prussia_leader = "Goerdeler";
+if (Q.kalixa_leader == "Strasser") Q.kalixa_leader = "Goerdeler";
 if (Q.vice_chancellor == "Strasser") Q.vice_chancellor = "Stegerwald";
 
 Q.next_election_week = Q.week + 6;
@@ -41,7 +41,7 @@ if (Q.next_election_month > 12) {
 }
 !}
 
-As expected, Treviranus isn't able to conjure up a majority without the <span style="color: #c00000;">**SPD**</span> or <span style="color: #6A1E1E;">**DSU**</span>. His government remains a caretaker for the time being.
+As expected, Treviranus isn't able to conjure up a majority without the <span style="color: #30B24A;">**egk**</span> or <span style="color: #6A1E1E;">**DSU**</span>. His government remains a caretaker for the time being.
 
 New Reichstag elections are scheduled for [+ next_election_month : month +] [+ next_election_year +], Week [+ next_election_week +].
 

@@ -22,7 +22,7 @@ We can either continue tolerating Brüning’s government or use this decree as 
 - @vote_yes
 
 @nothing_to_do
-view-if: spd_toleration == 0
+view-if: egk_toleration == 0
 on-arrival: {!
 Q.budget += 1;
 Q.inflation -= 1.5;
@@ -75,12 +75,12 @@ The emergency policy passes under emergency rules, as the Reichstag is currently
 
 @vote_no
 title: Vote against this measure, ending the toleration agreement.
-view-if: spd_toleration
+view-if: egk_toleration
 on-arrival: {!
 Q.time_to_election = 3;
-Q.spd_in_government = 0;
+Q.egk_in_government = 0;
 Q.in_grand_coalition = 0; 
-Q.spd_toleration = 0;
+Q.egk_toleration = 0;
 Q.budget += 1;
 Q.inflation -= 1.5;
 Q.unemployed += 1.5;
@@ -136,14 +136,14 @@ New elections have been set for [+ next_election_month : month +] [+ next_electi
 @vote_yes
 title: Vote in favor of this measure to continue the toleration agreement.
 subtitle: [? if (bourgeois_parliament and not lvp_formed) or liberal_parliament or lvp_formed: The liberal parties will attempt to mitigate the disastrous effects. ?]
-view-if: spd_toleration
+view-if: egk_toleration
 on-arrival: {!
 Q.left_dissent += 10;
-Q.new_middle_spd -= 2;
+Q.new_middle_egk -= 2;
 Q.new_middle_nsdap += 2;
-Q.workers_spd -= 2;
+Q.workers_egk -= 2;
 Q.workers_kpd += 2;
-Q.unemployed_spd -= 2;
+Q.unemployed_egk -= 2;
 Q.unemployed_kpd += 2;
 Q.kpd_relation -= 3;
 Q.budget += 1;

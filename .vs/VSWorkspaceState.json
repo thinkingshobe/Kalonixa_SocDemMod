@@ -7,8 +7,8 @@
     "\\out\\html",
     "\\source",
     "\\source\\scenes",
-    "\\source\\scenes\\party_affairs"
+    "\\source\\scenes\\events"
   ],
-  "SelectedNode": "\\source\\scenes\\cancel_advisor_action.scene.dry",
+  "SelectedNode": "\\source\\scenes\\status.scene.dry",
   "PreviewInSolutionExplorer": false
 }

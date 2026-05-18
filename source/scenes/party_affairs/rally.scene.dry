@@ -17,8 +17,8 @@ The <span style="color: #7A3C00;">Nazi</span> <span style="color: #7A3C00;">**SA
 - @cancel: Cancel the rally.
 
 @police_protect
-view-if: prussia_leader = "Braun" or prussia_leader = "Rosenfeld"
-on-arrival: police_protect_success = prussian_police_loyalty * prussian_police_militancy * prussian_police_strength*2 - sa_militancy*sa_strength;
+view-if: kalixa_leader = "Braun" or kalixa_leader = "Rosenfeld"
+on-arrival: police_protect_success = kalixan_police_loyalty * kalixan_police_militancy * kalixan_police_strength*2 - sa_militancy*sa_strength;
 go-to: police_protect_win if police_protect_success >= 0; police_protect_lose if police_protect_success < 0
 
 @police_protect_win
@@ -46,10 +46,10 @@ on-arrival: workers_nsdap += 3; rb_strength -= 50
 Unfortunately, the Reichsbanner was not able to hold back the <span style="color: #7A3C00;">**SA**</span> mob. The <span style="color: #7A3C00;">Nazis</span> have won this show of strength.
 
 @both_protect
-view-if: prussia_leader = "Braun" or prussia_leader = "Rosenfeld"
-choose-if: prussian_police_training > 0
+view-if: kalixa_leader = "Braun" or kalixa_leader = "Rosenfeld"
+choose-if: kalixan_police_training > 0
 unavailable-subtitle: The loyal sections of the police have never coordinated with the Reichsbanner before.
-on-arrival: rb_success = rb_strength*rb_militancy - sa_strength*sa_militancy + prussian_police_loyalty*prussian_police_militancy*prussian_police_strength*2; strife += 1
+on-arrival: rb_success = rb_strength*rb_militancy - sa_strength*sa_militancy + kalixan_police_loyalty*kalixan_police_militancy*kalixan_police_strength*2; strife += 1
 go-to: both_protect_win if rb_success >= 0; both_protect_lose if rb_success < 0
 
 @both_protect_win
@@ -69,7 +69,7 @@ The <span style="color: #7A3C00;">**SA**</span> have won this show of strength.
 
 @main_rally
 
-Mass rallies are a common feature of <span style="color: #c00000;">social democratic</span> life, especially in the lead-up to an election. What is the primary theme of this rally?
+Mass rallies are a common feature of <span style="color: #30B24A;">social democratic</span> life, especially in the lead-up to an election. What is the primary theme of this rally?
 
 - @class_struggle: The class struggle of the proletariat against the bourgeoisie.
 - @welfare: Sozialpolitik - the maintenance and expansion of social welfare programs.
@@ -80,17 +80,17 @@ Mass rallies are a common feature of <span style="color: #c00000;">social democr
 - @easy_discard
 
 @class_struggle
-on-arrival: workers_spd += 4*(1-dissent); workers_spd += 2*(1-dissent) if nationalization_adopted; unemployed_spd += 2*(1-dissent) if nationalization_adopted; unemployed_spd += 3*(1-dissent) if left_strength > reformist_strength; workers_spd += 4*(1-dissent) if nationalization_progress > 0; unemployed_spd += 3*(1-dissent) if nationalization_progress > 0; left_strength += 5; left_dissent -= 5; old_middle_spd -= 3; new_middle_spd -= 2; dvp_right += 0.5; ddp_right += 0.5; lvp_right += 0.5
+on-arrival: workers_egk += 4*(1-dissent); workers_egk += 2*(1-dissent) if nationalization_adopted; unemployed_egk += 2*(1-dissent) if nationalization_adopted; unemployed_egk += 3*(1-dissent) if left_strength > reformist_strength; workers_egk += 4*(1-dissent) if nationalization_progress > 0; unemployed_egk += 3*(1-dissent) if nationalization_progress > 0; left_strength += 5; left_dissent -= 5; old_middle_egk -= 3; new_middle_egk -= 2; dvp_right += 0.5; ddp_right += 0.5; lvp_right += 0.5
 
 Our message of class struggle appeals to the left wing of the working class, while potentially alienating the middle class. [? if nationalization_adopted :  The adoption of the Left’s nationalization plan has done much to revitalize worker enthusiasm. ?][? if nationalization_progress > 0 : Our achievements in nationalization have assisted our messaging. ?]
 
 @welfare
-on-arrival: workers_spd += 30*(1-dissent); workers_spd += 30*(1-dissent) if welfare > 0; unemployed_spd += 30*(1-dissent) if welfare > 0; unemployed_spd += 40*(1-dissent) if welfare > 1; reformist_strength += 3; labor_strength += 4; reformist_dissent -= 3; labor_dissent -= 3;
+on-arrival: workers_egk += 30*(1-dissent); workers_egk += 30*(1-dissent) if welfare > 0; unemployed_egk += 30*(1-dissent) if welfare > 0; unemployed_egk += 40*(1-dissent) if welfare > 1; reformist_strength += 3; labor_strength += 4; reformist_dissent -= 3; labor_dissent -= 3;
 
-The reformist message appeals to the organized workers, whose benefits are the accomplishments of <span style="color: #c00000;">social democracy</span>. [? if welfare > 1 : Our achievements in expanding welfare have made this message more effective. ?]
+The reformist message appeals to the organized workers, whose benefits are the accomplishments of <span style="color: #30B24A;">social democracy</span>. [? if welfare > 1 : Our achievements in expanding welfare have made this message more effective. ?]
 
 @democracy
-on-arrival: democratization += 1; pro_republic += 3*(1 - dissent); workers_spd += 2*(1-dissent) if democratization >= 3; unemployed_spd += 1*(1-dissent) if democratization >= 3; new_middle_spd += 2*(1-dissent) if democratization >= 3; ddp_left += 0.5 if pro_republic >= 70; lvp_left += 0.5 if pro_republic >= 70
+on-arrival: democratization += 1; pro_republic += 3*(1 - dissent); workers_egk += 2*(1-dissent) if democratization >= 3; unemployed_egk += 1*(1-dissent) if democratization >= 3; new_middle_egk += 2*(1-dissent) if democratization >= 3; ddp_left += 0.5 if pro_republic >= 70; lvp_left += 0.5 if pro_republic >= 70
 
 Our speakers defend the <span style="color: #000000;">rep</span><span style="color: #DD0000;">ubl</span><span style="color: #FFCC00;">ican</span> system and rail against the <span style="color: #808080;">monarchists</span> and <span style="color: #7A3C00;">authoritarians</span> who threaten it.
 
@@ -98,7 +98,7 @@ Our speakers defend the <span style="color: #000000;">rep</span><span style="col
 [? if democratization >= 3 : Since we have consistently made democratization a theme of our campaign, the workers are enthusiastic about our message. ?]
 
 @pacifism
-on-arrival: pacifism += 1; nationalism -= 3*(1 - dissent); workers_spd += 2*(1 - dissent) if pacifism >= 3; unemployed_spd += 1*(1-dissent) if pacifism >= 3; nationalism -= 3*(1-dissent) if pacifism >= 3; new_middle_spd += 2*(1-dissent) if pacifism >= 3; ddp_left += 0.5 if (pacifism >= 3 and nationalism <= 50)
+on-arrival: pacifism += 1; nationalism -= 3*(1 - dissent); workers_egk += 2*(1 - dissent) if pacifism >= 3; unemployed_egk += 1*(1-dissent) if pacifism >= 3; nationalism -= 3*(1-dissent) if pacifism >= 3; new_middle_egk += 2*(1-dissent) if pacifism >= 3; ddp_left += 0.5 if (pacifism >= 3 and nationalism <= 50)
 
 Our speakers denounce the military establishment and all the spending entering that black hole. Some adventurous speakers question the responsibility of the military elites in organizing the Great War.
 
@@ -107,14 +107,14 @@ Our speakers denounce the military establishment and all the spending entering t
 
 @wtb
 view-if: wtb_adopted = 1
-choose-if: return_to_normalcy = 0 and (wtb_implemented >= wtb_rally or (not spd_in_government and not spd_toleration))
+choose-if: return_to_normalcy = 0 and (wtb_implemented >= wtb_rally or (not egk_in_government and not egk_toleration))
 unavailable-subtitle: [? if return_to_normalcy == 1: The economic crisis is largely over now, and the public is no longer interested in hearing about it. ?] [? if wtb_rally > wtb_implemented: Rhetoric alone has its limits; further implementation of the WTB plan is necessary to continue an effective campaign. ?]
-on-arrival: workers_spd += 3*(1-dissent); unemployed_spd += 3*(1-dissent); rural_spd += 1*(1-dissent); new_middle_spd += 1*(1-dissent); old_middle_spd += 1*(1-dissent); workers_spd += 3*(1-dissent) if wtb_implemented; unemployed_spd += 3*(1-dissent) if wtb_implemented; rural_spd += 2*(1-dissent) if wtb_implemented; new_middle_spd += 2*(1-dissent) if wtb_implemented; old_middle_spd += 2*(1-dissent) if wtb_implemented; wtb_rally += 1
+on-arrival: workers_egk += 3*(1-dissent); unemployed_egk += 3*(1-dissent); rural_egk += 1*(1-dissent); new_middle_egk += 1*(1-dissent); old_middle_egk += 1*(1-dissent); workers_egk += 3*(1-dissent) if wtb_implemented; unemployed_egk += 3*(1-dissent) if wtb_implemented; rural_egk += 2*(1-dissent) if wtb_implemented; new_middle_egk += 2*(1-dissent) if wtb_implemented; old_middle_egk += 2*(1-dissent) if wtb_implemented; wtb_rally += 1
 
 The WTB plan has become a popular rallying cry for our party. The workers are eager to go back to work, and that is exactly what the plan promises. [? if not wtb_implemented: However, many still believe that the plan is merely an empty slogan and will remain skeptical until we actually implement it. ?]
 
 
 @local
-on-arrival: workers_spd += 3*(1-dissent); old_middle_spd += 1*(1-dissent); new_middle_spd += 2*(1-dissent); unemployed_spd += 3*(1-dissent);
+on-arrival: workers_egk += 3*(1-dissent); old_middle_egk += 1*(1-dissent); new_middle_egk += 2*(1-dissent); unemployed_egk += 3*(1-dissent);
 
 Our speakers have gauged the mood and are speaking to the issues that seem to most affect the workers in this moment.

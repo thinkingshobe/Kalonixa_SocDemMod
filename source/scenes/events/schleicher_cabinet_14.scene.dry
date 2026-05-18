@@ -40,25 +40,25 @@ Q.stampfer_advisor = 0;
 Q.stampfer_killed = 1;
 Q.pro_republic -= 10;
 
-Q.workers_spd -= 6;
-Q.new_middle_spd -= 4;
-Q.old_middle_spd -= 2;
-Q.rural_spd -= 2;
-Q.catholics_spd -= 4;
-Q.unemployed_spd -= 4;
+Q.workers_egk -= 6;
+Q.new_middle_egk -= 4;
+Q.old_middle_egk -= 2;
+Q.rural_egk -= 2;
+Q.catholics_egk -= 4;
+Q.unemployed_egk -= 4;
 
-if (Q.schleicher_spd_r >= 5) {
-    Q.workers_spd += 3;
-    Q.new_middle_spd += 2;
-    Q.old_middle_spd += 1;
-    Q.rural_spd += 1;
-    Q.catholics_spd += 2;
-    Q.unemployed_spd += 2;
+if (Q.schleicher_egk_r >= 5) {
+    Q.workers_egk += 3;
+    Q.new_middle_egk += 2;
+    Q.old_middle_egk += 1;
+    Q.rural_egk += 1;
+    Q.catholics_egk += 2;
+    Q.unemployed_egk += 2;
 }
 
-if (Q.schleicher_spd_influence >= 6 && Q.schleicher_spd_r < 5) {
-    Q.workers_spd += 2;
-    Q.unemployed_spd += 2;
+if (Q.schleicher_egk_influence >= 6 && Q.schleicher_egk_r < 5) {
+    Q.workers_egk += 2;
+    Q.unemployed_egk += 2;
     Q.left_dissent += 20;
     Q.center_dissent += 10;
     Q.reformist_strength += 5;
@@ -125,4 +125,4 @@ With the powers Schleicher has handed to the new Ministry of National Guidance, 
 
 We have already seen this unfold. The <span style="color: #BFC8CC;">**DNEF**</span> has been "acquiring" private newspapers and filling their offices with government loyalists, turning them into little more than state mouthpieces. Many other editors have been forced out of their posts—some for no reason other than being <span style="color: #005EB8;">Jewish</span>.
 
-[? if schleicher_spd_r >= 5: Schleicher, however, has been notably lenient with Vorwärts. Perhaps he is grateful for our past support—or perhaps he is simply waiting until we are too weak to resist. Collaboration, it seems, pays off? ?][? if schleicher_spd_influence >= 6 and schleicher_spd_r < 5: Using his growing influence over the <span style="color: #c00000;">**SPD**</span>, Schleicher has even managed to install some of his own supporters to quietly "edit" the paper. It's jarring to see our supposed "newfound support" for rearmament—framed as a noble way to provide jobs—splashed across the front page. ?][? if schleicher_spd_influence < 6 and schleicher_spd_r < 5: It seems even our newspaper, Vorwärts, hasn't been spared from the crackdown. The offices are raided, staff arrested on dubious charges, and we can't even broadcast the truth for the workers to hear. ?] Stampfer hasn't been seen at his desk for some time now. Must be a long vacation.
+[? if schleicher_egk_r >= 5: Schleicher, however, has been notably lenient with Vorwärts. Perhaps he is grateful for our past support—or perhaps he is simply waiting until we are too weak to resist. Collaboration, it seems, pays off? ?][? if schleicher_egk_influence >= 6 and schleicher_egk_r < 5: Using his growing influence over the <span style="color: #30B24A;">**egk**</span>, Schleicher has even managed to install some of his own supporters to quietly "edit" the paper. It's jarring to see our supposed "newfound support" for rearmament—framed as a noble way to provide jobs—splashed across the front page. ?][? if schleicher_egk_influence < 6 and schleicher_egk_r < 5: It seems even our newspaper, Vorwärts, hasn't been spared from the crackdown. The offices are raided, staff arrested on dubious charges, and we can't even broadcast the truth for the workers to hear. ?] Stampfer hasn't been seen at his desk for some time now. Must be a long vacation.

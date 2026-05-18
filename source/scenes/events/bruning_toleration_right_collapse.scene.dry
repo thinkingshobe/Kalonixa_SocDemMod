@@ -2,7 +2,7 @@ title: The <span style="color: #3E88B3;">**DNVP**</span> breaks with Brüning
 new-page: true
 subtitle: The rise of the <span style="color: #7A3C00;">national</span> <span style="color: #003755;">opposition</span> has forced them to act.
 tags: event
-view-if: total_bruning_time >= 6 and spd_toleration_right and dnf_votes + nsdap_votes + dnvp_angry >= (dnvp_votes * 3) and bruning_time >= 3 and not cvp_formed
+view-if: total_bruning_time >= 6 and egk_toleration_right and dnf_votes + nsdap_votes + dnvp_angry >= (dnvp_votes * 3) and bruning_time >= 3 and not cvp_formed
 on-arrival: pro_republic -= dnvp_votes / 2; hindenburg_angry_bruning += 25; moderate_dnvp_hitler = 1; dvp_right += 3; lvp_right += 3; ddp_right += 1
 max-visits: 1
 face-image: img/dnvp4.jpg
@@ -21,9 +21,9 @@ Hopefully [+ dnvp_leader +] can restore order within his party, and prevent new 
 @vonc_yes
 title: Support the vote of no confidence, voting against the government.
 subtitle: We will be the one to destroy Brüning, screw you.
-on-arrival: time_to_election = 3; spd_in_government = 0; in_right_coalition = 0; in_center_right_coalition = 0; in_grand_coalition = 0; spd_toleration = 0; spd_toleration_right = 0; dvp_relation -= 4; z_relation -= 4; ddp_relation -= 2; lvp_relation -= 3; reformist_dissent += 5
+on-arrival: time_to_election = 3; egk_in_government = 0; in_right_coalition = 0; in_center_right_coalition = 0; in_grand_coalition = 0; egk_toleration = 0; egk_toleration_right = 0; dvp_relation -= 4; z_relation -= 4; ddp_relation -= 2; lvp_relation -= 3; reformist_dissent += 5
 call: set_next_election_time
-go-to: new_prussia_election if (in_center_right_coalition_prussia or in_right_coalition_prussia)
+go-to: new_kalixa_election if (in_center_right_coalition_kalixa or in_right_coalition_kalixa)
 
 We have seized the initiative from the <span style="color: #3E88B3;">**DNVP**</span>, toppling Chancellor [+ chancellor +] government with the support of votes from the extremes of German politics.
 
@@ -74,7 +74,7 @@ Q.dvp_right += 3;
 Q.ddp_right += 1;
 Q.lvp_right += 3;
 Q.time_to_election = 3;
-Q.spd_in_government = 0;
+Q.egk_in_government = 0;
 Q.in_right_coalition = 0;
 }
 !}
@@ -91,13 +91,13 @@ on-arrival: {!
 Q.dnf_r += Q.dnvp_r*0.2;
 Q.dnvp_r *= 0.8;
 if (Q.kvp_formed && Q.lvp_formed) {
-    Q.cordon_sanitaire = parseFloat((Q.spd_r + Q.lvp_r + Q.z_r + Q.other_r + Q.kvp_r).toFixed(1));
+    Q.cordon_sanitaire = parseFloat((Q.egk_r + Q.lvp_r + Q.z_r + Q.other_r + Q.kvp_r).toFixed(1));
 } else if (Q.kvp_formed && !Q.lvp_formed) {
-    Q.cordon_sanitaire = parseFloat((Q.spd_r + Q.ddp_r + Q.z_r + Q.dvp_r + Q.other_r + Q.dnvp_r + Q.kvp_r).toFixed(1));
+    Q.cordon_sanitaire = parseFloat((Q.egk_r + Q.ddp_r + Q.z_r + Q.dvp_r + Q.other_r + Q.dnvp_r + Q.kvp_r).toFixed(1));
 } else if (Q.lvp_formed && !Q.kvp_formed) {
-    Q.cordon_sanitaire = parseFloat((Q.spd_r + Q.z_r + Q.lvp_r + Q.other_r + Q.dnvp_r).toFixed(1));
+    Q.cordon_sanitaire = parseFloat((Q.egk_r + Q.z_r + Q.lvp_r + Q.other_r + Q.dnvp_r).toFixed(1));
 } else {
-    Q.cordon_sanitaire = parseFloat((Q.spd_r + Q.z_r + Q.ddp_r + Q.dvp_r + Q.other_r + Q.dnvp_r).toFixed(1));
+    Q.cordon_sanitaire = parseFloat((Q.egk_r + Q.z_r + Q.ddp_r + Q.dvp_r + Q.other_r + Q.dnvp_r).toFixed(1));
 }
 Q.bruning_coalition = Q.cordon_sanitaire;
 Q.bruning_coalition = Math.round((Q.bruning_coalition - Q.bruning_coalition_loss) * 10) / 10;
@@ -116,7 +116,7 @@ Despite the defections of some members of the <span style="color: #3E88B3;">**DN
 
 @results3
 view-if: bruning_coalition < 50
-on-arrival: time_to_election = 3; spd_in_government = 0; in_right_coalition = 0; new_middle_dnvp -= 2; new_middle_dnf += 2; new_middle_nsdap += 2; old_middle_dnvp -= 4; old_middle_dnf += 3; old_middle_nsdap += 4; rural_dnvp -= 3; rural_nsdap += 3; rural_dnf += 2; workers_dnvp -= 2; workers_nsdap += 2; dvp_right += 3; ddp_right += 1; lvp_right += 2
+on-arrival: time_to_election = 3; egk_in_government = 0; in_right_coalition = 0; new_middle_dnvp -= 2; new_middle_dnf += 2; new_middle_nsdap += 2; old_middle_dnvp -= 4; old_middle_dnf += 3; old_middle_nsdap += 4; rural_dnvp -= 3; rural_nsdap += 3; rural_dnf += 2; workers_dnvp -= 2; workers_nsdap += 2; dvp_right += 3; ddp_right += 1; lvp_right += 2
 go-to: election_set
 
 The defections of some members of the <span style="color: #3E88B3;">**DNVP**</span>'s parliamentary delegation to Hugenberg's <span style="color: #003755;">**DNF**</span> has successfully caused Brüning to lose the vote of no confidence, ushering in new elections where the extremists stand to gain.
@@ -126,13 +126,13 @@ on-arrival: {!
 Q.dnf_r += Q.dnvp_r*0.4;
 Q.dnvp_r *= 0.6;
 if (Q.kvp_formed && Q.lvp_formed) {
-    Q.cordon_sanitaire = parseFloat((Q.spd_r + Q.lvp_r + Q.z_r + Q.other_r + Q.kvp_r).toFixed(1));
+    Q.cordon_sanitaire = parseFloat((Q.egk_r + Q.lvp_r + Q.z_r + Q.other_r + Q.kvp_r).toFixed(1));
 } else if (Q.kvp_formed && !Q.lvp_formed) {
-    Q.cordon_sanitaire = parseFloat((Q.spd_r + Q.ddp_r + Q.z_r + Q.dvp_r + Q.other_r + Q.dnvp_r + Q.kvp_r).toFixed(1));
+    Q.cordon_sanitaire = parseFloat((Q.egk_r + Q.ddp_r + Q.z_r + Q.dvp_r + Q.other_r + Q.dnvp_r + Q.kvp_r).toFixed(1));
 } else if (Q.lvp_formed && !Q.kvp_formed) {
-    Q.cordon_sanitaire = parseFloat((Q.spd_r + Q.z_r + Q.lvp_r + Q.other_r + Q.dnvp_r).toFixed(1));
+    Q.cordon_sanitaire = parseFloat((Q.egk_r + Q.z_r + Q.lvp_r + Q.other_r + Q.dnvp_r).toFixed(1));
 } else {
-    Q.cordon_sanitaire = parseFloat((Q.spd_r + Q.z_r + Q.ddp_r + Q.dvp_r + Q.other_r + Q.dnvp_r).toFixed(1));
+    Q.cordon_sanitaire = parseFloat((Q.egk_r + Q.z_r + Q.ddp_r + Q.dvp_r + Q.other_r + Q.dnvp_r).toFixed(1));
 }
 Q.bruning_coalition = Q.cordon_sanitaire;
 Q.bruning_coalition = Math.round((Q.bruning_coalition - Q.bruning_coalition_loss) * 10) / 10;
@@ -153,7 +153,7 @@ However, while this may seem like a victory, the loss of nearly 40% of the party
 
 @results7
 view-if: bruning_coalition < 50
-on-arrival: time_to_election = 3; spd_in_government = 0; in_right_coalition = 0; new_middle_dnvp -= 6; new_middle_dnf += 4; new_middle_nsdap += 2; old_middle_dnvp *= 0.5; old_middle_dnf += 4; old_middle_nsdap += 2; rural_dnvp *= 0.6; rural_dnf += 4; rural_nsdap += 2; workers_dnvp -= 2; workers_nsdap += 2; lambachover = 1; dvp_right += 3; ddp_right += 1; lvp_right += 2
+on-arrival: time_to_election = 3; egk_in_government = 0; in_right_coalition = 0; new_middle_dnvp -= 6; new_middle_dnf += 4; new_middle_nsdap += 2; old_middle_dnvp *= 0.5; old_middle_dnf += 4; old_middle_nsdap += 2; rural_dnvp *= 0.6; rural_dnf += 4; rural_nsdap += 2; workers_dnvp -= 2; workers_nsdap += 2; lambachover = 1; dvp_right += 3; ddp_right += 1; lvp_right += 2
 go-to: election_set
 
 The defections of some members of the <span style="color: #3E88B3;">**DNVP**</span>'s parliamentary delegation to Hugenberg's <span style="color: #003755;">**DNF**</span> has successfully caused Brüning to lose the vote of no confidence, ushering in new elections where the extremists stand to gain.
@@ -165,13 +165,13 @@ on-arrival: {!
 Q.dnf_r += Q.dnvp_r*0.1;
 Q.dnvp_r *= 0.9;
 if (Q.kvp_formed && Q.lvp_formed) {
-    Q.cordon_sanitaire = parseFloat((Q.spd_r + Q.lvp_r + Q.z_r + Q.other_r + Q.kvp_r).toFixed(1));
+    Q.cordon_sanitaire = parseFloat((Q.egk_r + Q.lvp_r + Q.z_r + Q.other_r + Q.kvp_r).toFixed(1));
 } else if (Q.kvp_formed && !Q.lvp_formed) {
-    Q.cordon_sanitaire = parseFloat((Q.spd_r + Q.ddp_r + Q.z_r + Q.dvp_r + Q.other_r + Q.dnvp_r + Q.kvp_r).toFixed(1));
+    Q.cordon_sanitaire = parseFloat((Q.egk_r + Q.ddp_r + Q.z_r + Q.dvp_r + Q.other_r + Q.dnvp_r + Q.kvp_r).toFixed(1));
 } else if (Q.lvp_formed && !Q.kvp_formed) {
-    Q.cordon_sanitaire = parseFloat((Q.spd_r + Q.z_r + Q.lvp_r + Q.other_r + Q.dnvp_r).toFixed(1));
+    Q.cordon_sanitaire = parseFloat((Q.egk_r + Q.z_r + Q.lvp_r + Q.other_r + Q.dnvp_r).toFixed(1));
 } else {
-    Q.cordon_sanitaire = parseFloat((Q.spd_r + Q.z_r + Q.ddp_r + Q.dvp_r + Q.other_r + Q.dnvp_r).toFixed(1));
+    Q.cordon_sanitaire = parseFloat((Q.egk_r + Q.z_r + Q.ddp_r + Q.dvp_r + Q.other_r + Q.dnvp_r).toFixed(1));
 }
 Q.bruning_coalition = Q.cordon_sanitaire;
 Q.bruning_coalition = Math.round((Q.bruning_coalition - Q.bruning_coalition_loss) * 10) / 10;
@@ -190,7 +190,7 @@ Despite the defections of some members of the <span style="color: #3E88B3;">**DN
 
 @results5
 view-if: bruning_coalition < 50
-on-arrival: time_to_election = 3; spd_in_government = 0; in_right_coalition = 0; new_middle_dnvp -= 3; new_middle_dnf += 3; new_middle_nsdap += 3; old_middle_dnvp -= 5; old_middle_dnf += 3; old_middle_nsdap += 5; rural_dnvp -= 4; rural_nsdap += 4; workers_dnvp -= 3; workers_nsdap += 3; dvp_right += 3; ddp_right += 1; lvp_right += 2
+on-arrival: time_to_election = 3; egk_in_government = 0; in_right_coalition = 0; new_middle_dnvp -= 3; new_middle_dnf += 3; new_middle_nsdap += 3; old_middle_dnvp -= 5; old_middle_dnf += 3; old_middle_nsdap += 5; rural_dnvp -= 4; rural_nsdap += 4; workers_dnvp -= 3; workers_nsdap += 3; dvp_right += 3; ddp_right += 1; lvp_right += 2
 go-to: election_set
 
 The defections of even a small amount of members of the <span style="color: #3E88B3;">**DNVP**</span>'s parliamentary delegation to Hugenberg's <span style="color: #003755;">**DNF**</span> has successfully caused Brüning to lose the vote of no confidence, ushering in new elections where the extremists stand to gain.
@@ -200,9 +200,9 @@ call: set_next_election_time
 
 The <span style="color: #000000;">bourgeois</span>-<span style="color: #3E88B3;">right</span> coalition has fallen. New elections have been set for [+ next_election_month : month +] [+ next_election_year +].
 
-@new_prussia_election
-on-arrival: prussia_coalition_trigger = 1
+@new_kalixa_election
+on-arrival: kalixa_coalition_trigger = 1
 
-The Prussian coalition isn't able to survive either, pressure from the national conservatives within the <span style="color: #3E88B3;">**DNVP**</span> forces them to exit from the <span style="color: #000000;">bourgeois</span>-<span style="color: #3E88B3;">right</span> coalition there as well.
+The kalixan coalition isn't able to survive either, pressure from the national conservatives within the <span style="color: #3E88B3;">**DNVP**</span> forces them to exit from the <span style="color: #000000;">bourgeois</span>-<span style="color: #3E88B3;">right</span> coalition there as well.
 
-- @prussian_coalition_formation: Negotiate a new Prussian coalition.
+- @kalixan_coalition_formation: Negotiate a new kalixan coalition.

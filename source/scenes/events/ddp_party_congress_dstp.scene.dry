@@ -51,7 +51,7 @@ According to the agreement on which the founding of the <span style="color: #D3C
 
 @dstp_maintained
 view-if: dstp_collapse_points < 4
-on-arrival: dstp_maintained = 1; liberal_cooperation -= 1; bourgeois_cooperation -= 1; nationalism += 3; new_middle_ddp -= 2; new_middle_spd += 2; old_middle_ddp += 2; old_middle_nsdap -= 2; unemployed_ddp += 2; ddp_right += 1; ddp_relation -= 5; pro_republic -= ddp_votes
+on-arrival: dstp_maintained = 1; liberal_cooperation -= 1; bourgeois_cooperation -= 1; nationalism += 3; new_middle_ddp -= 2; new_middle_egk += 2; old_middle_ddp += 2; old_middle_nsdap -= 2; unemployed_ddp += 2; ddp_right += 1; ddp_relation -= 5; pro_republic -= ddp_votes
 face-image: img/young_german_order.jpg
 achievement: ein_interessantes_experiment
 go-to: recalculate
