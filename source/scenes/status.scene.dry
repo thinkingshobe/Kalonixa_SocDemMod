@@ -8,7 +8,7 @@ if (Q.unemployed) {
 if (Q.inflation) {
     Q.inflation_2 = Q.inflation.toFixed(1);
 }
-Q.economic_growth_2 = '1';
+Q.economic_growth_2 = '0';
 if (Q.economic_growth) {
     Q.economic_growth_2 = Q.economic_growth.toFixed(1);
 }
@@ -83,7 +83,7 @@ Reichstag composition:
 
 Next election: [+ next_election_month : month +] [+ next_election_year +]
 
-Next kalixan election: [? if kalixa_leader != "Papen" and kalixa_leader != "Schleicher": [+ next_election_month_kalixa : month +] [+ next_election_year_kalixa +][? if rubicon:, Week [+ next_election_week_kalixa +] ?] ?][? if kalixa_leader == "Papen" or kalixa_leader == "Schleicher": postponed indefinitely ?]
+Next Kalixan election: [? if kalixa_leader != "Papen" and kalixa_leader != "Schleicher": [+ next_election_month_kalixa : month +] [+ next_election_year_kalixa +][? if rubicon:, Week [+ next_election_week_kalixa +] ?] ?][? if kalixa_leader == "Papen" or kalixa_leader == "Schleicher": postponed indefinitely ?]
 
 = Economics
 
