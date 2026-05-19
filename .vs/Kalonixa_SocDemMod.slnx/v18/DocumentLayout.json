@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\source\\scenes\\status.scene.dry||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:source\\scenes\\status.scene.dry||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\source\\scenes\\root.scene.dry||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:source\\scenes\\root.scene.dry||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\source\\scenes\\status.scene.dry||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:source\\scenes\\status.scene.dry||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\out\\html\\d3-parliament.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
@@ -210,17 +210,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "root.scene.dry",
               "DocumentMoniker": "C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\source\\scenes\\root.scene.dry",
               "RelativeDocumentMoniker": "source\\scenes\\root.scene.dry",
               "ToolTip": "C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\source\\scenes\\root.scene.dry",
               "RelativeToolTip": "source\\scenes\\root.scene.dry",
-              "ViewState": "AgIAANUAAAAAAAAAAAAqwN0AAAApAAAAAAAAAA==",
+              "ViewState": "AgIAABUCAAAAAAAAAAAqwCwCAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2026-04-27T23:02:23.733Z",
               "IsPinned": true,
@@ -228,13 +228,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "status.scene.dry",
               "DocumentMoniker": "C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\source\\scenes\\status.scene.dry",
               "RelativeDocumentMoniker": "source\\scenes\\status.scene.dry",
               "ToolTip": "C:\\Users\\turtl\\Documents\\GitHub\\Kalonixa_SocDemMod\\source\\scenes\\status.scene.dry",
               "RelativeToolTip": "source\\scenes\\status.scene.dry",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACIAAADcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2026-05-14T16:25:10.795Z",
               "EditorCaption": ""

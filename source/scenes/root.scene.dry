@@ -515,8 +515,8 @@ Q.economic_records = [];
 
 
 // State of the government
-Q.president = "Hindenburg";
-Q.president_ideology = "Hindenburg";
+Q.president = "Braun";
+Q.president_ideology = "Braun";
 // starting chancellor: Jadran Henley
 Q.chancellor = "Henley";
 Q.chancellor_party = 'KLP';
